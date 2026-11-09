@@ -1,0 +1,9 @@
+# Full-text copies of third-party content stay local: link to originals instead.
+sources/x/*.md
+!sources/x/README.md
+sources/x/*.jsonl
+sources/videos/transcripts/
+
+# Personal: the owner's beliefs and working logs
+LEARNING.md
+project-management/

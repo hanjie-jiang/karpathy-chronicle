@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karpathy Chronicle</title>
+<meta name="description" content="An independent, evidence-backed reading of how Andrej Karpathy's public thinking about AI developed, 2022 to 2026. Unofficial; every quote links to its source.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfaf7; --surface: #ffffff; --ink: #1c1b19; --muted: #6b6860; --faint: #a7a399;
+  --line: #e6e2d9; --hatch: #efebe3;
+  --milestone: #57534e; --fund: #2f6fb5; --agency: #2f8a5b; --coding: #c26a12; --practice: #7a4fb3;
+  --ours-bg: #f4f1ea; --accent: #1c1b19;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151513; --surface: #1d1d1a; --ink: #ecebe6; --muted: #a29f96; --faint: #6c6960;
+    --line: #2f2e2a; --hatch: #23221f;
+    --milestone: #b4afa6; --fund: #6aa5e6; --agency: #5cc08a; --coding: #eb9a45; --practice: #ad8be0;
+    --ours-bg: #22211e; --accent: #ecebe6;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #151513; --surface: #1d1d1a; --ink: #ecebe6; --muted: #a29f96; --faint: #6c6960;
+  --line: #2f2e2a; --hatch: #23221f;
+  --milestone: #b4afa6; --fund: #6aa5e6; --agency: #5cc08a; --coding: #eb9a45; --practice: #ad8be0;
+  --ours-bg: #22211e; --accent: #ecebe6;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.6 Inter, system-ui, sans-serif; }
+a { color: inherit; text-decoration-color: var(--faint); text-underline-offset: 3px; }
+a:hover { text-decoration-color: var(--ink); }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+h1, h2, h3 { font-family: Newsreader, Georgia, serif; font-weight: 500; letter-spacing: -0.01em; margin: 0; }
+h2 { font-size: 28px; margin-bottom: 6px; }
+.lede { color: var(--muted); max-width: 680px; margin: 0 0 24px; }
+section { padding: 56px 0; border-top: 1px solid var(--line); }
+
+/* hero */
+header { padding: 72px 0 48px; }
+.tag { display: inline-block; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; margin-bottom: 20px; }
+h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1.05; overflow-wrap: anywhere; }
+header p { font-size: 18px; color: var(--muted); max-width: 640px; margin: 16px 0 32px; }
+.stats { display: flex; flex-wrap: wrap; gap: 32px; }
+.stat b { display: block; font-family: Newsreader, serif; font-size: 30px; font-weight: 500; }
+.stat span { font-size: 13px; color: var(--muted); }
+
+/* legend */
+.legend { display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; color: var(--muted); margin-bottom: 20px; }
+.legend i { display: inline-block; vertical-align: -2px; margin-right: 6px; }
+.dot-key { width: 11px; height: 11px; border-radius: 50%; background: var(--fund); }
+.dot-key.spot { background: transparent; border: 2px solid var(--fund); }
+.hatch-key { width: 22px; height: 12px; border-radius: 3px; background: repeating-linear-gradient(135deg, var(--hatch) 0 4px, transparent 4px 8px); border: 1px solid var(--line); }
+.ours-key { width: 22px; height: 12px; border-radius: 3px; background: var(--ours-bg); border-left: 3px solid var(--faint); }
+
+/* chips */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.chip { font: inherit; font-size: 13px; color: var(--ink); background: var(--surface); border: 1px solid var(--line);
+  border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+/* timeline */
+.tl { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px 8px; }
+.tl-row { display: grid; grid-template-columns: 150px 1fr; align-items: stretch; }
+.tl-label { font-size: 12.5px; font-weight: 500; padding: 10px 12px 10px 0; display: flex; align-items: center; gap: 8px; }
+.tl-label i { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+.tl-track { position: relative; border-top: 1px solid var(--line); }
+.tl-row:first-child .tl-track { border-top: 0; }
+.band { position: absolute; top: 0; bottom: 0; }
+.band.outline { background: repeating-linear-gradient(135deg, var(--hatch) 0 5px, transparent 5px 10px); }
+.band.pre { background: var(--hatch); opacity: .5; }
+.yearline { position: absolute; top: 0; bottom: 0; border-left: 1px dashed var(--line); }
+.ev { position: absolute; width: 13px; height: 13px; margin: -6.5px 0 0 -6.5px; border-radius: 50%; border: 2px solid var(--c);
+  background: var(--c); cursor: pointer; padding: 0; transition: opacity .15s, transform .15s; }
+.ev.spot { background: var(--surface); }
+.ev:hover, .ev:focus-visible, .ev.sel { transform: scale(1.45); outline: none; z-index: 2; }
+.ev.sel { box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--c); }
+.ev.dim { opacity: .14; }
+.axis { display: grid; border-top: 1px solid var(--line); grid-template-columns: 150px 1fr; font-size: 12px; color: var(--muted); }
+.axis-track { position: relative; height: 26px; }
+.axis-track span { position: absolute; top: 6px; transform: translateX(-50%); }
+.tip { position: absolute; pointer-events: none; z-index: 5; max-width: 300px; background: var(--ink); color: var(--bg);
+  font-size: 13px; line-height: 1.45; padding: 8px 10px; border-radius: 8px; opacity: 0; transition: opacity .1s; }
+.tip small { display: block; opacity: .7; margin-bottom: 2px; }
+
+/* detail */
+.detail { margin-top: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 20px 24px; min-height: 120px; }
+.detail .meta { font-size: 12.5px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
+.pill { display: inline-flex; align-items: center; gap: 6px; }
+.pill i { width: 8px; height: 8px; border-radius: 50%; }
+.q { font-family: Newsreader, serif; font-size: 22px; line-height: 1.35; margin: 12px 0 8px; }
+.q::before { content: "\201C"; } .q::after { content: "\201D"; }
+.ctx { color: var(--muted); margin: 6px 0 10px; }
+.warn { font-size: 12.5px; color: var(--coding); }
+.empty { color: var(--muted); }
+
+/* list view (mobile) */
+.list { display: none; }
+.list h3 { font-size: 20px; margin: 22px 0 8px; }
+.li { display: grid; grid-template-columns: 14px 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); }
+.li .ev { position: static; margin: 5px 0 0; transform: none; cursor: default; }
+.li-date { font-size: 12px; color: var(--muted); }
+.li-q { font-family: Newsreader, serif; font-size: 17px; line-height: 1.35; }
+
+/* threads */
+.threads { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px 24px; }
+.card h3 { font-size: 21px; margin-bottom: 14px; }
+.steps { list-style: none; margin: 0 0 16px; padding: 0; position: relative; }
+.steps::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 8px; border-left: 1px solid var(--line); }
+.steps li { position: relative; padding: 0 0 12px 24px; }
+.steps li::before { content: ""; position: absolute; left: 0; top: 6px; width: 11px; height: 11px; border-radius: 50%; background: var(--c); border: 2px solid var(--c); box-sizing: border-box; }
+.steps li.spot::before { background: var(--surface); }
+.steps .d { font-size: 12px; color: var(--muted); }
+.steps .t { font-family: Newsreader, serif; font-size: 16.5px; line-height: 1.35; }
+.ours { background: var(--ours-bg); border-left: 3px solid var(--faint); padding: 10px 14px; border-radius: 0 8px 8px 0; font-size: 14px; color: var(--ink); }
+.ours b { font-weight: 600; font-size: 11.5px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 2px; }
+
+/* periods */
+.periods { display: grid; gap: 16px; }
+.period { display: grid; grid-template-columns: 120px 1fr; gap: 24px; }
+.period .yr { font-family: Newsreader, serif; font-size: 34px; line-height: 1; }
+.badge { display: inline-block; margin-top: 8px; font-size: 11.5px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.badge.read { color: var(--agency); border-color: currentColor; }
+.period h3 { font-size: 21px; margin-bottom: 4px; }
+.period .cov { font-size: 12.5px; color: var(--muted); margin: 0 0 8px; }
+.period ul { margin: 6px 0 0; padding-left: 18px; }
+
+.method { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 40px; color: var(--muted); font-size: 14px; }
+.method p { margin: 0 0 10px; }
+footer { padding: 32px 0 56px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+.themebtn { font: inherit; font-size: 13px; background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
+
+@media (max-width: 760px) {
+  .wrap { padding-left: 16px; padding-right: 16px; }
+  header { padding: 48px 0 32px; }
+  section { padding: 40px 0; }
+  .tl, .axis, .detail { display: none; }
+  .list { display: block; }
+  .threads, .method { grid-template-columns: 1fr; }
+  .period { grid-template-columns: 1fr; gap: 6px; }
+  .stats { gap: 20px; }
+}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <span class="tag">Independent · unofficial · work in progress</span>
+  <h1>The Karpathy Chronicle</h1>
+  <p>How Andrej Karpathy's public thinking about AI, its limits, human agency, and building with it has developed since 2022. Every quote links to the original. Our interpretations are labelled as ours.</p>
+  <div class="stats" id="stats"></div>
+</header>
+
+<section class="wrap" id="timeline">
+  <h2>Timeline</h2>
+  <p class="lede">Each dot is a dated public statement or piece of work, placed in one of four reading lenses. Select a dot to see his words. Pick a thread to follow one idea across the years.</p>
+  <div class="legend">
+    <span><i class="dot-key"></i>Period fully read</span>
+    <span><i class="dot-key spot"></i>Read on its own; period not yet read</span>
+    <span><i class="hatch-key"></i>Period not yet read</span>
+    <span><i class="ours-key"></i>Our interpretation</span>
+  </div>
+  <div class="chips" id="chips" role="group" aria-label="Filter by thread"></div>
+  <div class="tl" id="tl"><div class="tip" id="tip"></div></div>
+  <div class="detail" id="detail" aria-live="polite"><p class="empty">Select a dot to read the statement.</p></div>
+  <div class="list" id="list"></div>
+</section>
+
+<section class="wrap" id="threads">
+  <h2>Threads</h2>
+  <p class="lede">Four ideas followed across time. The steps are his statements. The shaded note at the end of each is our reading, which you can check against the steps.</p>
+  <div class="threads" id="threadcards"></div>
+</section>
+
+<section class="wrap" id="periods">
+  <h2>Periods</h2>
+  <p class="lede">The chronicle is written one period at a time, from a full read of that year's posts. Later periods are still outlines.</p>
+  <div class="periods" id="periodlist"></div>
+</section>
+
+<section class="wrap" id="method">
+  <h2>Method and limits</h2>
+  <div class="method">
+    <div>
+      <p><b>Sources.</b> His X posts, talks, interviews and writing. X quotes are checked word for word against an archive of his posts before each build. Talk quotes come from third-party or machine transcripts and are marked as such.</p>
+      <p><b>Dates.</b> Post dates are in Beijing time (UTC+8), so a post can appear one day after its US date.</p>
+    </div>
+    <div>
+      <p><b>Not exhaustive.</b> Replies, image-only posts and most long recordings have not been read. Leaving something out does not mean he never said it. Public statements show what he expressed and when, not when he privately learned it.</p>
+      <p><b>Not affiliated.</b> This is an independent reading by a learner. It is not endorsed by or connected to Andrej Karpathy. Corrections are welcome.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <span>Updated <span id="updated"></span> · Source and method on <a href="https://github.com/hanjie-jiang/karpathy-chronicle">GitHub</a></span>
+  <button class="themebtn" id="themebtn" type="button">Toggle theme</button>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
