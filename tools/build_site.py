@@ -70,6 +70,21 @@ X = [
     ("1642920043423088640", "practice", ["You need prompt engineers and LLM Ops"], "Building with models rather than training them.", []),
     ("1674873002314563584", "practice", ["One can be quite successful in this role without ever training anything"], "Endorses the \"AI Engineer\" role.", []),
     ("1689819017610227712", "practice", ["How long it takes to make demos *real*"], "Demos versus real products.", []),
+    # ---- 2024 (thread-tagged; other cited 2024 posts come from CHRONICLE automatically) ----
+    ("1757600075281547344", "milestone", ["My immediate plan is to work on my personal projects"], "Leaves OpenAI.", []),
+    ("1777427944971083809", "milestone", ["train LLMs in pure C without 245MB of PyTorch"], "Releases llm.c.", []),
+    ("1813263734707790301", "milestone", ["a new kind of school that is AI native"], "Announces Eureka Labs: teacher-designed courses scaled by an AI teaching assistant.", ["empower"]),
+    ("1744179910347039080", "agency", ["Of all humans, not a top percentile"], "\"e/ia\": intelligence amplification, tools that empower rather than replace.", ["empower"]),
+    ("1815842603377779140", "agency", ["the first time that a frontier-capability LLM is available to everyone to work with and build on"], "Llama 3.1 405B, open weights.", ["empower"]),
+    ("1828210213620748655", "agency", ["scrappy solo serial micro-entrepreneur viable"], "Cloud plus AI makes one-person companies viable.", ["empower"]),
+    ("1780692023970038259", "fund", ["computers that do statistical arithmetic on tokens"], "The history of computing repeating with LLMs.", ["computer"]),
+    ("1835024197506187617", "fund", ["highly general purpose technology for statistical modeling of token streams"], "LLMs have little to do with language.", ["computer"]),
+    ("1816531576228053133", "fund", ["Jagged Intelligence", "keep a human in the loop"], "Brilliant at some tasks, failing at simple ones, and not always obvious which is which.", ["verify", "oversight"]),
+    ("1862565643436138619", "fund", ["You're asking a human data labeler"], "What you are really talking to when you \"ask an AI\".", ["verify"]),
+    ("1767598414945292695", "coding", ["supervising the automation", "How does a human provide oversight?"], "Software engineering will follow self-driving: more autonomy, oversight at a higher level.", ["oversight"]),
+    ("1827143768459637073", "coding", ["reviewing and editing the generated diffs"], "With Cursor and Sonnet, most of his programming is now English, and he still reviews.", ["oversight"]),
+    ("1804187473167421798", "coding", ["One built-in UI/UX feature of LLM interfaces I'd love is proof"], "He checks commands against the docs to verify the model's recollection.", ["verify"]),
+    ("1831776835388285347", "practice", ["making actual apps is a lot more than code"], "Building is not shipping: environment and deployment are the hard part.", []),
     # ---- spot-read later posts (periods not yet fully read) ----
     ("1886192184808149383", "coding", ["I don't read the diffs anymore", "throwaway weekend projects"], "Names \"vibe coding\", explicitly limited to throwaway projects.", ["oversight"]),
     ("1959703967694545296", "coding", ["I don't run in YOLO mode", "they basically don't have a sense of taste"], "Describes his layered coding setup and the cleanup agents still need.", ["oversight"]),
@@ -77,7 +92,7 @@ X = [
     ("2015883857489522876", "coding", ["watch them like a hawk", "make wrong assumptions on your behalf"], "Agent mistakes are now conceptual; CLAUDE.md instructions only partly fix them. Source of community \"Karpathy skills\" files.", ["oversight"]),
     ("2037921699824607591", "agency", ["super useful as a tool for forming your own opinions"], "Use LLMs to argue several directions, and watch for sycophancy.", ["empower"]),
 ]
-READ_YEARS = {2022, 2023}
+READ_YEARS = {2022, 2023, 2024}
 
 OTHER = [
     dict(date="2019-04-25", lens="practice", kind="writing", title="A Recipe for Training Neural Networks", url="https://karpathy.github.io/2019/04/25/recipe/",
@@ -87,7 +102,7 @@ OTHER = [
     dict(date="2023-11-24", lens="fund", kind="talk", title="Intro to Large Language Models (video)", url="https://www.youtube.com/watch?v=zjkBMFhNj_g",
          note="Presents the LLM OS diagram to a general audience. Tool-use and LLM OS passages only.", threads=["computer"], status="read"),
     dict(date="2024-07-16", lens="milestone", kind="writing", title="Eureka Labs announced", url="https://eurekalabs.ai/",
-         note="Teacher-designed courses supported by AI guidance. A proposed product, not evidence of outcomes.", threads=["empower"], status="spot"),
+         note="Teacher-designed courses supported by AI guidance. A proposed product, not evidence of outcomes.", threads=["empower"], status="read"),
     dict(date="2025-03-19", lens="coding", kind="writing", title="The append-and-review note", url="https://karpathy.bearblog.dev/the-append-and-review-note/",
          note="Writes up the single-note practice already visible in June 2022.", threads=[], status="spot"),
     dict(date="2025-04-07", lens="agency", kind="writing", title="Power to the people", url="https://karpathy.bearblog.dev/power-to-the-people/",
@@ -108,7 +123,7 @@ THREADS = [
     dict(id="verify", title="Verification as the bottleneck",
          reading="Our reading: a recurring concern from 2019 onward. It is a pattern we infer, not a framework he names."),
     dict(id="computer", title="The LLM as a new kind of computer",
-         reading="Our reading: the analogy builds in steps, from 'differentiable computer' (2022) to 'LLM OS' (Sept 2023). This dates when he said it publicly, not when he first thought it."),
+         reading="Our reading: the analogy builds in steps, from 'differentiable computer' (2022) to 'LLM OS' (Sept 2023), then to 'statistical modeling of token streams' (2024). This dates when he said it publicly, not when he first thought it."),
     dict(id="empower", title="Empowerment and its risks",
          reading="Our reading: excitement about open tools and individual reach sits beside warnings about attention-exploiting apps and concentration. Both are held at once."),
 ]
@@ -126,8 +141,12 @@ PERIODS = [
          interpretation=["In May he advises co-pilots with human oversight. In November he predicts oversight becoming \"~pass-through\". We read the first as advice and the second as forecast; he does not reconcile them.",
                          "Verification becomes concrete: retrieval, multiple samples, verification chains.",
                          "Open weights, personal hardware and protective filters point toward individual control."]),
-    dict(id="2024", title="An explicit educational design", range=["2024-01-01", "2024-12-31"], status="outline",
-         coverage="0 of 203 X posts read yet. Talks and videos not yet reviewed.", summary="Eureka Labs is announced. The rest of the year is next in the reading queue.", interpretation=[]),
+    dict(id="2024", title="Independent again, naming the limits, putting empowerment first", range=["2024-01-01", "2024-12-31"], status="read",
+         coverage="All 203 X posts read. Sequoia and No Priors interviews read in full, Berkeley talk segment read (third-party transcripts). Tokenizer and GPT-2 lectures not read.",
+         summary="He leaves OpenAI, builds llm.c and reproduces GPT-2 in public, and starts Eureka Labs. He coins \"jagged intelligence\" and calls himself \"team human\".",
+         interpretation=["His most explicit year on empowerment so far: \"IA\" not AI, \"of all humans, not a top percentile\", AGI as \"a magnifier of power\". He admits he would still rent a better closed model, with open ones as a fallback.",
+                         "A sharper vocabulary for limits (jagged intelligence, lossy recollection, the average data labeler, the junior-intern test) always ends in oversight or verification, not withdrawal.",
+                         "Oversight moves up a level but does not vanish: in August he still reviews the diffs. The gap between demo and product becomes a theme that anticipates MenuGen in 2025."]),
     dict(id="2025", title="Vibe coding, useful agents and their limits", range=["2025-01-01", "2025-12-31"], status="outline",
          coverage="A few posts and four blog posts read on their own. Full X read not started (158 posts).",
          summary="Vibe coding is named, limited to throwaway projects. Blog posts on note-taking, empowerment and the friction of delivery. A year review on uneven capability.", interpretation=[]),
@@ -333,7 +352,10 @@ def main():
         print("\n".join(errors))
         sys.exit(1)
     events.sort(key=lambda e: e["date"])
-    data = dict(updated="2026-11-09", events=events, threads=THREADS, periods=PERIODS)
+    read_posts = sum(1 for p in posts.values() if p["year"] in READ_YEARS)
+    total_posts = sum(1 for p in posts.values() if p["year"] >= 2022)
+    data = dict(updated="2026-11-09", events=events, threads=THREADS, periods=PERIODS,
+                posts_read=read_posts, posts_total=total_posts)
     OUT.write_text("// Generated by tools/build_site.py. Do not edit by hand.\nwindow.CHRONICLE = "
                    + json.dumps(data, ensure_ascii=False, indent=1) + ";\n", encoding="utf-8")
     print(f"wrote {OUT.relative_to(ROOT)}: {len(events)} events ({len(extra)} added from CHRONICLE), all X quotes verbatim")

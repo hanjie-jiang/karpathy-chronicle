@@ -22,7 +22,7 @@
   const read = D.periods.filter((p) => p.status === "read").length;
   $("stats").innerHTML = [
     [D.events.length, "sourced moments"],
-    ["437 / 868", "X posts read since 2022"],
+    [`${D.posts_read} / ${D.posts_total}`, "X posts read since 2022"],
     [`${read} of ${D.periods.length}`, "periods written"],
   ].map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
   $("updated").textContent = fmt(D.updated);

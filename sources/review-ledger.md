@@ -6,7 +6,7 @@ This file records which collected material has actually been read, by period. It
 |---|---|---|---|---|
 | 2022 | 251 / 251 (full) | T01: keyword-located passages only; Y01–Y06: none | Drafted 2026-11-06 | Done 2026-11-06; see [LEARNING.md](../LEARNING.md) |
 | 2023 | 186 / 186 (full) | T02: recommendations ≈37:11–40:11; Y10: tool use and LLM OS ≈00:28–00:45; Y07: one passage; T10: none | Drafted 2026-11-06 | Done 2026-11-09; see [LEARNING.md](../LEARNING.md) |
-| 2024 | 0 / 203 | — | Outline only | — |
+| 2024 | 203 / 203 (full) | T11 (Sequoia, Mar): full; T04 (No Priors, Sep): full; T05 (Berkeley): Karpathy segment ≈04:04–22:10; Y08, Y09: none; GPU Mode: transcript missing | Drafted 2026-11-09 | Questions posed in CHRONICLE |
 | 2025 | 1 / 158 (vibe coding post) | A03–A06 (earlier review); T07 opening excerpt | Outline only | — |
 | 2026 | 0 / 70 | T09 partial (earlier review) | Outline only | — |
 | pre-2022 | 0 / 144 (context screening) | A01 (earlier review) | Context paragraph | — |
@@ -24,6 +24,13 @@ This file records which collected material has actually been read, by period. It
 - Image-only content not in the archive: the LLM OS diagram (Nov 11), the SFT and n-gram diagrams (Nov 5), the State of GPT slide (May 24).
 - Y10 is now dated by his own announcement, Nov 24, 2023 (Beijing time).
 
+## 2024 X pass (2026-11-09)
+
+- Method: read `sources/x/2024.md` front to back (203 posts). Posts not cited fall into the same groups as before (personal life, games, films and books, Apple Vision Pro impressions, jokes, brief reactions, model-release notes already represented), plus llm.c progress updates represented by the cited milestones.
+- Long-form: T11 and T04 read in full, and the Karpathy segment of T05, all in third-party machine transcripts. Quotes from them are approximate until audio-checked.
+- Image-only content not in the archive: the e/ia list image (its text is in the post), the jagged-intelligence screenshots, and the llm.c charts.
+- Not read: the Y08 tokenizer and Y09 GPT-2 lectures (about 6 hours). The GPU Mode transcript is missing.
+
 ## Next period
 
-2024: 203 posts, plus Y08 (tokenizer), Y09 (GPT-2 reproduction), T04 (No Priors 2024), T05 (Berkeley), T11 (Sequoia 2024) and the A02 Eureka announcement (reviewed earlier). The T03 (GPU Mode) transcript is missing.
+2025: 158 posts, plus the 2025 long-form sources (YC talk, Dwarkesh interview, general-audience videos) and blog posts A03–A06.

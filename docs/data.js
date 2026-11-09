@@ -1060,6 +1060,300 @@ window.CHRONICLE = {
    "status": "read"
   },
   {
+   "date": "2024-01-08",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1744062845426532473",
+   "quotes": [
+    "IA (intelligence amplification) instead of AI",
+    "human interaction"
+   ],
+   "note": "He tried calling today's technology \"IA (intelligence amplification) instead of AI\", because it needs \"human interaction\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-01-08",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1744179910347039080",
+   "quotes": [
+    "Of all humans, not a top percentile"
+   ],
+   "note": "\"e/ia\": intelligence amplification, tools that empower rather than replace.",
+   "threads": [
+    "empower"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2024-01-13",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1745921205020799433",
+   "quotes": [
+    "sleeper agent"
+   ],
+   "note": "\"sleeper agent\" data poisoning.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-02-11",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1756380066580455557",
+   "quotes": [
+    "the primary feeling should be that of effort"
+   ],
+   "note": "\"Learning is not supposed to be fun… the primary feeling should be that of effort.\" Short-form educational content \"is a trap\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-02-14",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1757600075281547344",
+   "quotes": [
+    "My immediate plan is to work on my personal projects"
+   ],
+   "note": "Leaves OpenAI.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-02-21",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1759996549109776702",
+   "quotes": [],
+   "note": "A 2h13m tokenizer lecture.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-02-22",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1760388761349927356",
+   "quotes": [
+    "almost 100X'd",
+    "Step 1 build the thing. Step 2 build the ramp"
+   ],
+   "note": "Micrograd's code did not change, but a video about it \"almost 100X'd\" engagement. \"Step 1 build the thing. Step 2 build the ramp\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-02-25",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1761467904737067456",
+   "quotes": [
+    "free of dark patterns, fully aligned with the user"
+   ],
+   "note": "He praised Obsidian's \"File over app\" philosophy: \"free of dark patterns, fully aligned with the user\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-03-05",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1764731169109872952",
+   "quotes": [
+    "GPT-4 is not 67% on coding (HumanEval)"
+   ],
+   "note": "\"GPT-4 is not 67% on coding (HumanEval)\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-03-07",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1765473722985771335",
+   "quotes": [
+    "patience and attention to detail",
+    "I exist in a perpetually terrified state of the remaining 20 silent bugs"
+   ],
+   "note": "He quoted his 2019 recipe (\"patience and attention to detail\") and added \"I exist in a perpetually terrified state of the remaining 20 silent bugs\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-03-10",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1766509149297189274",
+   "quotes": [
+    "Reading a tweet is a bit like downloading an (attacker-controlled) executable that you instantly run on your brain"
+   ],
+   "note": "\"Reading a tweet is a bit like downloading an (attacker-controlled) executable that you instantly run on your brain\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-03-13",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1767598414945292695",
+   "quotes": [
+    "supervising the automation",
+    "How does a human provide oversight?"
+   ],
+   "note": "Software engineering will follow self-driving: more autonomy, oversight at a higher level.",
+   "threads": [
+    "oversight"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2024-04-09",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1777493157485437009",
+   "quotes": [
+    "The current models are not there"
+   ],
+   "note": "He set rewriting llm.c as a challenge for agents: \"The current models are not there\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-04-09",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1777427944971083809",
+   "quotes": [
+    "train LLMs in pure C without 245MB of PyTorch"
+   ],
+   "note": "Releases llm.c.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-04-13",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1778841713605525889",
+   "quotes": [],
+   "note": "In a world where \"very custom programs are 'free', LLMs might end up being a kind of compiler\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-04-18",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1780684098773876941",
+   "quotes": [
+    "The most common stumbling point here is trying to parallelize something that was supposed to run on the CPU"
+   ],
+   "note": "\"The most common stumbling point here is trying to parallelize something that was supposed to run on the CPU\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-04-18",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1780692023970038259",
+   "quotes": [
+    "computers that do statistical arithmetic on tokens"
+   ],
+   "note": "The history of computing repeating with LLMs.",
+   "threads": [
+    "computer"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2024-05-28",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1795484547267834137",
+   "quotes": [
+    "in 90 minutes for $20"
+   ],
+   "note": "Reproducing GPT-2 (124M) \"in 90 minutes for $20\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-05-30",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1795873666481402010",
+   "quotes": [
+    "unintuitively difficult",
+    "1/3 of my time on data, 1/3 on evals"
+   ],
+   "note": "Good evals are \"unintuitively difficult\": at Tesla he spent \"1/3 of my time on data, 1/3 on evals\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-06-10",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1799949853289804266",
+   "quotes": [],
+   "note": "A 4-hour \"Let's reproduce GPT-2\" lecture.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-06-22",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1804208334033371213",
+   "quotes": [
+    "read about the topic previously, but they are not allowed to reference any material",
+    "their best attempt at a lossy recollection"
+   ],
+   "note": "Asking an LLM a factual question is like asking someone who \"read about the topic previously, but they are not allowed to reference any material\": \"their best attempt at a lossy recollection\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-06-22",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1804187473167421798",
+   "quotes": [
+    "One built-in UI/UX feature of LLM interfaces I'd love is proof"
+   ],
+   "note": "He checks commands against the docs to verify the model's recollection.",
+   "threads": [
+    "verify"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2024-07-11",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1811140282559385758",
+   "quotes": [
+    "The if-then-else monster. Bloated functions that take dozens of kwargs"
+   ],
+   "note": "He criticised \"The if-then-else monster. Bloated functions that take dozens of kwargs\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-07-12",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1811467135279104217",
+   "quotes": [],
+   "note": "The 1.6B model for about $672.",
+   "threads": [],
+   "status": "read"
+  },
+  {
    "quotes": [],
    "date": "2024-07-16",
    "lens": "milestone",
@@ -1070,7 +1364,335 @@ window.CHRONICLE = {
    "threads": [
     "empower"
    ],
-   "status": "spot"
+   "status": "read"
+  },
+  {
+   "date": "2024-07-17",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1813263734707790301",
+   "quotes": [
+    "a new kind of school that is AI native"
+   ],
+   "note": "Announces Eureka Labs: teacher-designed courses scaled by an AI teaching assistant.",
+   "threads": [
+    "empower"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2024-07-19",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1814038096218083497",
+   "quotes": [
+    "we're asking them to memorize the internet",
+    "the models have to first get larger before they can get smaller"
+   ],
+   "note": "\"the models have to first get larger before they can get smaller\", helping to build cleaner training data in a \"staircase of improvement\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-07-24",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1815842603377779140",
+   "quotes": [
+    "the first time that a frontier-capability LLM is available to everyone to work with and build on"
+   ],
+   "note": "Llama 3.1 405B, open weights.",
+   "threads": [
+    "empower"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2024-07-26",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1816531576228053133",
+   "quotes": [
+    "Jagged Intelligence",
+    "keep a human in the loop"
+   ],
+   "note": "Brilliant at some tasks, failing at simple ones, and not always obvious which is which.",
+   "threads": [
+    "verify",
+    "oversight"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2024-07-27",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1816953700403065162",
+   "quotes": [],
+   "note": "At Berkeley: \"snowball\" small projects, count your \"10,000 hours\", and publish projects because others seeing your work \"increases the bar for your own work\" (T05 ≈11:20–21:45). His summary post: \"While True: build and p",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-07-30",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1818141090790375462",
+   "quotes": [],
+   "note": "On AI video: \"The future is already here it's just unevenly distributed and unnecessarily difficult\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-08-08",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1821277264996352246",
+   "quotes": [
+    "RLHF is just barely RL",
+    "a proxy objective of what looks good to humans"
+   ],
+   "note": "Real RL, as in AlphaGo, needs actual rewards, which are \"really difficult in the open-ended problem solving tasks\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-08-14",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1823418177197646104",
+   "quotes": [
+    "User input strings are untrusted data"
+   ],
+   "note": "Special-token parsing as an injection attack: \"User input strings are untrusted data\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-08-24",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1827143768459637073",
+   "quotes": [
+    "reviewing and editing the generated diffs"
+   ],
+   "note": "With Cursor and Sonnet, most of his programming is now English, and he still reviews.",
+   "threads": [
+    "oversight"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2024-08-26",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1827810695658029262",
+   "quotes": [],
+   "note": "He wrote a small tool that drafts git commit messages, which you accept, edit or regenerate.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-08-27",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1828210213620748655",
+   "quotes": [
+    "scrappy solo serial micro-entrepreneur viable"
+   ],
+   "note": "Cloud plus AI makes one-person companies viable.",
+   "threads": [
+    "empower"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2024-09-06",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1831776835388285347",
+   "quotes": [
+    "making actual apps is a lot more than code"
+   ],
+   "note": "Building is not shipping: environment and deployment are the hard part.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-09-14",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1834641096905048165",
+   "quotes": [
+    "a highly autonomous system that outperforms humans at most economically valuable work",
+    "has clearly not been reached"
+   ],
+   "note": "On AGI, he endorsed OpenAI's definition, \"a highly autonomous system that outperforms humans at most economically valuable work\", and said it \"has clearly not been reached\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-09-15",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1835024197506187617",
+   "quotes": [
+    "highly general purpose technology for statistical modeling of token streams"
+   ],
+   "note": "LLMs have little to do with language.",
+   "threads": [
+    "computer"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2024-09-29",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1840112692910272898",
+   "quotes": [
+    "is getting way ahead of the UIUX of packaging it into products"
+   ],
+   "note": "AI capability \"is getting way ahead of the UIUX of packaging it into products\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-10-03",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1841594123381571863",
+   "quotes": [
+    "as a single person in 2 hours, curate (not create, but curate) a podcast",
+    "the potential and immediate critique here, of AI generated slop"
+   ],
+   "note": "He acknowledged \"the potential and immediate critique here, of AI generated slop\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-10-03",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1841536804073439268",
+   "quotes": [
+    "exist only because humans are finite in knowledge, IQ and attention"
+   ],
+   "note": "In his GPU Mode talk: software abstractions \"exist only because humans are finite in knowledge, IQ and attention\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-10-03",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1841512260784816329",
+   "quotes": [
+    "We have AI - predict the input!"
+   ],
+   "note": "\"Don't ask your users for input… We have AI - predict the input!\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-10-18",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1847164046216159421",
+   "quotes": [
+    "revenue from unintended forgetfulness"
+   ],
+   "note": "He called subscriptions \"a user-hostile dark pattern… revenue from unintended forgetfulness\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-11-11",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1855659091877937385",
+   "quotes": [
+    "you wouldn't hire them over a person for the most menial jobs"
+   ],
+   "note": "Moravec's paradox: models do well on hard closed problems, but \"you wouldn't hire them over a person for the most menial jobs\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-11-30",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1862565643436138619",
+   "quotes": [
+    "You're asking a human data labeler"
+   ],
+   "note": "What you are really talking to when you \"ask an AI\".",
+   "threads": [
+    "verify"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2024-12-09",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1865924776214327360",
+   "quotes": [
+    "starts decentralized, open and idealistic and then progresses towards centralization",
+    "Quite a few connections to draw on for LLMs"
+   ],
+   "note": "He recommended a history of information technologies that \"starts decentralized, open and idealistic and then progresses towards centralization\", with \"Quite a few connections to draw on for LLMs\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-12-15",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1868061331355840704",
+   "quotes": [
+    "whether you'd hire it as a junior intern"
+   ],
+   "note": "The capability he is watching for is \"whether you'd hire it as a junior intern\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-12-17",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1868903650451767322",
+   "quotes": [
+    "spot hallucinations (if any)"
+   ],
+   "note": "On an AI-written treatise in December he said he was \"not versed enough to… spot hallucinations (if any)\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-12-26",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1872038630405054853",
+   "quotes": [
+    "Cognitive load is what matters",
+    "Probably the most true, least practiced viewpoint"
+   ],
+   "note": "He endorsed \"Cognitive load is what matters\" as \"Probably the most true, least practiced viewpoint\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2024-12-27",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1872362712958906460",
+   "quotes": [
+    "trained on a joke of a budget"
+   ],
+   "note": "He praised DeepSeek-V3 as a frontier-grade open-weights model \"trained on a joke of a budget\"",
+   "threads": [],
+   "status": "read"
   },
   {
    "date": "2025-02-03",
@@ -1235,7 +1857,7 @@ window.CHRONICLE = {
   {
    "id": "computer",
    "title": "The LLM as a new kind of computer",
-   "reading": "Our reading: the analogy builds in steps, from 'differentiable computer' (2022) to 'LLM OS' (Sept 2023). This dates when he said it publicly, not when he first thought it."
+   "reading": "Our reading: the analogy builds in steps, from 'differentiable computer' (2022) to 'LLM OS' (Sept 2023), then to 'statistical modeling of token streams' (2024). This dates when he said it publicly, not when he first thought it."
   },
   {
    "id": "empower",
@@ -1282,17 +1904,21 @@ window.CHRONICLE = {
   },
   {
    "id": "2024",
-   "title": "An explicit educational design",
+   "title": "Independent again, naming the limits, putting empowerment first",
    "range": [
     "2024-01-01",
     "2024-12-31"
    ],
-   "status": "outline",
-   "coverage": "0 of 203 X posts read yet. Talks and videos not yet reviewed.",
-   "summary": "Eureka Labs is announced. The rest of the year is next in the reading queue.",
-   "interpretation": [],
-   "chapter": "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md#2024-an-explicit-educational-design-technical-and-interview-evidence-still-open",
-   "chapter_html": "<p><strong>Observation — reviewed announcement, A02.</strong> The July 16 <a href=\"https://eurekalabs.ai/\" target=\"_blank\" rel=\"noopener\">Eureka Labs introduction</a> proposes teacher-designed courses supported by AI guidance.</p>\n<p><strong>Interpretation:</strong> human expertise and scaled assistance are explicit parts of this proposed product. It is not evidence of successful deployment. The tokenizer/GPT-2 videos, Berkeley and GPU Mode talks, and <a href=\"https://www.youtube.com/watch?v=hM_h0UA7upI\" target=\"_blank\" rel=\"noopener\">No Priors interview</a> remain necessary checks on technical practice, project choice and the relationship between AI and human cognition.</p>"
+   "status": "read",
+   "coverage": "All 203 X posts read. Sequoia and No Priors interviews read in full, Berkeley talk segment read (third-party transcripts). Tokenizer and GPT-2 lectures not read.",
+   "summary": "He leaves OpenAI, builds llm.c and reproduces GPT-2 in public, and starts Eureka Labs. He coins \"jagged intelligence\" and calls himself \"team human\".",
+   "interpretation": [
+    "His most explicit year on empowerment so far: \"IA\" not AI, \"of all humans, not a top percentile\", AGI as \"a magnifier of power\". He admits he would still rent a better closed model, with open ones as a fallback.",
+    "A sharper vocabulary for limits (jagged intelligence, lossy recollection, the average data labeler, the junior-intern test) always ends in oversight or verification, not withdrawal.",
+    "Oversight moves up a level but does not vanish: in August he still reviews the diffs. The gap between demo and product becomes a theme that anticipates MenuGen in 2025."
+   ],
+   "chapter": "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md#2024-independent-again-naming-the-limits-and-putting-empowerment-first",
+   "chapter_html": "<p><strong>Coverage.</strong> All 203 main-timeline X posts from 2024 were read in full on 2026-11-09. Long-form sources:</p>\n<ul><li>\n<a href=\"https://www.youtube.com/watch?v=c3b-JASoPi0\" target=\"_blank\" rel=\"noopener\">Sequoia AI Ascent conversation</a> (T11, March 2024): read in full, in a third-party machine transcript.\n</li><li>\n<a href=\"https://www.youtube.com/watch?v=hM_h0UA7upI\" target=\"_blank\" rel=\"noopener\">No Priors interview</a> (T04, September 2024): read in full, in a third-party machine transcript with recognition errors.\n</li><li>\n<a href=\"https://www.youtube.com/watch?v=tsTeEkzO9xc\" target=\"_blank\" rel=\"noopener\">Berkeley AI Hackathon keynote</a> (T05, posted July 2024): his segment (≈04:04–22:10) read in a third-party transcript.\n</li><li>\nThe tokenizer (Y08) and GPT-2 (Y09) lectures were not read; his posts announcing them were. The GPU Mode talk transcript is still missing.\n</li></ul>\n<p>Timestamps below refer to those transcripts and are not audio-checked. Details are in the <a href=\"https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/sources/review-ledger.md\" target=\"_blank\" rel=\"noopener\">review ledger</a>.</p>\n<h4>Context</h4>\n<p>On February 14 he announced he had left OpenAI: \"nothing 'happened'… My immediate plan is to work on my personal projects\" (<a href=\"https://x.com/karpathy/status/1757600075281547344\" target=\"_blank\" rel=\"noopener\">post</a>). The rest of the year was public building and teaching:</p>\n<ul><li>\na 2h13m tokenizer lecture (<a href=\"https://x.com/karpathy/status/1759996549109776702\" target=\"_blank\" rel=\"noopener\">Feb 21</a>);\n</li><li>\nllm.c, GPT-2 training \"in pure C without 245MB of PyTorch\" (<a href=\"https://x.com/karpathy/status/1777427944971083809\" target=\"_blank\" rel=\"noopener\">Apr 9</a>);\n</li><li>\nreproducing GPT-2 (124M) \"in 90 minutes for $20\" (<a href=\"https://x.com/karpathy/status/1795484547267834137\" target=\"_blank\" rel=\"noopener\">May 28</a>), then the 1.6B model for about $672 (<a href=\"https://x.com/karpathy/status/1811467135279104217\" target=\"_blank\" rel=\"noopener\">Jul 12</a>);\n</li><li>\na 4-hour \"Let's reproduce GPT-2\" lecture (<a href=\"https://x.com/karpathy/status/1799949853289804266\" target=\"_blank\" rel=\"noopener\">Jun 10</a>).\n</li></ul>\n<p>On July 17 he announced Eureka Labs, \"a new kind of school that is AI native\", in which \"The teacher still designs the course materials, but they are supported, leveraged and scaled with an AI Teaching Assistant\" (<a href=\"https://x.com/karpathy/status/1813263734707790301\" target=\"_blank\" rel=\"noopener\">post</a>). He called it \"the culmination of my passion in both AI and education over ~2 decades\".</p>\n<h4>AI fundamentals and limits</h4>\n<ul><li>\n<strong>\"Jagged Intelligence\".</strong> He coined the term for models that \"can both perform extremely impressive tasks (e.g. solve complex math problems) while simultaneously struggle with some very dumb problems\", such as comparing 9.11 and 9.9. He contrasted this with humans, whose abilities \"are all highly correlated and improve linearly all together\". His advice: \"Use LLMs for the tasks they are good at but be on a lookout for jagged edges, and keep a human in the loop\" (<a href=\"https://x.com/karpathy/status/1816531576228053133\" target=\"_blank\" rel=\"noopener\">Jul 26</a>).\n</li><li>\n<strong>What you are actually talking to.</strong>\n<ul><li>\nAsking an LLM a factual question is like asking someone who \"read about the topic previously, but they are not allowed to reference any material\": \"their best attempt at a lossy recollection\" (<a href=\"https://x.com/karpathy/status/1804208334033371213\" target=\"_blank\" rel=\"noopener\">Jun 22</a>).\n</li><li>\nIn November: \"you're not asking some magical AI. You're asking a human data labeler. Whose average essence was lossily distilled into statistical token tumblers\" (<a href=\"https://x.com/karpathy/status/1862565643436138619\" target=\"_blank\" rel=\"noopener\">Nov 30</a>).\n</li></ul>\n</li><li>\n<strong>\"RLHF is just barely RL\".</strong> The reward model is \"just a vibe check… a proxy objective of what looks good to humans\", and optimizing against it for long finds adversarial examples. Real RL, as in AlphaGo, needs actual rewards, which are \"really difficult in the open-ended problem solving tasks\" (<a href=\"https://x.com/karpathy/status/1821277264996352246\" target=\"_blank\" rel=\"noopener\">Aug 8</a>). He gave the same AlphaGo framing at Sequoia in March: \"we've done step one of AlphaGo… the imitation learning part… people haven't done\" the RL step (T11 ≈00:25:21).\n</li><li>\n<strong>Benchmarks versus usefulness.</strong>\n<ul><li>\n\"GPT-4 is not 67% on coding (HumanEval)\" (<a href=\"https://x.com/karpathy/status/1764731169109872952\" target=\"_blank\" rel=\"noopener\">Mar 5</a>).\n</li><li>\nGood evals are \"unintuitively difficult\": at Tesla he spent \"1/3 of my time on data, 1/3 on evals\" (<a href=\"https://x.com/karpathy/status/1795873666481402010\" target=\"_blank\" rel=\"noopener\">May 30</a>).\n</li><li>\nMoravec's paradox: models do well on hard closed problems, but \"you wouldn't hire them over a person for the most menial jobs\" (<a href=\"https://x.com/karpathy/status/1855659091877937385\" target=\"_blank\" rel=\"noopener\">Nov 11</a>).\n</li><li>\nThe capability he is watching for is \"whether you'd hire it as a junior intern\" (<a href=\"https://x.com/karpathy/status/1868061331355840704\" target=\"_blank\" rel=\"noopener\">Dec 15</a>).\n</li><li>\nOn AGI, he endorsed OpenAI's definition, \"a highly autonomous system that outperforms humans at most economically valuable work\", and said it \"has clearly not been reached\" (<a href=\"https://x.com/karpathy/status/1834641096905048165\" target=\"_blank\" rel=\"noopener\">Sep 14</a>).\n</li></ul>\n</li><li>\n<strong>Where improvement will come from.</strong>\n<ul><li>\nModels are big because \"we're asking them to memorize the internet\". \"the models have to first get larger before they can get smaller\", helping to build cleaner training data in a \"staircase of improvement\" (<a href=\"https://x.com/karpathy/status/1814038096218083497\" target=\"_blank\" rel=\"noopener\">Jul 19</a>).\n</li><li>\nIn No Priors he put a \"cognitive core\" at perhaps a billion parameters (T04 ≈27:21). He warned that synthetic data is risky because models are \"silently collapsed\": ChatGPT \"only knows like three jokes\" (T04 ≈18:46).\n</li></ul>\n</li><li>\n<strong>The computer analogy continues.</strong>\n<ul><li>\n\"The history of computing is repeating in an echo, except replace computers that do precise arithmetic on bytes with computers that do statistical arithmetic on tokens\" (<a href=\"https://x.com/karpathy/status/1780692023970038259\" target=\"_blank\" rel=\"noopener\">Apr 18</a>).\n</li><li>\nLLMs \"have little to do with language\"; they are \"highly general purpose technology for statistical modeling of token streams\" (<a href=\"https://x.com/karpathy/status/1835024197506187617\" target=\"_blank\" rel=\"noopener\">Sep 15</a>).\n</li><li>\nThe LLM OS framing returns at Sequoia (T11 ≈00:04:01) and Berkeley (T05 ≈06:28).\n</li></ul>\n</li><li>\n<strong>Security as a limit.</strong>\n<ul><li>\n\"sleeper agent\" data poisoning (<a href=\"https://x.com/karpathy/status/1745921205020799433\" target=\"_blank\" rel=\"noopener\">Jan 13</a>).\n</li><li>\nSpecial-token parsing as an injection attack: \"User input strings are untrusted data\" (<a href=\"https://x.com/karpathy/status/1823418177197646104\" target=\"_blank\" rel=\"noopener\">Aug 14</a>).\n</li></ul>\n</li></ul>\n<h4>Human agency and empowerment</h4>\n<ul><li>\n<strong>Intelligence amplification, for everyone.</strong> He tried calling today's technology \"IA (intelligence amplification) instead of AI\", because it needs \"human interaction\" (<a href=\"https://x.com/karpathy/status/1744062845426532473\" target=\"_blank\" rel=\"noopener\">Jan 8</a>). His \"e/ia\" list: \"Does not seek to build superintelligent God entity that replaces humans… Builds 'bicycle for the mind' tools… Of all humans, not a top percentile\" (<a href=\"https://x.com/karpathy/status/1744179910347039080\" target=\"_blank\" rel=\"noopener\">Jan 8</a>).\n</li><li>\n<strong>\"Team human\".</strong> On why he moved to education: \"most of it is to kind of like replace or displace people… I'm always more interested in anything that kind of empowers people… I'm kind of on a high level like team human\" (T04 ≈30:36–31:04, machine transcript).\n</li><li>\n<strong>Concentration and ownership.</strong>\n<ul><li>\nHe wants a \"coral reef\" of startups and is \"hesitant about five megacorps taking over… Especially with AGI being such a magnifier of power\" (T11 ≈00:21:24–00:22:05).\n</li><li>\nOn AI as an exocortex, he agreed with the line \"not your weights, not your brain\". He also admitted the tradeoff: asked whether he would \"give up ownership and control to rent a better brain\", he answered \"Because I am\", and proposed open models as a fallback (T04 ≈25:42–26:58).\n</li><li>\nHe welcomed Llama 3.1 405B as \"the first time that a frontier-capability LLM is available to everyone to work with and build on\" (<a href=\"https://x.com/karpathy/status/1815842603377779140\" target=\"_blank\" rel=\"noopener\">Jul 24</a>). He praised DeepSeek-V3 as a frontier-grade open-weights model \"trained on a joke of a budget\" (<a href=\"https://x.com/karpathy/status/1872362712958906460\" target=\"_blank\" rel=\"noopener\">Dec 27</a>).\n</li><li>\nHe recommended a history of information technologies that \"starts decentralized, open and idealistic and then progresses towards centralization\", with \"Quite a few connections to draw on for LLMs\" (<a href=\"https://x.com/karpathy/status/1865924776214327360\" target=\"_blank\" rel=\"noopener\">Dec 9</a>).\n</li></ul>\n</li><li>\n<strong>Protecting attention and ownership.</strong>\n<ul><li>\n\"Reading a tweet is a bit like downloading an (attacker-controlled) executable that you instantly run on your brain\" (<a href=\"https://x.com/karpathy/status/1766509149297189274\" target=\"_blank\" rel=\"noopener\">Mar 10</a>).\n</li><li>\nHe praised Obsidian's \"File over app\" philosophy: \"free of dark patterns, fully aligned with the user\" (<a href=\"https://x.com/karpathy/status/1761467904737067456\" target=\"_blank\" rel=\"noopener\">Feb 25</a>).\n</li><li>\nHe called subscriptions \"a user-hostile dark pattern… revenue from unintended forgetfulness\" (<a href=\"https://x.com/karpathy/status/1847164046216159421\" target=\"_blank\" rel=\"noopener\">Oct 18</a>).\n</li></ul>\n</li><li>\n<strong>Learning takes effort.</strong> \"Learning is not supposed to be fun… the primary feeling should be that of effort.\" Short-form educational content \"is a trap\" (<a href=\"https://x.com/karpathy/status/1756380066580455557\" target=\"_blank\" rel=\"noopener\">Feb 11</a>). He repeated the gym comparison in No Priors (T04 ≈40:23).\n</li><li>\n<strong>Individual reach.</strong>\n<ul><li>\n\"Cloud+AI is increasingly making the @levelsio -style model of a scrappy solo serial micro-entrepreneur viable\" (<a href=\"https://x.com/karpathy/status/1828210213620748655\" target=\"_blank\" rel=\"noopener\">Aug 27</a>).\n</li><li>\nOn a podcast he made with AI tools: \"as a single person in 2 hours, curate (not create, but curate) a podcast\". He acknowledged \"the potential and immediate critique here, of AI generated slop\" (<a href=\"https://x.com/karpathy/status/1841594123381571863\" target=\"_blank\" rel=\"noopener\">Oct 3</a>).\n</li><li>\nOn AI video: \"The future is already here it's just unevenly distributed and unnecessarily difficult\" (<a href=\"https://x.com/karpathy/status/1818141090790375462\" target=\"_blank\" rel=\"noopener\">Jul 30</a>).\n</li></ul>\n</li></ul>\n<h4>Coding and thought organization</h4>\n<ul><li>\n<strong>Oversight rises in abstraction but stays.</strong> Using the self-driving progression as a model, he predicted software engineering will look \"a lot more like supervising the automation\". He then asked: \"How does a human provide oversight? What are they looking at?… It is very likely that we will have to change up the code editor\" (<a href=\"https://x.com/karpathy/status/1767598414945292695\" target=\"_blank\" rel=\"noopener\">Mar 13</a>). At Sequoia: \"it's quite autonomous, but not fully autonomous. So what does the oversight look like?\" (T11 ≈00:07:01).\n</li><li>\n<strong>His own practice by August.</strong> With Cursor and Sonnet 3.5: \"most of my 'programming' is now writing English (prompting and then reviewing and editing the generated diffs)\", plus \"half-coding\". Also: \"I basically can't imagine going back to 'unassisted' coding\" (<a href=\"https://x.com/karpathy/status/1827143768459637073\" target=\"_blank\" rel=\"noopener\">Aug 24</a>). He wrote a small tool that drafts git commit messages, which you accept, edit or regenerate (<a href=\"https://x.com/karpathy/status/1827810695658029262\" target=\"_blank\" rel=\"noopener\">Aug 26</a>).\n</li><li>\n<strong>Wanting proof, not trust.</strong> \"One built-in UI/UX feature of LLM interfaces I'd love is proof.\" He manually checks commands against the docs because \"I want to double check the LLM's recollection\" (<a href=\"https://x.com/karpathy/status/1804187473167421798\" target=\"_blank\" rel=\"noopener\">Jun 22</a>). When Claude 3 turned his lecture into a chapter, it looked good, but \"there are a number of subtle issues / hallucinations\" (<a href=\"https://x.com/karpathy/status/1764731169109872952\" target=\"_blank\" rel=\"noopener\">Mar 5</a>). On an AI-written treatise in December he said he was \"not versed enough to… spot hallucinations (if any)\" (<a href=\"https://x.com/karpathy/status/1868903650451767322\" target=\"_blank\" rel=\"noopener\">Dec 17</a>).\n</li><li>\n<strong>LLMs as compilers.</strong>\n<ul><li>\nIn a world where \"very custom programs are 'free', LLMs might end up being a kind of compiler\" (<a href=\"https://x.com/karpathy/status/1778841713605525889\" target=\"_blank\" rel=\"noopener\">Apr 13</a>).\n</li><li>\nHe set rewriting llm.c as a challenge for agents: \"The current models are not there\" (<a href=\"https://x.com/karpathy/status/1777493157485437009\" target=\"_blank\" rel=\"noopener\">Apr 9</a>).\n</li><li>\nIn his GPU Mode talk: software abstractions \"exist only because humans are finite in knowledge, IQ and attention\" (<a href=\"https://x.com/karpathy/status/1841536804073439268\" target=\"_blank\" rel=\"noopener\">Oct 3</a>).\n</li></ul>\n</li><li>\n<strong>Code taste.</strong> He criticised \"The if-then-else monster. Bloated functions that take dozens of kwargs\" (<a href=\"https://x.com/karpathy/status/1811140282559385758\" target=\"_blank\" rel=\"noopener\">Jul 11</a>). He endorsed \"Cognitive load is what matters\" as \"Probably the most true, least practiced viewpoint\" (<a href=\"https://x.com/karpathy/status/1872038630405054853\" target=\"_blank\" rel=\"noopener\">Dec 26</a>).\n</li></ul>\n<h4>Engineering and project practice</h4>\n<ul><li>\n<strong>Build the ramp.</strong> micrograd's code did not change, but a video about it \"almost 100X'd\" engagement. \"Step 1 build the thing. Step 2 build the ramp\" (<a href=\"https://x.com/karpathy/status/1760388761349927356\" target=\"_blank\" rel=\"noopener\">Feb 22</a>). He repeated it at Sequoia (T11 ≈00:32:36).\n</li><li>\n<strong>Demo versus product.</strong>\n<ul><li>\nWaymo took about ten years from a \"basically perfect\" demo drive to a paid product, and \"the demo is near, but the product is far\" (T04 ≈01:13–01:34, ≈36:11).\n</li><li>\n\"making actual apps is a lot more than code, you have to set up the entire environment, deploy it, etc.\" (<a href=\"https://x.com/karpathy/status/1831776835388285347\" target=\"_blank\" rel=\"noopener\">Sep 6</a>).\n</li><li>\nAI capability \"is getting way ahead of the UIUX of packaging it into products\" (<a href=\"https://x.com/karpathy/status/1840112692910272898\" target=\"_blank\" rel=\"noopener\">Sep 29</a>).\n</li><li>\n\"Don't ask your users for input… We have AI - predict the input!\" (<a href=\"https://x.com/karpathy/status/1841512260784816329\" target=\"_blank\" rel=\"noopener\">Oct 3</a>).\n</li></ul>\n</li><li>\n<strong>Advice for builders.</strong>\n<ul><li>\n\"Go after performance first. And then you make it cheaper later\", including distilling a working expensive system into a cheaper one (T11 ≈00:29:40–00:30:12).\n</li><li>\nHe warned against products \"too ahead of what's available, or maybe not ambitious enough\" (T04 ≈33:39).\n</li></ul>\n</li><li>\n<strong>Projects as the engine.</strong> At Berkeley: \"snowball\" small projects, count your \"10,000 hours\", and publish projects because others seeing your work \"increases the bar for your own work\" (T05 ≈11:20–21:45). His summary post: \"While True: build and publish projects. Accumulate 10,000 hours. Snowball your work\" (<a href=\"https://x.com/karpathy/status/1816953700403065162\" target=\"_blank\" rel=\"noopener\">Jul 27</a>).\n</li><li>\n<strong>Paranoia about silent bugs continues.</strong> He quoted his 2019 recipe (\"patience and attention to detail\") and added \"I exist in a perpetually terrified state of the remaining 20 silent bugs\" (<a href=\"https://x.com/karpathy/status/1765473722985771335\" target=\"_blank\" rel=\"noopener\">Mar 7</a>).\n</li><li>\n<strong>Organizing work.</strong> Some work is best \"run on a CPU\" (one highly competent person). Other work is best run \"on a GPU\" (many people in parallel). \"The most common stumbling point here is trying to parallelize something that was supposed to run on the CPU\" (<a href=\"https://x.com/karpathy/status/1780684098773876941\" target=\"_blank\" rel=\"noopener\">Apr 18</a>).\n</li></ul>\n<h4>Interpretation (ours, provisional)</h4>\n<ol><li>\n<strong>2024 is his most explicit year on empowerment so far.</strong> The 2022–2023 concerns about attention and concentration become a stated position: \"IA\" rather than AI, \"Of all humans, not a top percentile\", \"team human\", and AGI as \"a magnifier of power\". Eureka Labs is how he acts on it. He also admits the tension: he would rent a better closed brain, with open models as a fallback.\n</li><li>\n<strong>He names the limits more precisely.</strong> \"Jagged intelligence\", \"lossy recollection\", the \"average data labeler\", RLHF as a \"vibe check\" and the junior-intern test form a working vocabulary for what models are and aren't. In each case the practical conclusion is human oversight or verification, not withdrawal.\n</li><li>\n<strong>Oversight moves up a level but does not vanish.</strong> The 2023 forecast of \"~pass-through\" oversight is not repeated as a description of his own work. In August 2024 he still reviews and edits the diffs, and in March he asks what oversight interfaces should look like. Compare with February 2025 \"vibe coding\", which he limits to throwaway projects.\n</li><li>\n<strong>The distance from demo to product becomes a theme.</strong> Waymo's decade, \"making actual apps is a lot more than code\", and UI/UX lagging behind capability anticipate the 2025 MenuGen account. This is the most directly useful thread for building a product alone.\n</li><li>\n<strong>The verification thread continues.</strong> His proof feature, the checking against docs, the hallucinations he caught, and the evals (\"1/3 of my time\") connect to the 2019 recipe and the 2023 \"dream machines\" post.\n</li></ol>\n<h4>Uncertainties and gaps</h4>\n<ul><li>\nT04, T05 and T11 are third-party machine transcripts. The quotes above are approximate wording until checked against the audio.\n</li><li>\nThe tokenizer and GPT-2 lectures (about 6 hours together) were not read. They may show more of how he debugs and checks his own work.\n</li><li>\nThe GPU Mode talk transcript is missing. Only his post summarizing it was read.\n</li><li>\nImage-only content is not in the archive, for example the e/ia list image and the jagged-intelligence screenshots. Their accompanying text was read.\n</li></ul>"
   },
   {
    "id": "2025",
@@ -1322,5 +1948,7 @@ window.CHRONICLE = {
    "chapter": "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md#2026-reported-changes-in-coding-practice-with-original-recordings-still-to-verify",
    "chapter_html": "<p><strong>Observation — author-published AI-edited excerpt, T09.</strong> The April 30 <a href=\"https://karpathy.bearblog.dev/sequoia-ascent-2026/\" target=\"_blank\" rel=\"noopener\">Sequoia text</a> retrospectively describes increased trust around December 2025 and revisits MenuGen's need for an app interface. It is not a verbatim transcript.</p>\n<p><strong>Interpretation to test:</strong> distinguish changes in his observed tool performance, working methods and general beliefs; these need not move together. The March <a href=\"https://www.youtube.com/watch?v=kwSVtQ7dziU\" target=\"_blank\" rel=\"noopener\">No Priors recording</a>, 2026 X candidates and October 31 <a href=\"https://karpathy.bearblog.dev/hacker-tube/\" target=\"_blank\" rel=\"noopener\">HackerTube</a> remain unreviewed. This is an open period through November 6, not a completed endpoint.</p>"
   }
- ]
+ ],
+ "posts_read": 640,
+ "posts_total": 868
 };
