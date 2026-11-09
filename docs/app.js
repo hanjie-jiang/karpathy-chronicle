@@ -187,6 +187,7 @@
         <p class="cov">${esc(p.coverage)}</p>
         <p>${esc(p.summary)}</p>
         ${p.interpretation.length ? `<div class="ours"><b>Our reading</b><ul>${p.interpretation.map((s) => `<li>${esc(s)}</li>`).join("")}</ul></div>` : ""}
+        ${p.chapter ? `<p class="chapter"><a href="${esc(p.chapter)}" target="_blank" rel="noopener">${p.status === "read" ? "Read the full chapter, with every citation" : "Read the current outline"} ↗</a></p>` : ""}
       </div>
     </article>`).join("");
 

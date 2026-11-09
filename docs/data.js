@@ -16,6 +16,18 @@ window.CHRONICLE = {
    "status": "read"
   },
   {
+   "date": "2022-01-14",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1481724509795221505",
+   "quotes": [
+    "deployment-time simplicity"
+   ],
+   "note": "He valued \"deployment-time simplicity\" when choosing model components.",
+   "threads": [],
+   "status": "read"
+  },
+  {
    "date": "2022-01-26",
    "lens": "practice",
    "kind": "post",
@@ -24,6 +36,18 @@ window.CHRONICLE = {
     "Everybody gangsta until real-world deployment in production."
    ],
    "note": "Deployment realities over benchmarks.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2022-02-17",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1494166717269823492",
+   "quotes": [
+    "the world is built for humans"
+   ],
+   "note": "AI using the same keyboard-and-mouse \"APIs\" as humans, because \"the world is built for humans\"",
    "threads": [],
    "status": "read"
   },
@@ -57,6 +81,16 @@ window.CHRONICLE = {
   },
   {
    "date": "2022-03-28",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1508437725514510336",
+   "quotes": [],
+   "note": "He argued for counting training iterations rather than epochs.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2022-03-28",
    "lens": "milestone",
    "kind": "post",
    "url": "https://x.com/karpathy/status/1508148604149587972",
@@ -64,6 +98,70 @@ window.CHRONICLE = {
     "re-sharpen my technical edge and train some neural nets"
    ],
    "note": "Takes time off after almost five years at Tesla.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2022-04-02",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1509962678319595523",
+   "quotes": [],
+   "note": "He also passed on the Bitter Lesson as a \"gut check\" for ideas.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2022-04-20",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1516725875550879748",
+   "quotes": [],
+   "note": "He wanted a \"clean\" certification for apps without dark patterns.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2022-04-27",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1519010171376521216",
+   "quotes": [],
+   "note": "LLMs as the core of a larger system.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2022-05-17",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1526303528360128512",
+   "quotes": [
+    "a new form of programming"
+   ],
+   "note": "\"a new form of programming\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2022-05-23",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1528407022873346049",
+   "quotes": [
+    "I am so bored of fighting over definitions, chinese rooms and qualias"
+   ],
+   "note": "\"I am so bored of fighting over definitions, chinese rooms and qualias… Let's measure, characterize and focus on that\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2022-05-24",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1528808361558306817",
+   "quotes": [],
+   "note": "Complained about how experiment configs are managed.",
    "threads": [],
    "status": "read"
   },
@@ -80,6 +178,28 @@ window.CHRONICLE = {
    "threads": [
     "computer"
    ],
+   "status": "read"
+  },
+  {
+   "date": "2022-05-30",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1531296768243077120",
+   "quotes": [],
+   "note": "Hoped for products that brag about being \"dumb\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2022-06-04",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1532894698439774208",
+   "quotes": [
+    "AGI is a feeling. Like love. Stop trying to define it"
+   ],
+   "note": "\"AGI is a feeling. Like love. Stop trying to define it.\"",
+   "threads": [],
    "status": "read"
   },
   {
@@ -105,6 +225,18 @@ window.CHRONICLE = {
    "status": "read"
   },
   {
+   "date": "2022-07-01",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1542886366073171968",
+   "quotes": [
+    "highly amusing"
+   ],
+   "note": "He found it \"highly amusing\" that math could be handled by feeding raw text into a big transformer rather than by formal engines.",
+   "threads": [],
+   "status": "read"
+  },
+  {
    "date": "2022-07-14",
    "lens": "milestone",
    "kind": "post",
@@ -113,6 +245,18 @@ window.CHRONICLE = {
     "revisiting my long-term passions around technical work in AI, open source and education"
    ],
    "note": "Announces he is leaving Tesla, with no concrete plans.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2022-07-23",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1550590818041311232",
+   "quotes": [
+    "quickly growing stack around/above a single large language model"
+   ],
+   "note": "The \"quickly growing stack around/above a single large language model\"",
    "threads": [],
    "status": "read"
   },
@@ -128,6 +272,18 @@ window.CHRONICLE = {
    "threads": [
     "verify"
    ],
+   "status": "read"
+  },
+  {
+   "date": "2022-08-17",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1559589334449152000",
+   "quotes": [
+    "is possible when the model weights are available"
+   ],
+   "note": "He stressed that \"Dramatically greater creativity… is possible when the model weights are available\"",
+   "threads": [],
    "status": "read"
   },
   {
@@ -157,6 +313,18 @@ window.CHRONICLE = {
    "status": "read"
   },
   {
+   "date": "2022-08-31",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1564698516164730880",
+   "quotes": [
+    "may converge to wire-heading"
+   ],
+   "note": "AI art \"may converge to wire-heading\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
    "date": "2022-09-07",
    "lens": "fund",
    "kind": "post",
@@ -172,11 +340,33 @@ window.CHRONICLE = {
    "date": "2022-09-27",
    "lens": "practice",
    "kind": "post",
+   "url": "https://x.com/karpathy/status/1574474950416617472",
+   "quotes": [],
+   "note": "Lexicap transcribed ~322 podcast episodes with Whisper.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2022-09-27",
+   "lens": "practice",
+   "kind": "post",
    "url": "https://x.com/karpathy/status/1574501715990102016",
    "quotes": [
     "mostly built Lexicap so I could share a few snippets"
    ],
    "note": "Building small tools for his own needs.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2022-09-28",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1574841955405553664",
+   "quotes": [
+    "great timing to start an AI-native product company"
+   ],
+   "note": "As an AI Grant advisor: \"great timing to start an AI-native product company\"",
    "threads": [],
    "status": "read"
   },
@@ -204,6 +394,16 @@ window.CHRONICLE = {
    "threads": [
     "computer"
    ],
+   "status": "read"
+  },
+  {
+   "date": "2022-11-16",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1592715504841809926",
+   "quotes": [],
+   "note": "He contrasted LLM training with how humans learn: people skim what they already know, ignore noise, and revisit material that is learnable but not yet learned.",
+   "threads": [],
    "status": "read"
   },
   {
@@ -274,6 +474,18 @@ window.CHRONICLE = {
    "status": "read"
   },
   {
+   "date": "2022-12-26",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1607104323175211008",
+   "quotes": [
+    "are there to help the copilot"
+   ],
+   "note": "He also observed that code comments now \"are there to help the copilot\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
    "date": "2022-12-28",
    "lens": "practice",
    "kind": "post",
@@ -282,6 +494,18 @@ window.CHRONICLE = {
     "educational and 2) efficient in one repo"
    ],
    "note": "Splits minGPT because teaching and performance are different goals.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2022-12-31",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1608895190672211968",
+   "quotes": [
+    "alone in the text editor"
+   ],
+   "note": "Without it, he \"felt a sense of dread… alone in the text editor\"",
    "threads": [],
    "status": "read"
   },
@@ -374,6 +598,18 @@ window.CHRONICLE = {
    "status": "read"
   },
   {
+   "date": "2023-03-04",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1631812072668553218",
+   "quotes": [
+    "80% Python and 20% English"
+   ],
+   "note": "He wrote \"A file… 80% Python and 20% English\" that mixes code with GPT calls.",
+   "threads": [],
+   "status": "read"
+  },
+  {
    "date": "2023-03-07",
    "lens": "fund",
    "kind": "post",
@@ -382,6 +618,36 @@ window.CHRONICLE = {
     "not an AI but a simulator"
    ],
    "note": "A pretrained LLM simulates internet documents.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2023-03-17",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1636459245184106497",
+   "quotes": [],
+   "note": "Enthusiasm for evals.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2023-03-19",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1637147822482165760",
+   "quotes": [],
+   "note": "Fine-tuning can make a model's confidence miscalibrated.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2023-03-19",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1637147821311918083",
+   "quotes": [],
+   "note": "Few-shot classification with base models.",
    "threads": [],
    "status": "read"
   },
@@ -436,6 +702,36 @@ window.CHRONICLE = {
    "status": "read"
   },
   {
+   "date": "2023-04-07",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1644183721405464576",
+   "quotes": [],
+   "note": "In April he worked through a detailed comparison with early CPUs, describing the context window as RAM.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2023-04-15",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1647025230546886658",
+   "quotes": [],
+   "note": "SVMs instead of kNN for searching embeddings.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2023-04-16",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1647372603907280896",
+   "quotes": [],
+   "note": "Side projects continued: a movie search site built on embeddings.",
+   "threads": [],
+   "status": "read"
+  },
+  {
    "date": "2023-05-07",
    "lens": "agency",
    "kind": "post",
@@ -447,6 +743,18 @@ window.CHRONICLE = {
    "threads": [
     "empower"
    ],
+   "status": "read"
+  },
+  {
+   "date": "2023-05-15",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1657949234535211009",
+   "quotes": [
+    "many subtle sharp edges"
+   ],
+   "note": "Tokenization has \"many subtle sharp edges\"",
+   "threads": [],
    "status": "read"
   },
   {
@@ -462,6 +770,16 @@ window.CHRONICLE = {
    "threads": [
     "oversight"
    ],
+   "status": "read"
+  },
+  {
+   "date": "2023-06-21",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1671253733328719872",
+   "quotes": [],
+   "note": "A recommendation to learn Streamlit for rapid prototyping.",
+   "threads": [],
    "status": "read"
   },
   {
@@ -491,6 +809,16 @@ window.CHRONICLE = {
    "status": "read"
   },
   {
+   "date": "2023-07-13",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1679463907344146438",
+   "quotes": [],
+   "note": "Tuning API embeddings with a small set of example pairs.",
+   "threads": [],
+   "status": "read"
+  },
+  {
    "date": "2023-07-19",
    "lens": "agency",
    "kind": "post",
@@ -502,6 +830,28 @@ window.CHRONICLE = {
    "threads": [
     "empower"
    ],
+   "status": "read"
+  },
+  {
+   "date": "2023-07-21",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1682109479255678978",
+   "quotes": [
+    "It's too easy and feels like cheating. It should have taken hours"
+   ],
+   "note": "On data analysis code: \"It's too easy and feels like cheating. It should have taken hours\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2023-07-23",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1683143099361660929",
+   "quotes": [],
+   "note": "He thanked GPT-4 for help with his \"very rusty C\" in llama2.c.",
+   "threads": [],
    "status": "read"
   },
   {
@@ -539,6 +889,28 @@ window.CHRONICLE = {
    "status": "read"
   },
   {
+   "date": "2023-08-17",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1691849237900992580",
+   "quotes": [
+    "What would someone need a personal LLM node for?"
+   ],
+   "note": "He framed local LLM hardware as \"What would someone need a personal LLM node for?\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2023-09-23",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1705322159588208782",
+   "quotes": [],
+   "note": "Their knowledge is \"a lot more 'patchy' than you'd expect. I still don't have great intuition for it\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
    "date": "2023-09-29",
    "lens": "fund",
    "kind": "post",
@@ -550,6 +922,28 @@ window.CHRONICLE = {
    "threads": [
     "computer"
    ],
+   "status": "read"
+  },
+  {
+   "date": "2023-09-30",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1707920583219167731",
+   "quotes": [],
+   "note": "On comments: \"Coding is a team sport. Use comments. Not too much. Mostly the unobvious.\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2023-10-06",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1710071106022052127",
+   "quotes": [
+    "The Tyranny of the Marginal User"
+   ],
+   "note": "He also endorsed \"The Tyranny of the Marginal User\" on why consumer software gets worse.",
+   "threads": [],
    "status": "read"
   },
   {
@@ -567,6 +961,18 @@ window.CHRONICLE = {
    "status": "read"
   },
   {
+   "date": "2023-11-05",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1720939313112945057",
+   "quotes": [
+    "sit back, and iterate in English"
+   ],
+   "note": "On making diagrams: \"sit back, and iterate in English… needing to touch no code\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
    "date": "2023-11-09",
    "lens": "coding",
    "kind": "post",
@@ -578,6 +984,28 @@ window.CHRONICLE = {
    "threads": [
     "oversight"
    ],
+   "status": "read"
+  },
+  {
+   "date": "2023-11-11",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1723140519554105733",
+   "quotes": [],
+   "note": "This was followed by an \"LLM OS\" diagram.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2023-11-22",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1727033766252798272",
+   "quotes": [
+    "Thinking a lot about centralization and decentralization these few days"
+   ],
+   "note": "\"Thinking a lot about centralization and decentralization these few days\"",
+   "threads": [],
    "status": "read"
   },
   {
@@ -605,6 +1033,16 @@ window.CHRONICLE = {
    "threads": [
     "verify"
    ],
+   "status": "read"
+  },
+  {
+   "date": "2023-12-12",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1734251375163511203",
+   "quotes": [],
+   "note": "He preferred \"open weights\" to \"open source\" when training code and data aren't released.",
+   "threads": [],
    "status": "read"
   },
   {
@@ -820,7 +1258,8 @@ window.CHRONICLE = {
     "The clearest change is in his role (manager to builder and teacher), not in his beliefs: scaling, Transformers and data engines continue his earlier framing.",
     "Deep understanding of how models work and delegating code to them coexisted: he prompts and edits.",
     "Verification recurs, and optimism and caution about empowerment are held together."
-   ]
+   ],
+   "chapter": "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md#2022-leaving-management-returning-to-building-and-teaching-as-llms-start-to-look-general"
   },
   {
    "id": "2023",
@@ -836,7 +1275,8 @@ window.CHRONICLE = {
     "In May he advises co-pilots with human oversight. In November he predicts oversight becoming \"~pass-through\". We read the first as advice and the second as forecast; he does not reconcile them.",
     "Verification becomes concrete: retrieval, multiple samples, verification chains.",
     "Open weights, personal hardware and protective filters point toward individual control."
-   ]
+   ],
+   "chapter": "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md#2023-back-at-openai-and-building-a-vocabulary-for-using-llms"
   },
   {
    "id": "2024",
@@ -848,7 +1288,8 @@ window.CHRONICLE = {
    "status": "outline",
    "coverage": "0 of 203 X posts read yet. Talks and videos not yet reviewed.",
    "summary": "Eureka Labs is announced. The rest of the year is next in the reading queue.",
-   "interpretation": []
+   "interpretation": [],
+   "chapter": "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md#2024-an-explicit-educational-design-technical-and-interview-evidence-still-open"
   },
   {
    "id": "2025",
@@ -860,7 +1301,8 @@ window.CHRONICLE = {
    "status": "outline",
    "coverage": "A few posts and four blog posts read on their own. Full X read not started (158 posts).",
    "summary": "Vibe coding is named, limited to throwaway projects. Blog posts on note-taking, empowerment and the friction of delivery. A year review on uneven capability.",
-   "interpretation": []
+   "interpretation": [],
+   "chapter": "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md#marchapril-2025-organizing-thought-broadening-individual-reach-encountering-delivery-friction"
   },
   {
    "id": "2026",
@@ -872,7 +1314,8 @@ window.CHRONICLE = {
    "status": "outline",
    "coverage": "A few posts and one edited talk text read. Full X read not started (70 posts).",
    "summary": "Agents are a large net gain but still need close watching for code you care about.",
-   "interpretation": []
+   "interpretation": [],
+   "chapter": "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md#2026-reported-changes-in-coding-practice-with-original-recordings-still-to-verify"
   }
  ]
 };

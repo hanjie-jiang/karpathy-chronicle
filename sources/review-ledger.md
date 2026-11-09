@@ -5,7 +5,7 @@ This file records which collected material has actually been read, by period. It
 | Period | X posts read | Long-form read | Chronicle section | User discussion |
 |---|---|---|---|---|
 | 2022 | 251 / 251 (full) | T01: keyword-located passages only; Y01–Y06: none | Drafted 2026-11-06 | Done 2026-11-06; see [LEARNING.md](../LEARNING.md) |
-| 2023 | 186 / 186 (full) | T02: recommendations ≈37:11–40:11; Y10: tool use and LLM OS ≈00:28–00:45; Y07: one passage; T10: none | Drafted 2026-11-06 | Questions posed in CHRONICLE |
+| 2023 | 186 / 186 (full) | T02: recommendations ≈37:11–40:11; Y10: tool use and LLM OS ≈00:28–00:45; Y07: one passage; T10: none | Drafted 2026-11-06 | Done 2026-11-09; see [LEARNING.md](../LEARNING.md) |
 | 2024 | 0 / 203 | — | Outline only | — |
 | 2025 | 1 / 158 (vibe coding post) | A03–A06 (earlier review); T07 opening excerpt | Outline only | — |
 | 2026 | 0 / 70 | T09 partial (earlier review) | Outline only | — |
