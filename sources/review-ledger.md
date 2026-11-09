@@ -6,7 +6,7 @@ This file records which collected material has actually been read, by period. It
 |---|---|---|---|---|
 | 2022 | 251 / 251 (full) | T01: keyword-located passages only; Y01–Y06: none | Drafted 2026-11-06 | Done 2026-11-06; see [LEARNING.md](../LEARNING.md) |
 | 2023 | 186 / 186 (full) | T02: recommendations ≈37:11–40:11; Y10: tool use and LLM OS ≈00:28–00:45; Y07: one passage; T10: none | Drafted 2026-11-06 | Done 2026-11-09; see [LEARNING.md](../LEARNING.md) |
-| 2024 | 203 / 203 (full) | T11 (Sequoia, Mar): full; T04 (No Priors, Sep): full; T05 (Berkeley): Karpathy segment ≈04:04–22:10; Y08, Y09: none; GPU Mode: transcript missing | Drafted 2026-11-09 | Questions posed in CHRONICLE |
+| 2024 | 203 / 203 (full) | T11 (Sequoia, Mar): full; T04 (No Priors, Sep): full; T05 (Berkeley): Karpathy segment ≈04:04–22:10; Y08, Y09: none; GPU Mode: transcript missing | Drafted 2026-11-09 | Done 2026-11-09; see [LEARNING.md](../LEARNING.md) |
 | 2025 | 1 / 158 (vibe coding post) | A03–A06 (earlier review); T07 opening excerpt | Outline only | — |
 | 2026 | 0 / 70 | T09 partial (earlier review) | Outline only | — |
 | pre-2022 | 0 / 144 (context screening) | A01 (earlier review) | Context paragraph | — |
