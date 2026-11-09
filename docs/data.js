@@ -1695,6 +1695,67 @@ window.CHRONICLE = {
    "status": "read"
   },
   {
+   "date": "2025-01-24",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1882498281089241545",
+   "quotes": [
+    "served neatly packaged on a platter",
+    "long, multimodal, coherent, error-correcting sequences of tasks"
+   ],
+   "note": "Humanity's Last Exam: tasks \"served neatly packaged on a platter\" will be solved, but jobs needing \"long, multimodal, coherent, error-correcting sequences of tasks\" will take longer.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-01-24",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1882544526033924438",
+   "quotes": [
+    "2025-2035 is the decade of agents",
+    "a huge amount of work across the board to make it actually work. But it *should* work"
+   ],
+   "note": "\"2025-2035 is the decade of agents\", with \"a huge amount of work across the board to make it actually work. But it should work\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-01-28",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1883941452738355376",
+   "quotes": [
+    "1) imitation learning (watch and repeat",
+    "2) trial-and-error learning (reinforcement learning)"
+   ],
+   "note": "He said \"2 is significantly significantly more powerful\", and that the thinking strategies of reasoning models are \"emergent\" because \"the cognition of the model and the cognition of the human labeler is different\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-01-29",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1884336943321997800",
+   "quotes": [
+    "cognitive strategies"
+   ],
+   "note": "He named these \"cognitive strategies\" and asked when LLMs would produce a \"Move 37\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-01-31",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1885026028428681698",
+   "quotes": [],
+   "note": "He mapped training onto a textbook: exposition is pretraining, worked problems are supervised finetuning, and practice problems are reinforcement learning.",
+   "threads": [],
+   "status": "read"
+  },
+  {
    "date": "2025-02-03",
    "lens": "coding",
    "kind": "post",
@@ -1707,7 +1768,82 @@ window.CHRONICLE = {
    "threads": [
     "oversight"
    ],
-   "status": "spot"
+   "status": "read"
+  },
+  {
+   "date": "2025-02-06",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1887211193099825254",
+   "quotes": [
+    "Deep Dive into LLMs like ChatGPT"
+   ],
+   "note": "A 3.5-hour general-audience video on how LLMs are trained.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-02-08",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1887980449550758121",
+   "quotes": [
+    "to inspire others to make equivalents in their own domains of expertise"
+   ],
+   "note": "He said part of the reason was \"to inspire others to make equivalents in their own domains of expertise\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-02-25",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1894099637218545984",
+   "quotes": [
+    "Agency is significantly more powerful and significantly more scarce"
+   ],
+   "note": "Agency over intelligence, in hiring and education.",
+   "threads": [
+    "empower"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2025-02-28",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1895242932095209667",
+   "quotes": [
+    "How I Use LLMs"
+   ],
+   "note": "A 2h11m \"How I Use LLMs\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-03-13",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1899876370492383450",
+   "quotes": [
+    "99.9% of attention is about to be LLM attention, not human attention",
+    "a single your_project.md text file"
+   ],
+   "note": "Docs should be \"a single yourproject.md text file\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-03-19",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1902046003567718810",
+   "quotes": [
+    "Digital Hygiene"
+   ],
+   "note": "A new blog, started in March with \"Digital Hygiene\"",
+   "threads": [],
+   "status": "read"
   },
   {
    "quotes": [],
@@ -1718,7 +1854,66 @@ window.CHRONICLE = {
    "url": "https://karpathy.bearblog.dev/the-append-and-review-note/",
    "note": "Writes up the single-note practice already visible in June 2022.",
    "threads": [],
-   "status": "spot"
+   "status": "read"
+  },
+  {
+   "date": "2025-03-20",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1902503836067229803",
+   "quotes": [
+    "The append-and-review note"
+   ],
+   "note": "\"The append-and-review note\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-03-20",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1902737525900525657",
+   "quotes": [
+    "active, agentic context management"
+   ],
+   "note": "On \"One Thread\" versus a new conversation, he listed limits of giant contexts (speed, attention, signal to noise, train–test mismatch) and wanted \"active, agentic context management\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-03-23",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1903671737780498883",
+   "quotes": [],
+   "note": "Vibe-coded projects: an iOS app in Swift.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-03-23",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1903672057327452290",
+   "quotes": [
+    "I didn't even read any docs at all"
+   ],
+   "note": "A Swift app ran on his phone after about an hour: \"I didn't even read any docs at all\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-03-27",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1905051558783418370",
+   "quotes": [
+    "assembling IKEA furniture",
+    "It's not even code, it's... configurations, plumbing, orchestration"
+   ],
+   "note": "A month earlier he had compared modern web apps to \"assembling IKEA furniture\": \"It's not even code, it's... configurations, plumbing, orchestration\"",
+   "threads": [],
+   "status": "read"
   },
   {
    "quotes": [],
@@ -1727,11 +1922,53 @@ window.CHRONICLE = {
    "kind": "writing",
    "title": "Power to the people",
    "url": "https://karpathy.bearblog.dev/power-to-the-people/",
-   "note": "LLMs benefiting individuals first, with possible future concentration of benefits.",
+   "note": "LLMs benefit regular people more than organizations, for now. That changes if money can buy a much better model.",
    "threads": [
     "empower"
    ],
-   "status": "spot"
+   "status": "read"
+  },
+  {
+   "date": "2025-04-22",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1914489538006933770",
+   "quotes": [
+    "adding a Supabase db to your Vervel app shouldn’t be clicks but curls"
+   ],
+   "note": "\"adding a Supabase db to your Vervel app shouldn’t be clicks but curls\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-04-22",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1914494203696177444",
+   "quotes": [
+    "is now an LLM, not a human"
+   ],
+   "note": "Build docs and products for agents to read and script.",
+   "threads": [
+    "computer"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2025-04-25",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1915581920022585597",
+   "quotes": [
+    "keeping a very tight leash",
+    "always taking the inline learning opportunity, not delegating"
+   ],
+   "note": "For code he cares about: approaches first, small changes, review with the docs open, test, commit.",
+   "threads": [
+    "oversight",
+    "verify"
+   ],
+   "status": "read"
   },
   {
    "quotes": [],
@@ -1740,9 +1977,254 @@ window.CHRONICLE = {
    "kind": "writing",
    "title": "Vibe coding MenuGen",
    "url": "https://karpathy.bearblog.dev/vibe-coding-menugen/",
-   "note": "Building was fast; integration and deployment were the hard part.",
+   "note": "Felt 80% done, was closer to 20%: integration and deployment were the hard part. Calls for services an LLM can configure.",
    "threads": [],
-   "status": "spot"
+   "status": "read"
+  },
+  {
+   "date": "2025-04-30",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1917546757929722115",
+   "quotes": [
+    "When the data and the anecdotes disagree, the anecdotes are usually right"
+   ],
+   "note": "He proposed OpenRouter usage as a harder-to-game eval.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-05-01",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1917920257257459899",
+   "quotes": [
+    "feels like using an 80s computer terminal",
+    "generated on-demand, specifically for your prompt"
+   ],
+   "note": "The GUI will be visual and \"generated on-demand, specifically for your prompt\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-05-01",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1917961248031080455",
+   "quotes": [
+    "painful slog as a deployed, real app"
+   ],
+   "note": "MenuGen: the demo was quick, deployment was the work, and an LLM could not reach most of it.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-05-06",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1919647115099451892",
+   "quotes": [
+    "too little on physical lens - energy/heat of state change, data locality, parallelism, computer architecture. The former is interesting; The latter bestows power"
+   ],
+   "note": "\"too little on physical lens - energy/heat of state change, data locality, parallelism, computer architecture. The former is interesting; The latter bestows power\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-05-11",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1921368644069765486",
+   "quotes": [
+    "system prompt learning",
+    "feels more like a change in system prompt"
+   ],
+   "note": "In May he proposed a missing paradigm, \"system prompt learning\": a lot of human learning \"feels more like a change in system prompt\", as in \"taking notes for yourself\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-06-03",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1929634696474120576",
+   "quotes": [
+    "TikTok is nothing compared to what is possible"
+   ],
+   "note": "Generated video can be optimized directly against engagement, and he doubts we will like the optimum.",
+   "threads": [
+    "empower"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2025-06-05",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1930354382106964079",
+   "quotes": [
+    "are ngmi in the era of heavy human+AI collaboration"
+   ],
+   "note": "Products with rich UIs and opaque binary formats \"are ngmi in the era of heavy human+AI collaboration\", because an LLM must be able to read and script them.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-06-05",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1930305209747812559",
+   "quotes": [
+    "It's about staring at the code"
+   ],
+   "note": "LLMs made writing code instant but not checking it, so they should hand over work in small, easy-to-verify steps.",
+   "threads": [
+    "verify",
+    "oversight"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2025-06-17",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1934651657444528277",
+   "quotes": [
+    "Conflicted because I want to be an early adopter of LLM agents in my personal computing but the wild west of possibility is holding me back"
+   ],
+   "note": "On agents and security: \"Conflicted because I want to be an early adopter of LLM agents in my personal computing but the wild west of possibility is holding me back\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-06-19",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1935518272667217925",
+   "quotes": [
+    "LLMs are a new kind of computer, and you program them *in English*"
+   ],
+   "note": "YC talk summary: LLMs as utilities, fabs and operating systems; build partial-autonomy products.",
+   "threads": [
+    "computer"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2025-06-25",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1937902205765607626",
+   "quotes": [
+    "context engineering",
+    "thick layer of non-trivial software"
+   ],
+   "note": "He sees a \"thick layer of non-trivial software\" around model calls, including \"generation-verification UIUX flows\", so \"The term 'ChatGPT wrapper' is tired and really, really wrong\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-06-27",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1938626382248149433",
+   "quotes": [
+    "maximally sacrifices encyclopedic knowledge for capability"
+   ],
+   "note": "The \"cognitive core\": a small local model that reasons, looks things up, and stays yours.",
+   "threads": [
+    "computer",
+    "empower"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2025-07-06",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1941616674094170287",
+   "quotes": [
+    "small, modular, self-contained and trivial to copy-and-paste",
+    "Build a eukaryotic monorepo backbone if you have to, but maximize bacterial DNA"
+   ],
+   "note": "\"Build a eukaryotic monorepo backbone if you have to, but maximize bacterial DNA\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-07-14",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1944435412489171119",
+   "quotes": [
+    "I'm fairly certain RL will continue to yield more intermediate gains, but I also don't expect it to be the full story",
+    "just to learn a single scalar outcome at the very end"
+   ],
+   "note": "The reason is that you do hours of work \"just to learn a single scalar outcome at the very end\", whereas humans learn through a \"review/reflect stage\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-07-15",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1944885371957031005",
+   "quotes": [
+    "I always learn a lot more from in-depth analysis of few random cases over dashboards of aggregate statistics"
+   ],
+   "note": "\"I always learn a lot more from in-depth analysis of few random cases over dashboards of aggregate statistics\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-08-04",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1952076108565991588",
+   "quotes": [
+    "It is imperative that humanity not fall while AI ascends"
+   ],
+   "note": "Funds a challenge for things that \"uplift team human\".",
+   "threads": [
+    "empower"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2025-08-10",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1954224651443544436",
+   "quotes": [
+    "a little too agentic by default"
+   ],
+   "note": "He also found models \"a little too agentic by default\" for in-the-loop work.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-08-17",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1956765908078387382",
+   "quotes": [
+    "Or harder, when quick wins are tempting and ~free, and an independent ability to create is stifled"
+   ],
+   "note": "On creative culture and slop: does AI help reach a \"height of culture… Or harder, when quick wins are tempting and ~free, and an independent ability to create is stifled\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-08-19",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1957561075744010253",
+   "quotes": [
+    "better than what was, but also so far from what could be"
+   ],
+   "note": "He judged AI \"better than what was, but also so far from what could be\"",
+   "threads": [],
+   "status": "read"
   },
   {
    "date": "2025-08-25",
@@ -1757,7 +2239,81 @@ window.CHRONICLE = {
    "threads": [
     "oversight"
    ],
-   "status": "spot"
+   "status": "read"
+  },
+  {
+   "date": "2025-08-28",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1960803117689397543",
+   "quotes": [
+    "system prompt learning",
+    "I am bullish on environments and agentic interactions but I am bearish on reinforcement learning specifically"
+   ],
+   "note": "In August: \"I am bullish on environments and agentic interactions but I am bearish on reinforcement learning specifically… reward functions are super sus\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-09-25",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1971220449515516391",
+   "quotes": [
+    "doing great and is growing",
+    "like repetition of one rote task"
+   ],
+   "note": "The jobs that change first look \"like repetition of one rote task\", and even there he expected \"AI adopted as a tool at first\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-10-02",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1973435013875314729",
+   "quotes": [
+    "today's frontier LLM research is not about building animals. It is about summoning ghosts"
+   ],
+   "note": "Responding to Richard Sutton: \"Pretraining is our crappy evolution… today's frontier LLM research is not about building animals. It is about summoning ghosts\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-10-02",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1973468610917179630",
+   "quotes": [
+    "larger pipelines where a bunch of LLMs collaborate in DAGs and flows"
+   ],
+   "note": "Production apps are \"larger pipelines where a bunch of LLMs collaborate in DAGs and flows\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-10-09",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1976077806443569355",
+   "quotes": [
+    "they are mortally terrified of exceptions"
+   ],
+   "note": "On RL-trained models: \"they are mortally terrified of exceptions\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-10-13",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1977755427569111362",
+   "quotes": [
+    "full-stack training/inference pipeline of a simple ChatGPT clone"
+   ],
+   "note": "Releases nanochat, the planned capstone of his LLM101n course.",
+   "threads": [],
+   "status": "read"
   },
   {
    "quotes": [],
@@ -1766,11 +2322,12 @@ window.CHRONICLE = {
    "kind": "talk",
    "title": "Dwarkesh Podcast interview",
    "url": "https://www.dwarkesh.com/p/andrej-karpathy",
-   "note": "Everyday usefulness alongside doubts about employee-like autonomy. Opening excerpt only.",
+   "note": "Decade of agents; RL as \"sucking supervision through a straw\"; agents not net useful for novel code; the march of nines; education against disempowerment. Read in full (publisher transcript).",
    "threads": [
-    "oversight"
+    "oversight",
+    "empower"
    ],
-   "status": "spot"
+   "status": "read"
   },
   {
    "date": "2025-10-19",
@@ -1785,7 +2342,151 @@ window.CHRONICLE = {
    "threads": [
     "oversight"
    ],
-   "status": "spot"
+   "status": "read"
+  },
+  {
+   "date": "2025-11-13",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1988705360723763242",
+   "quotes": [
+    "Perfect drive, no notes",
+    "there's still more work for the team in the long march of 9s"
+   ],
+   "note": "After driving a new Tesla he reported \"Perfect drive, no notes\", while adding \"there's still more work for the team in the long march of 9s\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-11-17",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1990116666194456651",
+   "quotes": [
+    "Software 2.0 easily automates what you can verify"
+   ],
+   "note": "Verifiability predicts which tasks AI automates, and explains the jagged frontier.",
+   "threads": [
+    "verify"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2025-11-18",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1990612045700739548",
+   "quotes": [],
+   "note": "Cited in the chronicle.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-11-18",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1990577951671509438",
+   "quotes": [],
+   "note": "Reading: \"pass 1 is manual, then pass 2 'explain/summarize', pass 3 Q&A\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-11-19",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1990854771058913347",
+   "quotes": [
+    "Go talk to the model",
+    "an ensemble over private evals"
+   ],
+   "note": "On Gemini 3: \"Go talk to the model\", and look for \"an ensemble over private evals\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-11-22",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1991910395720925418",
+   "quotes": [
+    "space of intelligences",
+    "shaped a lot less by biological evolution and a lot more by commercial evolution"
+   ],
+   "note": "In November he described the \"space of intelligences\": LLMs are \"shaped a lot less by biological evolution and a lot more by commercial evolution\", and \"increasingly selected by at-scale A/B tests for DAU => deeply crave",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-11-23",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1992381094667411768",
+   "quotes": [],
+   "note": "Cited in the chronicle.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-11-24",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1992657223785586864",
+   "quotes": [
+    "The GUI is an intelligent canvas"
+   ],
+   "note": "In November: \"The GUI is an intelligent canvas\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-11-25",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1993010584175141038",
+   "quotes": [
+    "proficient in the use of AI, but can also exist without it"
+   ],
+   "note": "To a school board: grade in class, and keep the ability to verify AI.",
+   "threads": [
+    "empower",
+    "verify"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2025-12-08",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1997731268969304070",
+   "quotes": [
+    "Don't think of LLMs as entities but as simulators"
+   ],
+   "note": "Ask instead what a good group of people would say.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-12-09",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1998236299862659485",
+   "quotes": [
+    "no guarantee is made that different seeds produce different sequences"
+   ],
+   "note": "He traced it into the CPython source: \"no guarantee is made that different seeds produce different sequences\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-12-11",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1998803709468487877",
+   "quotes": [],
+   "note": "A hindsight grader for old Hacker News threads.",
+   "threads": [],
+   "status": "read"
   },
   {
    "quotes": [],
@@ -1794,11 +2495,35 @@ window.CHRONICLE = {
    "kind": "writing",
    "title": "2025 year in review",
    "url": "https://karpathy.bearblog.dev/year-in-review-2025/",
-   "note": "Uneven capabilities, verification and application design.",
+   "note": "RL on verifiable rewards, jagged \"ghost\" intelligence, distrust of benchmarks, the LLM app layer, agents on your computer, vibe coding, and a new GUI.",
    "threads": [
     "verify"
    ],
-   "status": "spot"
+   "status": "read"
+  },
+  {
+   "date": "2025-12-27",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2004607146781278521",
+   "quotes": [
+    "I've never felt this much behind as a programmer"
+   ],
+   "note": "At year end: a new layer of agents, prompts and tools to master, and a sense of falling behind.",
+   "threads": [
+    "oversight"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2025-12-28",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2005067301511630926",
+   "quotes": [],
+   "note": "The next day Claude Code found and controlled his home automation system on his local network.",
+   "threads": [],
+   "status": "read"
   },
   {
    "date": "2026-01-27",
@@ -1847,12 +2572,12 @@ window.CHRONICLE = {
   {
    "id": "oversight",
    "title": "How much to oversee AI-written code",
-   "reading": "Our reading: not a straight line toward less oversight. Advice depends on stakes and on the tools of the moment. He limits 'vibe coding' to throwaway projects and, for code you care about, still says to watch closely."
+   "reading": "Our reading: not a straight line toward less oversight. Advice depends on stakes and on the tools of the moment. He limits 'vibe coding' to throwaway projects and, for code you care about, still says to watch closely. In 2025 he sorts his tools by stakes, and at year end says he feels behind."
   },
   {
    "id": "verify",
    "title": "Verification as the bottleneck",
-   "reading": "Our reading: a recurring concern from 2019 onward. It is a pattern we infer, not a framework he names."
+   "reading": "Our reading: a recurring concern from 2019 onward, inferred by us at first. In 2025 he states it himself: coding 'is about staring at the code', and verifiability decides what AI automates."
   },
   {
    "id": "computer",
@@ -1922,17 +2647,22 @@ window.CHRONICLE = {
   },
   {
    "id": "2025",
-   "title": "Vibe coding, useful agents and their limits",
+   "title": "Vibe coding, building for agents, and what models lack",
    "range": [
     "2025-01-01",
     "2025-12-31"
    ],
-   "status": "outline",
-   "coverage": "A few posts and four blog posts read on their own. Full X read not started (158 posts).",
-   "summary": "Vibe coding is named, limited to throwaway projects. Blog posts on note-taking, empowerment and the friction of delivery. A year review on uneven capability.",
-   "interpretation": [],
-   "chapter": "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md#marchapril-2025-organizing-thought-broadening-individual-reach-encountering-delivery-friction",
-   "chapter_html": "<h3>March–April 2025: organizing thought, broadening individual reach, encountering delivery friction</h3>\n<p><strong>Observation — reviewed writing, A03–A05.</strong> The March 19 <a href=\"https://karpathy.bearblog.dev/the-append-and-review-note/\" target=\"_blank\" rel=\"noopener\">note-taking account</a> describes a longstanding practice, not a new AI method. April 7's <a href=\"https://karpathy.bearblog.dev/power-to-the-people/\" target=\"_blank\" rel=\"noopener\">empowerment argument</a> includes possible future concentration of benefits. April 27's <a href=\"https://karpathy.bearblog.dev/vibe-coding-menugen/\" target=\"_blank\" rel=\"noopener\">MenuGen account</a> contrasts rapid construction with integration difficulties.</p>\n<p><strong>Interpretation:</strong> these artifacts connect cognitive simplicity, expanded personal capability and the work of delivering usable products. They do not prove an entrepreneurial formula.</p>\n<p><strong>Observation — archived X post, February 3, 2025 (Beijing time).</strong> The <a href=\"https://x.com/karpathy/status/1886192184808149383\" target=\"_blank\" rel=\"noopener\">\"vibe coding\" post</a> describes giving in to the vibes: \"I 'Accept All' always, I don't read the diffs anymore\", with \"the code grows beyond my usual comprehension\". He limits it explicitly: \"It's not too bad for throwaway weekend projects, but still quite amusing.\" Compare with December 2022's \"I prompt. &amp; edit.\" The 2025 post is about a specific kind of project, not a general working method. The rest of the 2025 X posts and the two general-audience videos remain unreviewed.</p>\n<h3>June–December 2025: useful agents, reliability limits and a retrospective assessment</h3>\n<p>June's <a href=\"https://www.youtube.com/watch?v=LCEmiRjPEtQ\" target=\"_blank\" rel=\"noopener\">YC talk</a> is a registered review target; a linked third-party transcript warns of errors, so no direct speech claims rely on it here.</p>\n<p><strong>Observation — reviewed excerpt, T07.</strong> In the October 17 <a href=\"https://www.dwarkesh.com/p/andrej-karpathy\" target=\"_blank\" rel=\"noopener\">Dwarkesh transcript</a>, opening 00:00:07–00:02:57, everyday usefulness coexists with doubts about employee-like autonomy. <strong>Observation — reviewed writing, A06:</strong> the December 19 <a href=\"https://karpathy.bearblog.dev/year-in-review-2025/\" target=\"_blank\" rel=\"noopener\">year review</a> links uneven capabilities, verification and application design.</p>\n<p><strong>Interpretation:</strong> encouragement and caution are simultaneous positions, not necessarily a reversal. The interview's later sections and original YC recording are needed before writing a continuous argument across these dates.</p>"
+   "status": "read",
+   "coverage": "All 158 X posts read. Dwarkesh interview read in full (publisher transcript); YC talk via his own summary; four blog posts read. The two general-audience videos: short passages only.",
+   "summary": "He names vibe coding and limits it to throwaway projects, vibe-codes MenuGen and hits the deployment wall, releases nanochat, and builds a theory of what models lack. At year end he says he has \"never felt this much behind as a programmer\".",
+   "interpretation": [
+    "Coding advice is sorted by stakes: vibe coding for throwaway work, a \"tight leash\" for code he cares about, autocomplete for novel code. Verification cost is the rule underneath.",
+    "Jagged intelligence gets a cause (what is verifiable gets optimized) and a list of missing pieces: reflection instead of scalar rewards, system prompt learning, culture, a knowledge-light cognitive core.",
+    "The demo-to-product gap becomes personal (MenuGen) and turns into a design rule: make products and docs readable by LLMs.",
+    "Empowerment becomes a race to keep humans capable: stronger optimism about regular people, and a stated fear that humanity \"gets disempowered\"."
+   ],
+   "chapter": "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md#2025-vibe-coding-building-for-agents-and-a-theory-of-what-models-lack",
+   "chapter_html": "<p><strong>Coverage.</strong> All 158 main-timeline X posts from 2025 were read in full on 2026-11-09. Long-form sources:</p>\n<ul><li>\n<a href=\"https://www.dwarkesh.com/p/andrej-karpathy\" target=\"_blank\" rel=\"noopener\">Dwarkesh Podcast interview</a> (T07, October 17): read in full, in the publisher's transcript.\n</li><li>\n<a href=\"https://www.youtube.com/watch?v=LCEmiRjPEtQ\" target=\"_blank\" rel=\"noopener\">YC AI Startup School talk, \"Software Is Changing (Again)\"</a> (T06, June 17): read in a third-party transcript that its publisher warns contains errors. It is used here only to locate content. Claims about the talk rely on his own chapter summary post.\n</li><li>\nBlog posts <a href=\"https://karpathy.bearblog.dev/power-to-the-people/\" target=\"_blank\" rel=\"noopener\">Power to the people</a> (A04, April 7), <a href=\"https://karpathy.bearblog.dev/vibe-coding-menugen/\" target=\"_blank\" rel=\"noopener\">Vibe coding MenuGen</a> (A05, April 27) and <a href=\"https://karpathy.bearblog.dev/year-in-review-2025/\" target=\"_blank\" rel=\"noopener\">2025 LLM Year in Review</a> (A06, December 19): re-read live on 2026-11-09. A03 (append-and-review) is quoted in full in an archived post.\n</li><li>\n<a href=\"https://www.youtube.com/watch?v=7xTGNNLPyMI\" target=\"_blank\" rel=\"noopener\">Deep Dive into LLMs like ChatGPT</a> (Y11) and <a href=\"https://www.youtube.com/watch?v=EWvNQjAaOHw\" target=\"_blank\" rel=\"noopener\">How I use LLMs</a> (Y12): only the closing advice of Y11 and the deep-research section of Y12, located by keyword in machine transcripts. Neither was read in full.\n</li></ul>\n<p>Interview timestamps refer to the transcript and are not audio-checked. Details are in the <a href=\"https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/sources/review-ledger.md\" target=\"_blank\" rel=\"noopener\">review ledger</a>.</p>\n<h4>Context</h4>\n<p>He stayed independent all year. His public output was general-audience teaching, small personal projects, and one large educational codebase:</p>\n<ul><li>\nTwo long general-audience videos: a 3h31m \"Deep Dive into LLMs like ChatGPT\" (<a href=\"https://x.com/karpathy/status/1887211193099825254\" target=\"_blank\" rel=\"noopener\">Feb 6</a>) and a 2h11m \"How I Use LLMs\" (<a href=\"https://x.com/karpathy/status/1895242932095209667\" target=\"_blank\" rel=\"noopener\">Feb 28</a>). He said part of the reason was \"to inspire others to make equivalents in their own domains of expertise\" (<a href=\"https://x.com/karpathy/status/1887980449550758121\" target=\"_blank\" rel=\"noopener\">Feb 8</a>).\n</li><li>\nA new blog, started in March with \"Digital Hygiene\" (<a href=\"https://x.com/karpathy/status/1902046003567718810\" target=\"_blank\" rel=\"noopener\">Mar 19</a>) and \"The append-and-review note\" (<a href=\"https://x.com/karpathy/status/1902503836067229803\" target=\"_blank\" rel=\"noopener\">Mar 20</a>).\n</li><li>\nVibe-coded projects: an iOS app in Swift (<a href=\"https://x.com/karpathy/status/1903671737780498883\" target=\"_blank\" rel=\"noopener\">Mar 23</a>), MenuGen (<a href=\"https://x.com/karpathy/status/1917961248031080455\" target=\"_blank\" rel=\"noopener\">May 1</a>), reader3 (<a href=\"https://x.com/karpathy/status/1990612045700739548\" target=\"_blank\" rel=\"noopener\">Nov 18</a>), llm-council (<a href=\"https://x.com/karpathy/status/1992381094667411768\" target=\"_blank\" rel=\"noopener\">Nov 23</a>) and a hindsight grader for old Hacker News threads (<a href=\"https://x.com/karpathy/status/1998803709468487877\" target=\"_blank\" rel=\"noopener\">Dec 11</a>).\n</li><li>\nnanochat, \"a minimal, from scratch, full-stack training/inference pipeline of a simple ChatGPT clone\" in about 8,000 lines. It is meant as the capstone of the LLM101n course (<a href=\"https://x.com/karpathy/status/1977755427569111362\" target=\"_blank\" rel=\"noopener\">Oct 13</a>).\n</li><li>\nTalks and interviews: YC AI Startup School in June (<a href=\"https://x.com/karpathy/status/1935518272667217925\" target=\"_blank\" rel=\"noopener\">chapter summary</a>) and the Dwarkesh Podcast in October (<a href=\"https://x.com/karpathy/status/1979644538185752935\" target=\"_blank\" rel=\"noopener\">his notes</a>).\n</li></ul>\n<h4>AI fundamentals and limits</h4>\n<ul><li>\n<strong>Imitation versus trial and error.</strong> After DeepSeek-R1 he distinguished \"1) imitation learning (watch and repeat…)\" from \"2) trial-and-error learning (reinforcement learning)\". He said \"2 is significantly significantly more powerful\", and that the thinking strategies of reasoning models are \"<em>emergent</em>\" because \"the cognition of the model and the cognition of the human labeler is different\" (<a href=\"https://x.com/karpathy/status/1883941452738355376\" target=\"_blank\" rel=\"noopener\">Jan 28</a>). He named these \"cognitive strategies\" and asked when LLMs would produce a \"Move 37\" (<a href=\"https://x.com/karpathy/status/1884336943321997800\" target=\"_blank\" rel=\"noopener\">Jan 29</a>). He mapped training onto a textbook: exposition is pretraining, worked problems are supervised finetuning, and practice problems are reinforcement learning (<a href=\"https://x.com/karpathy/status/1885026028428681698\" target=\"_blank\" rel=\"noopener\">Jan 31</a>).\n</li><li>\n<strong>Then a growing doubt about RL itself.</strong>\n<ul><li>\nIn May he proposed a missing paradigm, \"system prompt learning\": a lot of human learning \"feels more like a change in system prompt\", as in \"taking notes for yourself\" (<a href=\"https://x.com/karpathy/status/1921368644069765486\" target=\"_blank\" rel=\"noopener\">May 11</a>).\n</li><li>\nIn July: \"I'm fairly certain RL will continue to yield more intermediate gains, but I also don't expect it to be the full story\". The reason is that you do hours of work \"just to learn a single scalar outcome at the very end\", whereas humans learn through a \"review/reflect stage\" (<a href=\"https://x.com/karpathy/status/1944435412489171119\" target=\"_blank\" rel=\"noopener\">Jul 14</a>).\n</li><li>\nIn August: \"I am bullish on environments and agentic interactions but I am bearish on reinforcement learning specifically… reward functions are super sus\" (<a href=\"https://x.com/karpathy/status/1960803117689397543\" target=\"_blank\" rel=\"noopener\">Aug 28</a>).\n</li><li>\nOn Dwarkesh: \"Reinforcement learning is terrible. It just so happens that everything that we had before it is much worse\". It is \"sucking supervision through a straw\". LLM judges used as rewards are \"gameable\", for example a nonsense string that scored 100% (T07 ≈00:40:47–00:48:22).\n</li></ul>\n</li><li>\n<strong>Ghosts, not animals.</strong> Responding to Richard Sutton: \"Pretraining is our crappy evolution… today's frontier LLM research is not about building animals. It is about summoning ghosts\" (<a href=\"https://x.com/karpathy/status/1973435013875314729\" target=\"_blank\" rel=\"noopener\">Oct 2</a>). In November he described the \"space of intelligences\": LLMs are \"shaped a lot less by biological evolution and a lot more by commercial evolution\", and \"increasingly selected by at-scale A/B tests for DAU =&gt; deeply craves an upvote from the average user, sycophancy\" (<a href=\"https://x.com/karpathy/status/1991910395720925418\" target=\"_blank\" rel=\"noopener\">Nov 22</a>).\n</li><li>\n<strong>Simulators, not entities.</strong> \"Don't think of LLMs as entities but as simulators… There is no 'you'\". Ask instead what a good group of people would say (<a href=\"https://x.com/karpathy/status/1997731268969304070\" target=\"_blank\" rel=\"noopener\">Dec 8</a>). This repeats his 2023 point that a base model is \"not an AI but a simulator\" (<a href=\"https://x.com/karpathy/status/1632800081622761472\" target=\"_blank\" rel=\"noopener\">Mar 7, 2023</a>), now applied to how to prompt.\n</li><li>\n<strong>Verifiability explains jaggedness.</strong> \"Software 1.0 easily automates what you can specify. Software 2.0 easily automates what you can verify.\" Tasks that can be practised, with an environment that is resettable, efficient and rewardable, \"progress rapidly\", while others lag (<a href=\"https://x.com/karpathy/status/1990116666194456651\" target=\"_blank\" rel=\"noopener\">Nov 17</a>). The year review adds the downside: \"benchmarks are almost by construction verifiable environments and are therefore immediately susceptible to RLVR\", so \"Training on the test set is a new art form\" (A06).\n</li><li>\n<strong>The cognitive core.</strong> He described \"a few billion param model that maximally sacrifices encyclopedic knowledge for capability\". It runs on every computer, looks things up, and offers \"sovereignty ('not your weights not your brain')\" (<a href=\"https://x.com/karpathy/status/1938626382248149433\" target=\"_blank\" rel=\"noopener\">Jun 27</a>). On Dwarkesh he said memorization is \"probably holding back the neural networks\" and that a billion parameters may be enough. He added \"Some basic curriculum needs to be there for knowledge\" (T07 ≈00:12:42, ≈01:02:22). See LEARNING.md 2b for the user's reframing.\n</li><li>\n<strong>Benchmarks versus real use.</strong>\n<ul><li>\nHumanity's Last Exam: tasks \"served neatly packaged on a platter\" will be solved, but jobs needing \"long, multimodal, coherent, error-correcting sequences of tasks\" will take longer (<a href=\"https://x.com/karpathy/status/1882498281089241545\" target=\"_blank\" rel=\"noopener\">Jan 24</a>).\n</li><li>\nOn the leaderboard paper: \"When the data and the anecdotes disagree, the anecdotes are usually right\". He proposed OpenRouter usage as a harder-to-game eval (<a href=\"https://x.com/karpathy/status/1917546757929722115\" target=\"_blank\" rel=\"noopener\">Apr 30</a>).\n</li><li>\nOn Gemini 3: \"Go talk to the model\", and look for \"an ensemble over private evals\" (<a href=\"https://x.com/karpathy/status/1990854771058913347\" target=\"_blank\" rel=\"noopener\">Nov 19</a>).\n</li><li>\n\"I always learn a lot more from in-depth analysis of few random cases over dashboards of aggregate statistics\" (<a href=\"https://x.com/karpathy/status/1944885371957031005\" target=\"_blank\" rel=\"noopener\">Jul 15</a>).\n</li></ul>\n</li><li>\n<strong>Timelines.</strong> \"2025-2035 is the decade of agents\", with \"a huge amount of work across the board to make it actually work. But it <em>should</em> work\" (<a href=\"https://x.com/karpathy/status/1882544526033924438\" target=\"_blank\" rel=\"noopener\">Jan 24</a>). After Dwarkesh: \"my AI timelines are about 5-10X pessimistic\" compared with SF house parties, \"but still quite optimistic w.r.t. a rising tide of AI deniers\" (<a href=\"https://x.com/karpathy/status/1979644538185752935\" target=\"_blank\" rel=\"noopener\">Oct 19</a>). In the interview he expected AI to stay on the same roughly 2% GDP growth trend as earlier computing: \"my expectation is that it stays in the same pattern\" (T07 ≈01:22:01–01:25:53). On jobs, radiology is \"doing great and is growing\". The jobs that change first look \"like repetition of one rote task\", and even there he expected \"AI adopted as a tool at first\" (<a href=\"https://x.com/karpathy/status/1971220449515516391\" target=\"_blank\" rel=\"noopener\">Sep 25</a>).\n</li></ul>\n<h4>Human agency and empowerment</h4>\n<ul><li>\n<strong>Benefits flowing to individuals first.</strong> LLMs \"generate disproportionate benefit for regular people\", because their capability is \"simultaneously versatile but also shallow and fallible\", and organizations face complexity and inertia. For now \"Money can't buy better ChatGPT\", but \"the moment money can buy dramatically better ChatGPT, things change\" (A04, April 7). The year review extends this to vibe coding: \"regular people benefit a lot more from LLMs compared to professionals, corporations and governments\" (A06).\n</li><li>\n<strong>Agency as the scarce trait.</strong> \"Agency &gt; Intelligence… Agency is significantly more powerful and significantly more scarce. Are you hiring for agency? Are we educating for agency?\" (<a href=\"https://x.com/karpathy/status/1894099637218545984\" target=\"_blank\" rel=\"noopener\">Feb 25</a>).\n</li><li>\n<strong>\"Team human\", made concrete.</strong> He redirected his X payout to a challenge: \"It is imperative that humanity not fall while AI ascends… Create something that is specifically designed to uplift team human\" (<a href=\"https://x.com/karpathy/status/1952076108565991588\" target=\"_blank\" rel=\"noopener\">Aug 4</a>). The winner worked through hard problems with AI on video. He judged AI \"better than what was, but also so far from what could be\" (<a href=\"https://x.com/karpathy/status/1957561075744010253\" target=\"_blank\" rel=\"noopener\">Aug 19</a>).\n</li><li>\n<strong>His stated reason for working on education.</strong> \"My personal big fear is that a lot of this stuff happens on the side of humanity, and that humanity gets disempowered by it.\" He fears a \"WALL-E or Idiocracy\" future and calls education the lever. He also said: \"pre-AGI education is useful. Post-AGI education is fun\", like going to the gym (T07 ≈01:56:33–02:08:00). He called the current AI-tutor capability insufficient: \"I'm waiting for that capability\" (T07 ≈02:01:03).\n</li><li>\n<strong>Risks he names.</strong>\n<ul><li>\nGenerated video is \"directly optimizable\" against engagement: \"TikTok is nothing compared to what is possible. And I'm not so sure that we will like what 'optimal' looks like\" (<a href=\"https://x.com/karpathy/status/1929634696474120576\" target=\"_blank\" rel=\"noopener\">Jun 3</a>).\n</li><li>\nOn creative culture and slop: does AI help reach a \"height of culture… Or harder, when quick wins are tempting and ~free, and an independent ability to create is stifled\" (<a href=\"https://x.com/karpathy/status/1956765908078387382\" target=\"_blank\" rel=\"noopener\">Aug 17</a>).\n</li><li>\nOn agents and security: \"Conflicted because I want to be an early adopter of LLM agents in my personal computing but the wild west of possibility is holding me back\" (<a href=\"https://x.com/karpathy/status/1934651657444528277\" target=\"_blank\" rel=\"noopener\">Jun 17</a>).\n</li><li>\nOn Dwarkesh, his most likely bad outcome is \"a gradual loss of control and understanding\" (T07 ≈01:18:51).\n</li></ul>\n</li><li>\n<strong>Keeping human ability under AI.</strong> To a school board: \"You will never be able to detect the use of AI in homework\", so grading should move into class. Students should be \"proficient in the use of AI, but can also exist without it\". Like calculators, they should know enough to \"notice it, gut check it, verify it\" (<a href=\"https://x.com/karpathy/status/1993010584175141038\" target=\"_blank\" rel=\"noopener\">Nov 25</a>).\n</li><li>\n<strong>Ownership in daily life.</strong> His digital hygiene guide: \"I prefer to be the customer, not the product in my digital life\". He also admitted he keeps Gmail and X, \"trading off sovereignty for convenience\" (<a href=\"https://x.com/karpathy/status/1902046003567718810\" target=\"_blank\" rel=\"noopener\">Mar 19</a>).\n</li></ul>\n<h4>Coding and thought organization</h4>\n<ul><li>\n<strong>Vibe coding, named and limited.</strong> \"There's a new kind of coding I call 'vibe coding'… I 'Accept All' always, I don't read the diffs anymore\". He limited it: \"It's not too bad for throwaway weekend projects\" (<a href=\"https://x.com/karpathy/status/1886192184808149383\" target=\"_blank\" rel=\"noopener\">Feb 3</a>). A Swift app ran on his phone after about an hour: \"I didn't even read any docs at all\" (<a href=\"https://x.com/karpathy/status/1903672057327452290\" target=\"_blank\" rel=\"noopener\">Mar 23</a>).\n</li><li>\n<strong>\"Real coding\" on a tight leash.</strong> For \"code I actually and professionally care about, contrast to vibe code\", his loop was: stuff the relevant context in, ask for high-level approaches before code, pick one, review with the API docs open, test, commit. \"The emphasis is on keeping a very tight leash on this new over-eager junior intern savant… who also bullshits you all the time\", and on \"being slow, defensive, careful, paranoid, and on always taking the inline learning opportunity, not delegating\" (<a href=\"https://x.com/karpathy/status/1915581920022585597\" target=\"_blank\" rel=\"noopener\">Apr 25</a>).\n</li><li>\n<strong>Verification is the work.</strong> \"In coding LLMs have collapsed (1) to ~instant, but have done very little to address (2)\". \"the biggest misunderstanding non-coders have about coding… They think that coding is about writing the code (1). It's not. It's about staring at the code (2).\" So the LLM \"has to anticipate the computational work of (2) and reduce it as much as possible\" (<a href=\"https://x.com/karpathy/status/1930305209747812559\" target=\"_blank\" rel=\"noopener\">Jun 5</a>).\n</li><li>\n<strong>A layered toolset by August.</strong> About 75% of his LLM help is still tab completion, because typing code in place is \"a high bandwidth way of communicating 'task specification'\". He uses agents like Claude Code for larger, easy-to-specify chunks, but \"I don't run in YOLO mode\" and \"they basically don't have a sense of taste\". He calls GPT-5 Pro the \"final layer of defense\" for the hardest bugs. And: \"It's the code post-scarcity era - you can just create and then delete thousands of lines of super custom, super ephemeral code now\" (<a href=\"https://x.com/karpathy/status/1959703967694545296\" target=\"_blank\" rel=\"noopener\">Aug 25</a>). He also found models \"a little too agentic by default\" for in-the-loop work (<a href=\"https://x.com/karpathy/status/1954224651443544436\" target=\"_blank\" rel=\"noopener\">Aug 10</a>).\n</li><li>\n<strong>Where agents failed him.</strong> For nanochat, agents were \"not net useful\": the code is \"intellectually intense\" and the models \"kept misunderstanding the code because they have too much memory from all the typical ways of doing things\". \"For now, autocomplete is my sweet spot\". Agents helped with boilerplate and with Rust, where he had a Python reference and tests (T07 ≈00:29:53–00:36:53). His stated preference: \"I'd like to go in chunks that I can keep in my head… I want to learn along the way and become better as a programmer, not just get served mountains of code that I'm told works\" (<a href=\"https://x.com/karpathy/status/1979644538185752935\" target=\"_blank\" rel=\"noopener\">Oct 19</a>).\n</li><li>\n<strong>The tone changes at year end.</strong> \"I've never felt this much behind as a programmer… I have a sense that I could be 10X more powerful if I just properly string together what has become available over the last ~year\". He described \"a new programmable layer of abstraction to master\" made of agents, prompts, memory, tools and skills (<a href=\"https://x.com/karpathy/status/2004607146781278521\" target=\"_blank\" rel=\"noopener\">Dec 27</a>). The next day Claude Code found and controlled his home automation system on his local network (<a href=\"https://x.com/karpathy/status/2005067301511630926\" target=\"_blank\" rel=\"noopener\">Dec 28</a>). The 2026 section picks this up.\n</li><li>\n<strong>Thinking and reading with LLMs.</strong>\n<ul><li>\nHis note practice: one Apple Note, append at the top, review by scrolling, \"rescue it towards the top\". \"When I note something down, I feel that I can immediately move on\" (<a href=\"https://x.com/karpathy/status/1902503836067229803\" target=\"_blank\" rel=\"noopener\">Mar 20</a>). He had described it in 2022.\n</li><li>\nOn \"One Thread\" versus a new conversation, he listed limits of giant contexts (speed, attention, signal to noise, train–test mismatch) and wanted \"active, agentic context management\" (<a href=\"https://x.com/karpathy/status/1902737525900525657\" target=\"_blank\" rel=\"noopener\">Mar 20</a>).\n</li><li>\nReading: \"pass 1 is manual, then pass 2 'explain/summarize', pass 3 Q&amp;A\" (<a href=\"https://x.com/karpathy/status/1990577951671509438\" target=\"_blank\" rel=\"noopener\">Nov 18</a>).\n</li><li>\nOn learning from code: rebuild nanochat yourself with no copy-paste, \"If I can't build it, I don't understand it\" (T07 ≈00:28:10–00:29:45). On explaining: \"if I don't really understand something, I can't explain it\" (T07 ≈02:23:20).\n</li></ul>\n</li><li>\n<strong>What \"context engineering\" means.</strong> \"+1 for 'context engineering' over 'prompt engineering'\". He sees a \"thick layer of non-trivial software\" around model calls, including \"generation-verification UIUX flows\", so \"The term 'ChatGPT wrapper' is tired and really, really wrong\" (<a href=\"https://x.com/karpathy/status/1937902205765607626\" target=\"_blank\" rel=\"noopener\">Jun 25</a>).\n</li></ul>\n<h4>Engineering and project practice</h4>\n<ul><li>\n<strong>MenuGen: the demo-to-product gap, lived.</strong> He built it with a vibe-coding approach: \"I wrote none of the code directly… and I don't really know how the app works\". The local demo was quick, \"but a bit of a painful slog as a deployed, real app\". Most of the work was in the browser configuring services, and \"All of this work and state is not even accessible or manipulatable by an LLM\" (<a href=\"https://x.com/karpathy/status/1917961248031080455\" target=\"_blank\" rel=\"noopener\">May 1</a>). In the blog post: \"I felt like I was 80% done but (foreshadowing...) it was a bit closer to 20%\" (A05). A month earlier he had compared modern web apps to \"assembling IKEA furniture\": \"It's not even code, it's... configurations, plumbing, orchestration\" (<a href=\"https://x.com/karpathy/status/1905051558783418370\" target=\"_blank\" rel=\"noopener\">Mar 27</a>).\n</li><li>\n<strong>Build for agents.</strong>\n<ul><li>\n\"99.9% of attention is about to be LLM attention, not human attention\". Docs should be \"a single your_project.md text file\" (<a href=\"https://x.com/karpathy/status/1899876370492383450\" target=\"_blank\" rel=\"noopener\">Mar 13</a>).\n</li><li>\n\"The primary audience of your thing (product, service, library, …) is now an LLM, not a human… LLMs don’t like to click, they like to curl\" (<a href=\"https://x.com/karpathy/status/1914494203696177444\" target=\"_blank\" rel=\"noopener\">Apr 22</a>). \"adding a Supabase db to your Vervel app shouldn’t be clicks but curls\" (<a href=\"https://x.com/karpathy/status/1914489538006933770\" target=\"_blank\" rel=\"noopener\">Apr 22</a>).\n</li><li>\nProducts with rich UIs and opaque binary formats \"are ngmi in the era of heavy human+AI collaboration\", because an LLM must be able to read and script them (<a href=\"https://x.com/karpathy/status/1930354382106964079\" target=\"_blank\" rel=\"noopener\">Jun 5</a>).\n</li><li>\nIn MenuGen: \"Don't talk to a developer… Instruct and empower their LLM\" (A05).\n</li></ul>\n</li><li>\n<strong>Partial autonomy, not flashy agents.</strong> His YC chapter summary: LLMs are a new OS \"fabbed by labs, and distributed like utilities\". They are \"people spirits\", so the opportunity is \"partially autonomous products\", plus software that is \"highly accessible\" and built \"for agents\" (<a href=\"https://x.com/karpathy/status/1935518272667217925\" target=\"_blank\" rel=\"noopener\">Jun 19</a>). The year review describes the app layer the same way: \"LLM apps like Cursor bundle and orchestrate LLM calls for specific verticals\" (A06).\n</li><li>\n<strong>The interface after chat.</strong> \"Chatting\" with an LLM \"feels like using an 80s computer terminal\". The GUI will be visual and \"generated on-demand, specifically for your prompt\" (<a href=\"https://x.com/karpathy/status/1917920257257459899\" target=\"_blank\" rel=\"noopener\">May 1</a>). In November: \"The GUI is an intelligent canvas\" (<a href=\"https://x.com/karpathy/status/1992657223785586864\" target=\"_blank\" rel=\"noopener\">Nov 24</a>). In the year review: \"People actually dislike reading text - it is slow and effortful\" (A06).\n</li><li>\n<strong>The march of nines.</strong> Demos reach the first nine, \"Then you need the second nine, a third nine\". \"I'm very unimpressed by demos\". In production software \"it's almost unbounded how terrible something could be\" (T07 ≈01:43:11–01:46:25). After driving a new Tesla he reported \"Perfect drive, no notes\", while adding \"there's still more work for the team in the long march of 9s\" (<a href=\"https://x.com/karpathy/status/1988705360723763242\" target=\"_blank\" rel=\"noopener\">Nov 13</a>).\n</li><li>\n<strong>Code built to be copied.</strong> Write code like bacteria: \"small, modular, self-contained and trivial to copy-and-paste\". \"Build a eukaryotic monorepo backbone if you have to, but maximize bacterial DNA\" (<a href=\"https://x.com/karpathy/status/1941616674094170287\" target=\"_blank\" rel=\"noopener\">Jul 6</a>). nanochat's goal is \"one cohesive, minimal, readable, hackable, maximally forkable repo\" (<a href=\"https://x.com/karpathy/status/1977755427569111362\" target=\"_blank\" rel=\"noopener\">Oct 13</a>).\n</li><li>\n<strong>Bugs and skepticism of the defaults.</strong> A train/test split bug in nanochat came from Python's `random.seed` treating 5 and -5 as the same seed. He traced it into the CPython source: \"no guarantee is made that different seeds produce different sequences\" (<a href=\"https://x.com/karpathy/status/1998236299862659485\" target=\"_blank\" rel=\"noopener\">Dec 9</a>). On RL-trained models: \"they are mortally terrified of exceptions\" (<a href=\"https://x.com/karpathy/status/1976077806443569355\" target=\"_blank\" rel=\"noopener\">Oct 9</a>).\n</li><li>\n<strong>When to finetune.</strong> \"finetuning isn't so much about 'stylizing' an LLM, instead, it's a lot more about narrowing the scope\". Production apps are \"larger pipelines where a bunch of LLMs collaborate in DAGs and flows\" (<a href=\"https://x.com/karpathy/status/1973468610917179630\" target=\"_blank\" rel=\"noopener\">Oct 2</a>).\n</li><li>\n<strong>What his undergrad missed.</strong> \"too little on physical lens - energy/heat of state change, data locality, parallelism, computer architecture. The former is interesting; The latter bestows power\" (<a href=\"https://x.com/karpathy/status/1919647115099451892\" target=\"_blank\" rel=\"noopener\">May 6</a>).\n</li></ul>\n<h4>Interpretation (ours, provisional)</h4>\n<ol><li>\n<strong>Coding advice is sorted by stakes, not a single trend.</strong> In one year he coined vibe coding for throwaway projects, kept a \"tight leash\" for code he cares about, and for nanochat used mostly autocomplete. The rule underneath is verification cost: his June statement that coding \"is about staring at the code\" explains all three modes. The December \"never felt this much behind\" is the first sign of a change in his own practice. It is a statement of feeling, not yet a described new workflow. 2026 should be read against it.\n</li><li>\n<strong>He builds a theory of what models lack.</strong> Jagged intelligence (2024) gets a cause in 2025: what is verifiable gets optimized. He also gives a list of missing pieces: reflection instead of scalar rewards, system prompt learning, culture, a smaller knowledge-light core, and entropy against collapse. His view of RL moves from \"significantly significantly more powerful\" than imitation (January) to \"terrible\" but better than what came before (October). We read this as a sharpening, not a reversal: trial-and-error beats imitation, but outcome rewards are a weak way to do it.\n</li><li>\n<strong>The demo-to-product thread becomes his own experience.</strong> In 2024 it was Waymo and \"a lot more than code\". In 2025 it is MenuGen (\"closer to 20%\"), the IKEA list and the march of nines. His suggested fix moves the problem: make products and docs legible to LLMs, so agents can do the configuration.\n</li><li>\n<strong>Empowerment is now framed as a race to keep humans capable.</strong> The optimism (benefits flowing to \"regular people\", vibe coding for everyone) is stronger than before. So is the fear (\"humanity gets disempowered\", WALL-E, optimizable video, slop). His answers are about human capacity: education as \"ramps to knowledge\", agency, schools that test without AI, and reading with an LLM only after a manual first pass.\n</li><li>\n<strong>Timelines and demos keep him calibrated.</strong> \"Decade of agents\", \"5-10X pessimistic\" and \"unimpressed by demos\" come from the same self-driving experience that drives the march of nines. It is a consistent position across the year, stated against both hype and denial.\n</li></ol>\n<h4>Uncertainties and gaps</h4>\n<ul><li>\nT07 is a publisher transcript, not audio-checked. T06 has a stated error warning and was not used for quotation.\n</li><li>\nY11 and Y12 (about 5h40m) were not read in full. They may contain more detail on his daily tools and how he checks outputs. Only the closing advice of Y11 (\"check their work… own the product of your work\") and Y12's deep-research section (\"Treat this as your first draft\") were read.\n</li><li>\nImage-only content is not in the archive: the textbook diagram, the GPT-4.5 poll images, the Excalidraw board, the bacterial-code image and the nano banana outputs.\n</li><li>\nBlog posts outside A03–A06 were not read: digital hygiene (quoted in full in its post), the sleep tracker, auto-grading HN, and the Animals vs. Ghosts, Verifiability and Space of Minds posts linked from A06. Two X articles (Apr 8, Dec 20) are link-only in the archive; we take them to be A04 and A06.\n</li><li>\nWe read \"the decade of agents\" and \"loss of control\" as his forecasts, not settled positions. He gives \"double digit percent uncertainty\" on the Sutton questions (<a href=\"https://x.com/karpathy/status/1973435013875314729\" target=\"_blank\" rel=\"noopener\">Oct 2</a>).\n</li></ul>"
   },
   {
    "id": "2026",
@@ -1949,6 +2679,6 @@ window.CHRONICLE = {
    "chapter_html": "<p><strong>Observation — author-published AI-edited excerpt, T09.</strong> The April 30 <a href=\"https://karpathy.bearblog.dev/sequoia-ascent-2026/\" target=\"_blank\" rel=\"noopener\">Sequoia text</a> retrospectively describes increased trust around December 2025 and revisits MenuGen's need for an app interface. It is not a verbatim transcript.</p>\n<p><strong>Interpretation to test:</strong> distinguish changes in his observed tool performance, working methods and general beliefs; these need not move together. The March <a href=\"https://www.youtube.com/watch?v=kwSVtQ7dziU\" target=\"_blank\" rel=\"noopener\">No Priors recording</a>, 2026 X candidates and October 31 <a href=\"https://karpathy.bearblog.dev/hacker-tube/\" target=\"_blank\" rel=\"noopener\">HackerTube</a> remain unreviewed. This is an open period through November 6, not a completed endpoint.</p>"
   }
  ],
- "posts_read": 640,
+ "posts_read": 798,
  "posts_total": 868
 };
