@@ -10,6 +10,7 @@ Run from the project root:  python -I tools/build_site.py
 
 The archive itself (sources/x/*.jsonl) is private and is not published.
 """
+import html
 import json
 import re
 import sys
@@ -156,6 +157,88 @@ def slug(heading):
     return s.replace(" ", "-")
 
 
+REPO_BLOB = "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/"
+PRIVATE_SECTIONS = {"questions for the user"}  # prompts addressed to the owner, not to readers
+
+
+def inline(t):
+    """Escape HTML, then render links, bold and italics."""
+    t = html.escape(t, quote=False)
+    def link(m):
+        url = m.group(2)
+        if not re.match(r"https?://", url):
+            url = REPO_BLOB + url  # repo-relative file
+        return f'<a href="{html.escape(url)}" target="_blank" rel="noopener">{m.group(1)}</a>'
+    t = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", link, t)
+    t = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t)
+    t = re.sub(r"(?<![\w*])_(.+?)_(?![\w*])", r"<em>\1</em>", t)
+    t = re.sub(r"(?<![\w*])\*(?!\s)([^*]+?)\*(?![\w*])", r"<em>\1</em>", t)
+    return t
+
+
+def md_to_html(md):
+    """Small Markdown subset used by CHRONICLE: ###, paragraphs, - and 1. lists (one nesting level)."""
+    out, para, stack = [], [], []  # stack of open list tags, by indent level
+    blank = False
+
+    def flush_para():
+        if para:
+            out.append("<p>" + inline(" ".join(para)) + "</p>")
+            para.clear()
+
+    def close_lists(depth=0):
+        while len(stack) > depth:
+            out.append(f"</li></{stack.pop()}>")
+
+    for raw in md.splitlines():
+        line = raw.rstrip()
+        m = re.match(r"^(\s*)([-*]|\d+\.)\s+(.*)", line)
+        if not line.strip():
+            flush_para()
+            blank = True
+            continue
+        if stack and blank and not m and not raw.startswith("  "):
+            close_lists()  # a paragraph after a blank line ends the list
+        blank = False
+        if line.startswith("### "):
+            flush_para(); close_lists()
+            out.append(f"<h4>{inline(line[4:])}</h4>")
+        elif m:
+            flush_para()
+            depth = 1 if len(m.group(1)) >= 2 else 0
+            tag = "ol" if m.group(2)[0].isdigit() else "ul"
+            if len(stack) < depth + 1:
+                out.append(f"<{tag}><li>")
+                stack.append(tag)
+            else:
+                close_lists(depth + 1)
+                out.append("</li><li>")
+            out.append(inline(m.group(3)))
+        elif stack:
+            out.append(" " + inline(line.strip()))  # continuation of a list item
+        else:
+            para.append(line.strip())
+    flush_para(); close_lists()
+    return "\n".join(out)
+
+
+def chapters():
+    """Chapter HTML per year: every ## section naming that year, minus private subsections."""
+    text = CHRONICLE.read_text(encoding="utf-8")
+    result = {}
+    for sec in re.split(r"\n(?=## )", text):
+        head = sec.splitlines()[0]
+        m = re.search(r"\b(20\d\d)\b", head)
+        if not head.startswith("## ") or not m:
+            continue
+        body = sec.split("\n", 1)[1] if "\n" in sec else ""
+        parts = re.split(r"\n(?=### )", "\n" + body)
+        keep = [p for p in parts if p.strip().splitlines()[0][4:].strip().lower() not in PRIVATE_SECTIONS] if body.strip() else []
+        sub = f"<h3>{inline(head[3:])}</h3>\n" if not head[3:].startswith(m.group(1)) else ""
+        result.setdefault(m.group(1), []).append(sub + md_to_html("\n".join(keep)))
+    return {y: "\n".join(v) for y, v in result.items()}
+
+
 def plain(seg):
     """The sentence of chronicle prose that leads up to a citation, without Markdown."""
     t = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", seg)
@@ -230,8 +313,10 @@ def main():
     events, errors = [], []
     extra, anchors = chronicle_events(posts, {x[0] for x in X}, errors)
     events += extra
+    chap = chapters()
     for p in PERIODS:
         p["chapter"] = anchors.get(p["id"])
+        p["chapter_html"] = chap.get(p["id"], "")
     for pid, lens, quotes, note, threads in X:
         p = posts.get(pid)
         if not p:

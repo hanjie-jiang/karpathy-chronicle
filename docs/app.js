@@ -187,7 +187,10 @@
         <p class="cov">${esc(p.coverage)}</p>
         <p>${esc(p.summary)}</p>
         ${p.interpretation.length ? `<div class="ours"><b>Our reading</b><ul>${p.interpretation.map((s) => `<li>${esc(s)}</li>`).join("")}</ul></div>` : ""}
-        ${p.chapter ? `<p class="chapter"><a href="${esc(p.chapter)}" target="_blank" rel="noopener">${p.status === "read" ? "Read the full chapter, with every citation" : "Read the current outline"} ↗</a></p>` : ""}
+        ${p.chapter_html ? `<details class="chap"><summary>${p.status === "read" ? `Read the full ${p.id} chapter` : `Read the current ${p.id} outline`}</summary>
+          <div class="prose">${p.chapter_html}</div>
+          ${p.chapter ? `<p class="chapter"><a href="${esc(p.chapter)}" target="_blank" rel="noopener">Also on GitHub ↗</a></p>` : ""}
+        </details>` : ""}
       </div>
     </article>`).join("");
 

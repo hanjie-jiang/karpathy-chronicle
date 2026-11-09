@@ -130,7 +130,20 @@ header p { font-size: 18px; color: var(--muted); max-width: 640px; margin: 16px 
 .period h3 { font-size: 21px; margin-bottom: 4px; }
 .period .cov { font-size: 12.5px; color: var(--muted); margin: 0 0 8px; }
 .period ul { margin: 6px 0 0; padding-left: 18px; }
-.chapter { margin: 12px 0 0; font-size: 14px; font-weight: 500; }
+.chapter { margin: 12px 0 0; font-size: 13px; color: var(--muted); }
+.chap { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 12px; }
+.chap summary { cursor: pointer; font-weight: 600; font-size: 14.5px; list-style: none; display: inline-flex; align-items: center; gap: 8px; }
+.chap summary::-webkit-details-marker { display: none; }
+.chap summary::before { content: "+"; display: inline-grid; place-items: center; width: 20px; height: 20px; border: 1px solid var(--line); border-radius: 50%; font-weight: 500; }
+.chap[open] summary::before { content: "\2212"; }
+.prose { max-width: 720px; font-size: 15px; line-height: 1.7; }
+.prose h3 { font-size: 20px; margin: 28px 0 6px; }
+.prose h4 { font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 19px; margin: 26px 0 6px; }
+.period .prose ul, .period .prose ol { margin: 6px 0 12px; padding-left: 20px; }
+.prose li { margin: 6px 0; }
+.prose li ul { margin: 4px 0; }
+.prose p { margin: 10px 0; }
+.prose a { color: var(--fund); }
 
 .method { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 40px; color: var(--muted); font-size: 14px; }
 .method p { margin: 0 0 10px; }
