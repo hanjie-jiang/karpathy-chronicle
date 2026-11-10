@@ -175,6 +175,78 @@ PERIODS = [
 ]
 
 
+# ---- Belief tracks (prototype: one track) ----
+# One question, a few dated stations in his words, placed on an ordered scale.
+# kind: practice (his own coding) | forecast | advice (to others) | feeling
+# lane: "care" (code he cares about) | "throwaway" (projects where mistakes cost little)
+# level: 1..4 on the scale below; the label and note are ours, the quote is his.
+# X stations take date and URL from the archive and the quote must be verbatim.
+TRACKS = [
+    dict(id="oversight", prototype=True,
+         question="How much of the coding does he hand to AI?",
+         scale_note="His own image for this is the \"autonomy slider\". The four steps are our wording.",
+         levels=["He writes; AI autocompletes", "AI drafts; he reads every change", "Agents write; he watches closely", "AI writes; he doesn't read it"],
+         stations=[
+             dict(x="1608895189078380544", kind="practice", lane="care", level=2, short="prompt & edit", change="Start",
+                  quote="I don't even really code, I prompt. & edit.", note="Copilot writes about 80% of his code. He still edits it."),
+             dict(date="2023-05-23", url="https://www.youtube.com/watch?v=bZQun8Y4L2A", source="State of GPT talk (third-party transcript)",
+                  kind="advice", lane="care", level=2, short="co-pilots, not agents", change="Advice",
+                  quote="think co-pilots, instead of completely autonomous agents", note="His advice to developers: keep a human in the loop."),
+             dict(x="1722359332116062491", kind="forecast", lane="care", level=4, short="forecast: ~pass-through", change="Forecast",
+                  quote="Human input and oversight gradually ascends in abstraction and contributes less, until it is ~pass-through.",
+                  note="A prediction about where coding is heading, not a description of his own work."),
+             dict(x="1767598414945292695", kind="forecast", lane="care", level=3, short="how to oversee?", change="Forecast",
+                  quote="How does a human provide oversight?", note="Expects coding to follow self-driving: more automation, with the human supervising."),
+             dict(x="1827143768459637073", kind="practice", lane="care", level=2, short="reviews the diffs", change="Same",
+                  quote="reviewing and editing the generated diffs", note="With Cursor and Sonnet, most of his programming is English, and he still reads the changes."),
+             dict(x="1886192184808149383", kind="practice", lane="throwaway", level=4, short="vibe coding", change="Splits by stakes",
+                  quote="I don't read the diffs anymore", note="Names vibe coding and limits it to \"throwaway weekend projects\"."),
+             dict(x="1915581920022585597", kind="practice", lane="care", level=2, short="tight leash", change="Splits by stakes",
+                  quote="keeping a very tight leash on this new over-eager junior intern savant",
+                  note="For code he cares about: approaches first, small steps, review with the docs open, test, commit."),
+             dict(x="1917961248031080455", kind="practice", lane="throwaway", level=4, short="MenuGen", change="Same",
+                  quote="I wrote none of the code directly", note="A vibe-coded web app. Building was easy; deploying it was the hard part."),
+             dict(x="1930305209747812559", kind="advice", lane="care", level=2, short="the work is checking", change="Advice",
+                  quote="It's about staring at the code", note="Writing code got instant; checking it did not. This is the rule under the whole track."),
+             dict(x="1959703967694545296", kind="practice", lane="care", level=1, short="mostly tab complete", change="Moves down",
+                  quote="the bread & butter (~75%?) of my LLM assistance continues to be just (Cursor) tab complete",
+                  note="Agents for larger chunks, but \"I don't run in YOLO mode\"."),
+             dict(date="2025-10-17", url="https://www.dwarkesh.com/p/andrej-karpathy", source="Dwarkesh Podcast (publisher transcript, ≈00:35:42)",
+                  kind="practice", lane="care", level=1, short="autocomplete for nanochat", change="Same",
+                  quote="For now, autocomplete is my sweet spot.", note="For novel code like nanochat, agents were \"not net useful\"."),
+             dict(x="2004607146781278521", kind="feeling", lane="care", level=None, short="\"never felt this much behind\"", change="Turning point",
+                  quote="I've never felt this much behind as a programmer.", note="A feeling, not yet a new workflow: a new layer of agents and tools to master."),
+             dict(x="2015883857489522876", kind="practice", lane="care", level=3, short="80% agents, watched closely", change="Moves up",
+                  quote="80% agent coding and 20% edits+touchups in December",
+                  note="Up from \"about 80% manual+autocomplete\" in November. Still: \"watch them like a hawk\"."),
+         ],
+         reading="Not a steady climb. For code he cares about, his own practice stays at or below \"reads every change\" for three years, and in 2025 even drops to mostly autocomplete, while his 2023 forecast pointed to \"~pass-through\". From February 2025 he splits by stakes: throwaway projects go to the top. The real jump for code he cares about comes in December 2025, and even then he says to watch the agents closely."),
+]
+
+
+def build_tracks(posts, errors):
+    out = []
+    for tr in TRACKS:
+        stations = []
+        for i, s in enumerate(tr["stations"], 1):
+            s = dict(s, n=i)
+            if "x" in s:
+                p = posts.get(s["x"])
+                if not p:
+                    errors.append(f"track post missing: {s['x']}")
+                    continue
+                if s["quote"] not in p["text"]:
+                    errors.append(f"track quote not verbatim in {s['x']}: {s['quote']!r}")
+                s.update(date=p["date_cst"], url=p["url"], source="X post",
+                         status="read" if p["year"] in READ_YEARS else "spot")
+                del s["x"]
+            else:
+                s["status"] = "read" if int(s["date"][:4]) in READ_YEARS else "spot"
+            stations.append(s)
+        out.append(dict(tr, stations=stations))
+    return out
+
+
 CHRONICLE = ROOT / "CHRONICLE.md"
 REPO_URL = "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md"
 LENS_HEADINGS = {
@@ -367,13 +439,14 @@ def main():
                            threads=threads, status="read" if p["year"] in READ_YEARS else "spot"))
     for o in OTHER:
         events.append(dict(quotes=[], **o) if "quotes" not in o else dict(o))
+    tracks = build_tracks(posts, errors)
     if errors:
         print("\n".join(errors))
         sys.exit(1)
     events.sort(key=lambda e: e["date"])
     read_posts = sum(1 for p in posts.values() if p["year"] in READ_YEARS)
     total_posts = sum(1 for p in posts.values() if p["year"] >= 2022)
-    data = dict(updated="2026-11-09", events=events, threads=THREADS, periods=PERIODS,
+    data = dict(updated="2026-11-09", events=events, threads=THREADS, periods=PERIODS, tracks=tracks,
                 posts_read=read_posts, posts_total=total_posts)
     OUT.write_text("// Generated by tools/build_site.py. Do not edit by hand.\nwindow.CHRONICLE = "
                    + json.dumps(data, ensure_ascii=False, indent=1) + ";\n", encoding="utf-8")

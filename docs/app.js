@@ -167,6 +167,120 @@
   }
   applyFilter();
 
+  // ---- belief track (prototype): one chart, words on demand
+  (function renderTrack() {
+    const T = (D.tracks || [])[0];
+    if (!T) { $("track").remove(); return; }
+    const COL = { care: "var(--coding)", throwaway: "var(--practice)" };
+    const SHORT = ["Writes it himself", "Reviews every change", "Supervises agents", "Doesn't read it"];
+    const TINY = ["Himself", "Reviews", "Supervises", "Unread"];
+    const month = (d) => new Date(d + "T00:00:00").toLocaleDateString("en-GB", { month: "short", year: "numeric" });
+    const S = T.stations;
+    const pts = S.filter((s) => s.kind === "practice" || s.kind === "feeling" || s.n === 3);
+    $("track-q").textContent = T.question;
+    $("track-lede").textContent = "In 2023 he forecast that human oversight of code would fade to almost nothing. For code he cares about, his own practice stayed low until December 2025. Hover or tap a point to read his words.";
+    const idle = `<p class="nt">Hover or tap a point on the chart to read what he said and when.</p>`;
+    $("tcard").innerHTML = idle;
+
+    let sel = null;
+    function card(n) {
+      const s = S.find((x) => x.n === +n);
+      const c = s.kind === "practice" ? COL[s.lane] : "var(--muted)";
+      const what = s.kind === "forecast" ? "Forecast (a prediction, not his own practice)"
+        : s.kind === "feeling" ? "A feeling, not yet a new way of working"
+        : `${T.levels[s.level - 1]}${s.lane === "throwaway" ? " · throwaway project" : " · code he cares about"}`;
+      $("tcard").style.setProperty("--c", c);
+      $("tcard").innerHTML = `<div class="m">${month(s.date)} · <b>${esc(what)}</b></div>
+        <p class="qq">“${esc(s.quote)}”</p>
+        <p class="nt">${esc(s.note)} <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.source)} ↗</a>
+        ${s.status === "spot" ? " · 2026 not fully read yet" : ""}</p>`;
+    }
+
+    function draw() {
+      const box = $("trk");
+      const W = Math.max(300, box.clientWidth - 16);
+      const narrow = W < 640;
+      const H = narrow ? 290 : 360, L = narrow ? 70 : 156, R = narrow ? 12 : 28, TOP = 44, BOT = 34;
+      const Y = (k) => TOP + ((4 - k) * (H - TOP - BOT)) / 3;
+      const a = Date.parse("2022-09-01"), b = Date.parse("2026-03-15");
+      const X = (d) => L + ((Date.parse(d) - a) / (b - a)) * (W - L - R);
+      const lab = narrow ? TINY : SHORT;
+      let g = "";
+      // rows and years
+      for (let k = 1; k <= 4; k++) {
+        g += `<line class="grid" x1="${L}" x2="${W - R}" y1="${Y(k)}" y2="${Y(k)}"/>`;
+        g += `<text class="ax" x="${L - 12}" y="${Y(k) + 4}" text-anchor="end">${lab[k - 1]}</text>`;
+      }
+      g += `<text class="ax" x="${L - 12}" y="${TOP - 26}" text-anchor="end" font-weight="600">More to AI ↑</text>`;
+      for (let y = 2023; y <= 2026; y++) {
+        const xx = X(y + "-01-01");
+        g += `<line class="grid" x1="${xx}" x2="${xx}" y1="${TOP - 8}" y2="${H - BOT + 6}" stroke-dasharray="2 5"/>`;
+        g += `<text class="ax" x="${xx}" y="${H - 10}" text-anchor="middle">${y}</text>`;
+      }
+      const x26 = X("2026-01-01");
+      g += `<rect x="${x26}" y="${TOP - 8}" width="${W - R - x26}" height="${H - BOT - TOP + 14}" fill="var(--hatch)" opacity=".7"/>`;
+
+      // his practice: step line + soft area, per lane
+      const lane = (ln) => S.filter((s) => s.kind === "practice" && s.lane === ln);
+      const care = lane("care"), thr = lane("throwaway"), end = W - R;
+      let d = `M${X(care[0].date)},${Y(care[0].level)}`;
+      for (let i = 1; i < care.length; i++) d += ` H${X(care[i].date)} V${Y(care[i].level)}`;
+      d += ` H${end}`;
+      const base = Y(1) + 0.5;
+      g += `<path d="${d} V${base} H${X(care[0].date)} Z" fill="var(--coding)" opacity=".08"/>`;
+      g += `<path d="${d}" fill="none" stroke="var(--coding)" stroke-width="3" stroke-linejoin="round"/>`;
+      const ty = Y(thr[0].level);
+      g += `<path d="M${X(thr[0].date)},${ty} H${end}" fill="none" stroke="var(--practice)" stroke-width="3" stroke-dasharray="7 5"/>`;
+
+      // the 2023 forecast: an arrow up, no timing implied
+      const f = S.find((s) => s.n === 3), fx = X(f.date);
+      g += `<defs><marker id="ah" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--muted)"/></marker></defs>`;
+      g += `<line x1="${fx}" y1="${Y(2) - 10}" x2="${fx}" y2="${Y(4) + 4}" stroke="var(--muted)" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#ah)"/>`;
+
+      // the December 2025 turn
+      const fe = S.find((s) => s.kind === "feeling"), fex = X(fe.date);
+      g += `<line x1="${fex}" y1="${TOP - 8}" x2="${fex}" y2="${H - BOT + 6}" stroke="var(--ink)" stroke-dasharray="3 4" opacity=".45"/>`;
+
+      // a few direct labels (desktop only); phone relies on the card
+      if (!narrow) {
+        const c0 = care[0];
+        g += `<text class="cl q" x="${X(c0.date) + 12}" y="${Y(2) - 14}">“I prompt. &amp; edit.”</text>`;
+        g += `<text class="cl" x="${X("2023-06-01")}" y="${Y(2) + 22}" style="fill:var(--coding)">code he cares about</text>`;
+        g += `<text class="cl" x="${fx}" y="${Y(4) - 14}" text-anchor="middle" style="fill:var(--muted)">2023 forecast: “~pass-through”</text>`;
+        g += `<text class="cl" x="${X(thr[0].date) - 14}" y="${ty + 5}" text-anchor="end" style="fill:var(--practice)">throwaway projects (vibe coding)</text>`;
+        const tab = care.find((s) => s.level === 1);
+        g += `<text class="cl q" x="${X(tab.date) - 12}" y="${Y(1) - 12}" text-anchor="end">“tab complete”</text>`;
+        g += `<text class="cl" x="${fex - 8}" y="${TOP - 18}" text-anchor="end">“never felt this much behind”</text>`;
+        const last = care[care.length - 1];
+        g += `<text class="cl q" x="${X(last.date) - 14}" y="${Y(last.level) - 14}" text-anchor="end">“80% agent coding”</text>`;
+      }
+
+      // points (with a larger invisible hit area)
+      pts.forEach((s) => {
+        const cx = X(s.date);
+        const cy = s.kind === "feeling" ? TOP - 8 : s.n === 3 ? Y(2) - 10 : Y(s.level);
+        const c = s.kind === "practice" ? COL[s.lane] : s.kind === "feeling" ? "var(--ink)" : "var(--muted)";
+        const hollow = s.status === "spot" || s.kind !== "practice";
+        g += `<g class="pt${sel === s.n ? " sel" : ""}" data-n="${s.n}" tabindex="0" role="button" aria-label="${month(s.date)}: ${esc(s.quote)}">
+          <circle cx="${cx}" cy="${cy}" r="18" fill="transparent"/>
+          <circle class="v" cx="${cx}" cy="${cy}" r="6.5" fill="${hollow ? "var(--surface)" : c}" stroke="${c}" stroke-width="2.5"/></g>`;
+      });
+      box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="${esc(T.question)}">${g}</svg>`;
+    }
+
+    const pick = (ev) => {
+      const p = ev.target.closest(".pt");
+      if (!p) return;
+      if (ev.type === "keydown" && ev.key !== "Enter" && ev.key !== " ") return;
+      if (ev.type !== "mouseover") { ev.preventDefault(); sel = +p.dataset.n; $("trk").querySelectorAll(".pt").forEach((e) => e.classList.toggle("sel", +e.dataset.n === sel)); }
+      card(p.dataset.n);
+    };
+    ["mouseover", "click", "keydown"].forEach((t) => $("trk").addEventListener(t, pick));
+    $("trk").addEventListener("mouseleave", () => { if (sel) card(sel); else $("tcard").innerHTML = idle; });
+    draw();
+    let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(draw, 120); });
+  })();
+
   // ---- threads
   $("threadcards").innerHTML = D.threads.map((t) => {
     const evs = D.events.filter((e) => e.threads.includes(t.id));

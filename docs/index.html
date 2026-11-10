@@ -121,6 +121,24 @@ header p { font-size: 18px; color: var(--muted); max-width: 640px; margin: 16px 
 .ours { background: var(--ours-bg); border-left: 3px solid var(--faint); padding: 10px 14px; border-radius: 0 8px 8px 0; font-size: 14px; color: var(--ink); }
 .ours b { font-weight: 600; font-size: 11.5px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 2px; }
 
+/* belief track: chart */
+.trk { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 10px 8px 4px; }
+.trk svg { display: block; width: 100%; font-family: Inter, system-ui, sans-serif; overflow: visible; }
+.trk .ax { font-size: 12px; fill: var(--muted); }
+.trk .grid { stroke: var(--line); }
+.trk .cl { font-size: 13px; fill: var(--ink); }
+.trk .cl.q { font-family: Newsreader, Georgia, serif; font-size: 15px; font-style: italic; }
+.trk .pt { cursor: pointer; }
+.trk .pt circle.v { transition: r .12s; }
+.trk .pt:hover circle.v, .trk .pt.sel circle.v { r: 9; }
+.trk .pt:focus { outline: none; }
+.trk .pt:focus-visible circle.v { stroke: var(--ink); stroke-width: 2; }
+.tcard { margin-top: 14px; min-height: 92px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; }
+.tcard .m { font-size: 12.5px; color: var(--muted); }
+.tcard .m b { color: var(--c, var(--ink)); font-weight: 600; }
+.tcard .qq { font-family: Newsreader, Georgia, serif; font-size: 21px; line-height: 1.35; margin: 6px 0 4px; }
+.tcard .nt { margin: 0; font-size: 14px; color: var(--muted); }
+
 /* periods */
 .periods { display: grid; gap: 16px; }
 .period { display: grid; grid-template-columns: 120px 1fr; gap: 24px; }
@@ -169,6 +187,14 @@ footer { padding: 32px 0 56px; border-top: 1px solid var(--line); font-size: 13p
   <p>How Andrej Karpathy's public thinking about AI, its limits, human agency, and building with it has developed since 2022. Every quote links to the original. Our interpretations are labelled as ours.</p>
   <div class="stats" id="stats"></div>
 </header>
+
+<section class="wrap" id="track">
+  <span class="tag">Prototype</span>
+  <h2 id="track-q"></h2>
+  <p class="lede" id="track-lede"></p>
+  <div class="trk" id="trk"></div>
+  <div class="tcard" id="tcard" aria-live="polite"></div>
+</section>
 
 <section class="wrap" id="timeline">
   <h2>Timeline</h2>
