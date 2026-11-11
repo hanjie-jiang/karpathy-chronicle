@@ -184,11 +184,22 @@ header p { font-size: 18px; color: var(--muted); max-width: 640px; margin: 16px 
 .period .cov { font-size: 12.5px; color: var(--muted); margin: 0 0 8px; }
 .period ul { margin: 6px 0 0; padding-left: 18px; }
 .chapter { margin: 12px 0 0; font-size: 13px; color: var(--muted); }
-.chap { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 12px; }
-.chap summary { cursor: pointer; font-weight: 600; font-size: 14.5px; list-style: none; display: inline-flex; align-items: center; gap: 8px; }
+/* expandable sections: tinted pill buttons with a turning chevron */
+.chap { --tint: var(--fund); margin-top: 16px; }
+.threads .chap { --tint: var(--tc, var(--fund)); }
+.period .chap { --tint: var(--coding); }
+.chap summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 10px;
+  font-weight: 600; font-size: 14px; color: var(--tint);
+  background: color-mix(in srgb, var(--tint) 10%, var(--surface)); border: 1px solid color-mix(in srgb, var(--tint) 28%, transparent);
+  border-radius: 999px; padding: 7px 16px 7px 12px; transition: background .15s, border-color .15s; }
+.chap summary:hover { background: color-mix(in srgb, var(--tint) 18%, var(--surface)); border-color: color-mix(in srgb, var(--tint) 50%, transparent); }
+.chap summary:focus-visible { outline: 2px solid var(--tint); outline-offset: 2px; }
 .chap summary::-webkit-details-marker { display: none; }
-.chap summary::before { content: "+"; display: inline-grid; place-items: center; width: 20px; height: 20px; border: 1px solid var(--line); border-radius: 50%; font-weight: 500; }
-.chap[open] summary::before { content: "\2212"; }
+.chap summary::before { content: ""; width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg); transition: transform .2s; margin-left: 2px; }
+.chap[open] summary::before { transform: rotate(45deg) translate(-2px, -2px); }
+.chap[open] summary { background: var(--tint); color: var(--surface); border-color: var(--tint); }
+.chap[open] > :not(summary) { border-left: 2px solid color-mix(in srgb, var(--tint) 35%, transparent); padding-left: 16px; margin-top: 14px; }
 .prose { max-width: 720px; font-size: 15px; line-height: 1.7; }
 .prose h3 { font-size: 20px; margin: 28px 0 6px; }
 .prose h4 { font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 19px; margin: 26px 0 6px; }
@@ -202,8 +213,11 @@ header p { font-size: 18px; color: var(--muted); max-width: 640px; margin: 16px 
 .method p { margin: 0 0 10px; }
 footer { padding: 32px 0 56px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 .top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
-.langbtn { font: inherit; font-size: 13px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); border-radius: 999px; padding: 4px 12px; cursor: pointer; }
-.langbtn:hover { border-color: var(--ink); }
+/* language switch: both options always visible */
+.lang { display: inline-flex; padding: 3px; gap: 2px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; flex: none; }
+.lang a { font-size: 13px; line-height: 1; padding: 6px 12px; border-radius: 999px; color: var(--muted); text-decoration: none; }
+.lang a:hover { color: var(--ink); }
+.lang a[aria-current="true"] { background: var(--ink); color: var(--bg); font-weight: 600; }
 .zhnote { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
 :lang(zh) .ours b { letter-spacing: 0; }
 /* findings */
@@ -219,14 +233,19 @@ footer { padding: 32px 0 56px; border-top: 1px solid var(--line); font-size: 13p
 .evl .t { font-family: Newsreader, Georgia, serif; font-size: 16px; line-height: 1.35; }
 @media (max-width: 760px) { .find { grid-template-columns: 1fr; padding: 18px; } .find .n { font-size: 22px; } }
 /* sticky nav */
-.nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
-.nav .in { display: flex; align-items: center; gap: 4px 18px; overflow-x: auto; scrollbar-width: none; white-space: nowrap; padding-top: 10px; padding-bottom: 10px; font-size: 13.5px; }
+.nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--surface) 88%, transparent); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line); box-shadow: 0 1px 0 color-mix(in srgb, var(--coding) 35%, transparent); }
+.nav .in { display: flex; align-items: center; gap: 4px 6px; overflow-x: auto; scrollbar-width: none; white-space: nowrap; padding-top: 8px; padding-bottom: 8px; font-size: 13.5px; }
 .nav .in::-webkit-scrollbar { display: none; }
 .nav a { text-decoration: none; color: var(--muted); }
-.nav a:hover, .nav a.on { color: var(--ink); }
-.nav .yrs { display: inline-flex; gap: 4px; padding-left: 14px; border-left: 1px solid var(--line); }
-.nav .yrs a { border: 1px solid var(--line); border-radius: 999px; padding: 1px 9px; font-variant-numeric: tabular-nums; }
-.nav .yrs a:hover { border-color: var(--ink); }
+.nav .in > a { padding: 5px 11px; border-radius: 999px; font-weight: 500; transition: background .15s, color .15s; }
+.nav .in > a:hover { color: var(--coding); background: color-mix(in srgb, var(--coding) 9%, transparent); }
+.nav .in > a.on { color: var(--surface); background: var(--coding); }
+.nav .yrs { display: inline-flex; gap: 4px; margin: 0 6px; padding: 0 10px; border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+.nav .yrs a { border-radius: 999px; padding: 4px 10px; font-variant-numeric: tabular-nums; font-weight: 500;
+  color: var(--fund); background: color-mix(in srgb, var(--fund) 9%, transparent); transition: background .15s, color .15s; }
+.nav .yrs a:hover { background: color-mix(in srgb, var(--fund) 18%, transparent); }
+.nav .yrs a.on { background: var(--fund); color: var(--surface); }
 section, .period, .find { scroll-margin-top: 56px; }
 .themebtn { font: inherit; font-size: 13px; background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
 
@@ -244,7 +263,7 @@ section, .period, .find { scroll-margin-top: 56px; }
 </head>
 <body>
 <header class="wrap">
-  <div class="top"><span class="tag" data-i18n="tag">Independent · unofficial · work in progress</span><button class="langbtn" id="langbtn" type="button" lang="zh">中文</button></div>
+  <div class="top"><span class="tag" data-i18n="tag">Independent · unofficial · work in progress</span><div class="lang" role="group" aria-label="Language / 语言"><a href="?lang=en" data-l="en" lang="en">EN</a><a href="?lang=zh" data-l="zh" lang="zh">中文</a></div></div>
   <h1 data-i18n="h1">The Karpathy Chronicle</h1>
   <p data-i18n="intro">How Andrej Karpathy's public thinking about AI, its limits, human agency, and building with it has developed since 2022. Every quote links to the original. Our interpretations are labelled as ours.</p>
   <div class="stats" id="stats"></div>

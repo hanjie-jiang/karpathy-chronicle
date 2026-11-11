@@ -52,13 +52,15 @@
     document.title = "Karpathy 思想编年史";
     document.querySelectorAll("[data-i18n]").forEach((el) => { const v = ZHUI[el.dataset.i18n]; if (v) el.innerHTML = v; });
   }
-  const lb = $("langbtn");
-  lb.textContent = ZH ? "English" : "中文";
-  lb.lang = ZH ? "en" : "zh";
-  lb.addEventListener("click", () => {
-    const next = ZH ? "en" : "zh";
-    try { localStorage.setItem("lang", next); } catch (_) {}
-    const u = new URL(location.href); u.searchParams.set("lang", next); location.href = u.toString();
+  document.querySelectorAll(".lang a").forEach((a) => {
+    const on = (a.dataset.l === "zh") === ZH;
+    a.setAttribute("aria-current", on ? "true" : "false");
+    a.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      if (on) return;
+      try { localStorage.setItem("lang", a.dataset.l); } catch (_) {}
+      const u = new URL(location.href); u.searchParams.set("lang", a.dataset.l); location.href = u.toString();
+    });
   });
   const fmt = (d) => new Date(d + "T00:00:00").toLocaleDateString(ZH ? "zh-CN" : "en-GB", { day: "numeric", month: "short", year: "numeric" });
 
@@ -242,7 +244,8 @@
         <div class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.quotes[0] ? "“" + e.quotes[0] + "”" : tr(e.note))}</a></div>
       </li>`;
     const keys = evs.filter(isKey);
-    return `<article class="card"><h3>${esc(tr(t.title))}</h3><ol class="steps">${keys.map(step).join("")}</ol>
+    const TC = { oversight: "--coding", verify: "--fund", computer: "--practice", empower: "--agency" };
+    return `<article class="card" style="--tc:var(${TC[t.id] || "--fund"})"><h3>${esc(tr(t.title))}</h3><ol class="steps">${keys.map(step).join("")}</ol>
       <div class="ours"><b>${LG("Our reading", "我们的解读")}</b>${esc(tr(t.reading))}</div>
       <details class="chap"><summary>${LG(`All ${evs.length} statements`, `全部 ${evs.length} 条原话`)}</summary><ol class="steps">${evs.map(step).join("")}</ol></details></article>`;
   }).join("");
@@ -277,6 +280,13 @@
       if (en.isIntersecting) links.forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id));
     }), { rootMargin: "-45% 0px -50% 0px" });
     ["findings", "track", "attention", "threads", "periods", "method"].forEach((id) => { const el = $(id); if (el) io.observe(el); });
+    const yrs = [...document.querySelectorAll(".nav .yrs a")];
+    const yo = new IntersectionObserver((ents) => ents.forEach((en) => {
+      if (en.isIntersecting) yrs.forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id));
+    }), { rootMargin: "-40% 0px -55% 0px" });
+    document.querySelectorAll(".period").forEach((el) => yo.observe(el));
+    new IntersectionObserver((ents) => ents.forEach((en) => { if (!en.isIntersecting) yrs.forEach((a) => a.classList.remove("on")); }))
+      .observe($("periods"));
   }
 
   // ---- theme toggle
