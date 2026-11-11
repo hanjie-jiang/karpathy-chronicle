@@ -139,6 +139,28 @@ header p { font-size: 18px; color: var(--muted); max-width: 640px; margin: 16px 
 .tcard .qq { font-family: Newsreader, Georgia, serif; font-size: 21px; line-height: 1.35; margin: 6px 0 4px; }
 .tcard .nt { margin: 0; font-size: 14px; color: var(--muted); }
 
+/* attention chart */
+.at { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px 8px; }
+.at-row { display: grid; grid-template-columns: 170px 1fr; gap: 14px; align-items: end; }
+.at-lab { font-size: 13.5px; padding-bottom: 6px; }
+.at-bars { display: grid; gap: 6px; height: 64px; border-bottom: 1px solid var(--line); }
+.at-b { all: unset; cursor: pointer; display: flex; align-items: flex-end; height: 100%; border-radius: 4px 4px 0 0; }
+.at-b i { display: block; width: 100%; background: var(--fund); border-radius: 4px 4px 0 0; transition: opacity .15s; }
+.at-b:hover i, .at-b:focus-visible i { opacity: .7; }
+.at-b.sel i { background: var(--ink); }
+.at-b.low i { opacity: .35; }
+.at-b:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.at-axis .at-bars { height: auto; border: 0; font-size: 12px; color: var(--muted); padding: 6px 0 4px; }
+.at-axis .at-bars span { text-align: center; }
+.at-list { list-style: none; margin: 8px 0 0; padding: 0; max-height: 260px; overflow: auto; font-size: 14px; }
+.at-list li { padding: 5px 0; border-top: 1px solid var(--line); }
+.at-list span { font-family: Newsreader, Georgia, serif; font-size: 15.5px; }
+@media (max-width: 760px) {
+  .at-row { grid-template-columns: 1fr; gap: 2px; }
+  .at-lab { padding: 10px 0 2px; }
+  .at-bars { gap: 3px; height: 48px; }
+}
+
 /* periods */
 .periods { display: grid; gap: 16px; }
 .period { display: grid; grid-template-columns: 120px 1fr; gap: 24px; }
@@ -196,19 +218,11 @@ footer { padding: 32px 0 56px; border-top: 1px solid var(--line); font-size: 13p
   <div class="tcard" id="tcard" aria-live="polite"></div>
 </section>
 
-<section class="wrap" id="timeline">
-  <h2>Timeline</h2>
-  <p class="lede">Each dot is a dated public statement or piece of work, placed in one of four reading lenses. Select a dot to see his words. Pick a thread to follow one idea across the years.</p>
-  <div class="legend">
-    <span><i class="dot-key"></i>Period fully read</span>
-    <span><i class="dot-key spot"></i>Read on its own; period not yet read</span>
-    <span><i class="hatch-key"></i>Period not yet read</span>
-    <span><i class="ours-key"></i>Our interpretation</span>
-  </div>
-  <div class="chips" id="chips" role="group" aria-label="Filter by thread"></div>
-  <div class="tl" id="tl"><div class="tip" id="tip"></div></div>
-  <div class="detail" id="detail" aria-live="polite"><p class="empty">Select a dot to read the statement.</p></div>
-  <div class="list" id="list"></div>
+<section class="wrap" id="attention">
+  <h2>What he talks about</h2>
+  <p class="lede">Share of his X posts touching each theme, every half-year since 2022. Counted automatically by keyword, so it shows attention, not belief.</p>
+  <div class="at" id="at"></div>
+  <div class="tcard" id="atcard" aria-live="polite"></div>
 </section>
 
 <section class="wrap" id="threads">
