@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- Social preview card (1200x630). Render: chrome --headless=new --window-size=1200,630 --screenshot=docs/og.png tools/og_card.html -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>og card</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; background: #fbfaf7; color: #1c1b19; font-family: Inter, system-ui, sans-serif; }
+  .card { box-sizing: border-box; width: 1200px; height: 630px; padding: 56px 64px; display: grid; grid-template-rows: auto auto auto 1fr auto; }
+  .tag { font-size: 17px; letter-spacing: .05em; text-transform: uppercase; color: #6b6860; }
+  h1 { font-family: Newsreader, Georgia, serif; font-weight: 500; font-size: 68px; line-height: 1.05; margin: 10px 0 8px; letter-spacing: -0.01em; }
+  .sub { font-size: 25px; color: #4a4843; margin: 0; }
+  svg { display: block; margin-top: 30px; }
+  .foot { display: flex; justify-content: space-between; font-size: 18px; color: #6b6860; }
+  .ax { font-size: 15px; fill: #6b6860; }
+  .lab { font-size: 17px; }
+  .q { font-family: Newsreader, Georgia, serif; font-style: italic; font-size: 19px; fill: #1c1b19; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="tag">Independent · every quote checked against the source</div>
+  <h1>The Karpathy Chronicle</h1>
+  <p class="sub">How Andrej Karpathy's thinking about AI changed, 2022–2026 · five findings</p>
+  <svg id="c" width="1072" height="270"></svg>
+  <div class="foot"><span>How much of the coding does he hand to AI?</span><span>hanjie-jiang.github.io/karpathy-chronicle · English / 中文</span></div>
+</div>
+<script src="../docs/data.js"></script>
+<script>
+  const S = window.CHRONICLE.tracks[0].stations;
+  const W = 1072, H = 270, L = 200, R = 10, TOP = 22, BOT = 30;
+  const a = Date.parse("2022-09-01"), b = Date.parse("2026-12-01");
+  const X = (d) => L + ((Date.parse(d) - a) / (b - a)) * (W - L - R);
+  const Y = (k) => TOP + ((4 - k) * (H - TOP - BOT)) / 3;
+  const names = ["Writes it himself", "Reviews every change", "Supervises agents", "Doesn't read it"];
+  let g = "";
+  for (let k = 1; k <= 4; k++) {
+    g += `<line x1="${L}" x2="${W - R}" y1="${Y(k)}" y2="${Y(k)}" stroke="#e6e2d9"/>`;
+    g += `<text class="ax" x="${L - 14}" y="${Y(k) + 5}" text-anchor="end">${names[k - 1]}</text>`;
+  }
+  for (let y = 2023; y <= 2026; y++) g += `<text class="ax" x="${X(y + "-01-01")}" y="${H - 4}" text-anchor="middle">${y}</text>`;
+  const care = S.filter((s) => s.kind === "practice" && s.lane === "care");
+  const thr = S.filter((s) => s.kind === "practice" && s.lane === "throwaway");
+  let d = `M${X(care[0].date)},${Y(care[0].level)}`;
+  for (let i = 1; i < care.length; i++) d += ` H${X(care[i].date)} V${Y(care[i].level)}`;
+  d += ` H${W - R}`;
+  g += `<path d="${d} V${Y(1)} H${X(care[0].date)} Z" fill="#c26a12" opacity=".09"/>`;
+  g += `<path d="${d}" fill="none" stroke="#c26a12" stroke-width="4.5" stroke-linejoin="round"/>`;
+  g += `<path d="M${X(thr[0].date)},${Y(4)} H${W - R}" fill="none" stroke="#7a4fb3" stroke-width="4" stroke-dasharray="9 7"/>`;
+  care.forEach((s) => g += `<circle cx="${X(s.date)}" cy="${Y(s.level)}" r="7" fill="#c26a12"/>`);
+  const fe = S.find((s) => s.kind === "feeling");
+  g += `<line x1="${X(fe.date)}" x2="${X(fe.date)}" y1="${TOP - 10}" y2="${H - BOT}" stroke="#1c1b19" stroke-dasharray="3 5" opacity=".4"/>`;
+  g += `<text class="lab" x="${X(thr[0].date) - 14}" y="${Y(4) + 6}" text-anchor="end" fill="#7a4fb3">throwaway projects</text>`;
+  g += `<text class="lab" x="${X("2023-03-01")}" y="${Y(2) + 28}" fill="#c26a12">code he cares about</text>`;
+  const tab = care.find((s) => s.level === 1);
+  g += `<text class="q" x="${X(tab.date) - 14}" y="${Y(1) - 12}" text-anchor="end">“tab complete” (2025)</text>`;
+  const a80 = care.find((s) => s.quote.startsWith("80%"));
+  g += `<text class="q" x="${X(a80.date) - 16}" y="${Y(3) - 14}" text-anchor="end">“80% agent coding” (2026)</text>`;
+  document.getElementById("c").innerHTML = g;
+</script>
+</body>
+</html>

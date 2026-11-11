@@ -1,6 +1,6 @@
 # Karpathy: provisional chronological outline
 
-Updated 2026-11-09 (Asia/Shanghai). **Initial outline, not a completed intellectual history.** The 2022, 2023 and 2024 sections are written from a full read of each year's X posts. Later sections are still outline-level. Full agreed source scope remains in [README.md](README.md). The working period is 2022 onward, with older explanatory context. Source identities and separate access/review states are in [sources.jsonl](sources.jsonl); [coverage and evidence notes](sources/2026-11-06-inventory-and-evidence.md) explain gaps and review extents.
+Updated 2026-11-11 (Asia/Shanghai). **A provisional chronicle, not a completed intellectual history.** All five periods (2022–2026) are written from a full read of each year's X posts; long recordings are covered unevenly (see each period's coverage note). The agreed scope is in [BRIEF.md](BRIEF.md). Source identities and separate access/review states are in [sources.jsonl](sources.jsonl); [coverage and evidence notes](sources/2026-11-06-inventory-and-evidence.md) explain gaps and review extents.
 
 The headings below organize dated public artifacts. They do not claim private learning stages, steady intellectual progress, or first-ever expression. “Observation” refers to accessible material; “interpretation” is ours; questions remain unresolved. No user belief or practical decision has been inferred.
 

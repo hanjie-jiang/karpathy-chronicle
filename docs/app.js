@@ -77,7 +77,7 @@
     const F = D.findings || [];
     if (!F.length) { $("findings").remove(); return; }
     $("finds").innerHTML = F.map((f, i) => `
-      <article class="find"><div class="n">${i + 1}</div>
+      <article class="find" id="finding-${i + 1}"><div class="n"><a href="#finding-${i + 1}" style="text-decoration:none;color:inherit" title="Link to this finding">${i + 1}</a></div>
         <div><h3>${esc(tr(f.title))}</h3><p class="why">${esc(tr(f.why))}</p></div>
         <ul class="evl">${f.evidence.map((e) => `<li><div class="d">${fmt(e.date)} · ${esc(tr(e.source))}${e.note ? " · " + esc(tr(e.note)) : ""}</div>
           <div class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">“${esc(e.quote)}”</a></div></li>`).join("")}</ul>
