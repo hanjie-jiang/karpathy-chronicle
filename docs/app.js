@@ -32,7 +32,10 @@
     upd: "更新于",
     src: "源码与方法见",
     theme: "切换主题",
+    n_fi: "发现",
     n_track: "编程图表",
+    fi_h: "我们的发现",
+    fi_lede: "通读他自 2022 年以来的全部帖子后，归纳出的五个规律。标题是我们的解读；旁边附上他的原话，供你核对。",
     n_at: "话题",
     n_th: "主线",
     n_pe: "时期",
@@ -68,6 +71,18 @@
     [LG(`${read} of ${D.periods.length}`, `${read} / ${D.periods.length}`), LG("periods written", "已写完的时期")],
   ].map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
   $("updated").textContent = fmt(D.updated);
+
+  // ---- findings: our headline, his words beside it
+  (function renderFindings() {
+    const F = D.findings || [];
+    if (!F.length) { $("findings").remove(); return; }
+    $("finds").innerHTML = F.map((f, i) => `
+      <article class="find"><div class="n">${i + 1}</div>
+        <div><h3>${esc(tr(f.title))}</h3><p class="why">${esc(tr(f.why))}</p></div>
+        <ul class="evl">${f.evidence.map((e) => `<li><div class="d">${fmt(e.date)} · ${esc(tr(e.source))}${e.note ? " · " + esc(tr(e.note)) : ""}</div>
+          <div class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">“${esc(e.quote)}”</a></div></li>`).join("")}</ul>
+      </article>`).join("");
+  })();
 
   // ---- attention: what he talks about, counted by keyword per half-year
   (function renderAttention() {
@@ -261,7 +276,7 @@
     const io = new IntersectionObserver((ents) => ents.forEach((en) => {
       if (en.isIntersecting) links.forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id));
     }), { rootMargin: "-45% 0px -50% 0px" });
-    ["track", "attention", "threads", "periods", "method"].forEach((id) => { const el = $(id); if (el) io.observe(el); });
+    ["findings", "track", "attention", "threads", "periods", "method"].forEach((id) => { const el = $(id); if (el) io.observe(el); });
   }
 
   // ---- theme toggle

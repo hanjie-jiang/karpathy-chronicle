@@ -313,6 +313,72 @@ def build_tracks(posts, errors):
     return out
 
 
+# ---- "What we found": five findings chosen by the user (2026-11-11) from findings-draft.md.
+# Titles and "why" lines are our interpretation; evidence quotes are his words, checked below:
+# X quotes against the archive, interview quotes against the local transcript files.
+T08_SRC = dict(date="2026-03-20", url="https://www.youtube.com/watch?v=kwSVtQ7dziU", source="No Priors interview (third-party transcript)", transcript="T08")
+T09_SRC = dict(date="2026-04-29", url="https://karpathy.bearblog.dev/sequoia-ascent-2026/", source="AI Ascent (AI-edited text he published)", transcript="T09")
+FINDINGS = [
+    dict(title="His own coding didn't climb steadily toward AI. It dipped, then jumped.",
+         why="The year he named vibe coding, his serious code was still mostly autocomplete. The jump came in December 2025.",
+         evidence=[dict(x="1827143768459637073", quote="reviewing and editing the generated diffs"),
+                   dict(x="1959703967694545296", quote="the bread & butter (~75%?) of my LLM assistance continues to be just (Cursor) tab complete"),
+                   dict(x="2015883857489522876", quote="80% agent coding and 20% edits+touchups in December"),
+                   dict(T08_SRC, quote="I don't think I've typed like a line of code probably since December")]),
+    dict(title="Even at peak automation, he kept a line between throwaway and production code.",
+         why="The headline is \"he stopped writing code\". The fine print is that production code still gets a different standard.",
+         evidence=[dict(x="1886192184808149383", quote="throwaway weekend projects"),
+                   dict(x="2015883857489522876", quote="watch them like a hawk"),
+                   dict(x="2064409694761054332", quote="(but don't do this in prod!)")]),
+    dict(title="Checking didn't disappear when he stopped reading code. It moved into the setup.",
+         why="The human job shifts from reviewing output to designing the tests and metrics the agent must pass.",
+         evidence=[dict(x="1930305209747812559", quote="It's about staring at the code"),
+                   dict(x="2015883857489522876", quote="give it success criteria and watch it go"),
+                   dict(T08_SRC, quote="if you can't evaluate then you can't auto research it")]),
+    dict(title="In five months he went from \"learn along the way\" to \"remove yourself as the bottleneck\".",
+         why="He keeps one thing for the human: understanding. He also admits his own code-writing skill is fading.",
+         evidence=[dict(x="1979644538185752935", quote="I want to learn along the way and become better as a programmer, not just get served mountains of code"),
+                   dict(x="2015883857489522876", quote="I am slowly starting to atrophy my ability to write code manually"),
+                   dict(T08_SRC, quote="you have to remove yourself as the bottleneck"),
+                   dict(T09_SRC, quote="You can outsource your thinking, but you can't outsource your understanding", note="a line he quotes from someone else")]),
+    dict(title="He made the case for staying outside a frontier lab, then joined one.",
+         why="He argued both sides himself, so it isn't a contradiction. But from May 2026 on, read him as an insider.",
+         evidence=[dict(T08_SRC, quote="You're not a completely free agent"),
+                   dict(T08_SRC, quote="my judgment will inevitably start to drift", note="on staying outside"),
+                   dict(x="2056753169888334312", quote="I've joined Anthropic")]),
+]
+
+
+def build_findings(posts, errors):
+    def norm(t):
+        return " ".join(t.replace("’", "'").split()).lower()
+    texts = {}
+    out = []
+    for f in FINDINGS:
+        ev = []
+        for e in f["evidence"]:
+            e = dict(e)
+            if "x" in e:
+                p = posts.get(e["x"])
+                if not p or e["quote"] not in p["text"]:
+                    errors.append(f"finding quote not verbatim in {e['x']}: {e['quote']!r}")
+                    continue
+                e.update(date=p["date_cst"], url=p["url"], source="X post")
+                del e["x"]
+            else:
+                tid = e.pop("transcript")
+                path = ROOT / "sources" / "videos" / "transcripts" / f"{tid}.md"
+                if path.exists():
+                    texts.setdefault(tid, norm(path.read_text(encoding="utf-8")))
+                    if norm(e["quote"]) not in texts[tid]:
+                        errors.append(f"finding quote not in transcript {tid}: {e['quote']!r}")
+                else:
+                    print(f"warning: transcript {tid} not on disk; finding quote not checked")
+            ev.append(e)
+        out.append(dict(f, evidence=ev))
+    return out
+
+
 CHRONICLE = ROOT / "CHRONICLE.md"
 REPO_URL = "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md"
 LENS_HEADINGS = {
@@ -487,6 +553,9 @@ ZH_FILE = ROOT / "tools" / "i18n_zh.json"
 def displayed_strings(data):
     """Site text written by us that the page shows. His quotes are excluded: they stay in English."""
     out = []
+    for f in data["findings"]:
+        out += [f["title"], f["why"]]
+        out += [x for e in f["evidence"] for x in (e["source"], e.get("note")) if x]
     for e in data["events"]:
         if not e["threads"]:
             continue
@@ -531,13 +600,14 @@ def main():
     for o in OTHER:
         events.append(dict(quotes=[], **o) if "quotes" not in o else dict(o))
     tracks = build_tracks(posts, errors)
+    findings = build_findings(posts, errors)
     if errors:
         print("\n".join(errors))
         sys.exit(1)
     events.sort(key=lambda e: e["date"])
     read_posts = sum(1 for p in posts.values() if p["year"] in READ_YEARS)
     total_posts = sum(1 for p in posts.values() if p["year"] >= 2022)
-    data = dict(updated="2026-11-11", events=events, threads=THREADS, periods=PERIODS, tracks=tracks,
+    data = dict(updated="2026-11-11", events=events, threads=THREADS, periods=PERIODS, tracks=tracks, findings=findings,
                 attention=build_attention(posts, events),
                 posts_read=read_posts, posts_total=total_posts)
     zh_all = json.loads(ZH_FILE.read_text(encoding="utf-8"))

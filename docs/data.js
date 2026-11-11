@@ -3499,6 +3499,142 @@ window.CHRONICLE = {
    "reading": "Not a steady climb. For code he cares about, his own practice stays at or below \"reads every change\" for three years, and in 2025 even drops to mostly autocomplete, while his 2023 forecast pointed to \"~pass-through\". From February 2025 he splits by stakes: throwaway projects go to the top. The real jump for code he cares about comes in December 2025, and even then he says to watch the agents closely. By March 2026 he types no code at all, yet for production he still says \"don't do this in prod!\": the top step stays reserved for throwaway projects."
   }
  ],
+ "findings": [
+  {
+   "title": "His own coding didn't climb steadily toward AI. It dipped, then jumped.",
+   "why": "The year he named vibe coding, his serious code was still mostly autocomplete. The jump came in December 2025.",
+   "evidence": [
+    {
+     "quote": "reviewing and editing the generated diffs",
+     "date": "2024-08-24",
+     "url": "https://x.com/karpathy/status/1827143768459637073",
+     "source": "X post"
+    },
+    {
+     "quote": "the bread & butter (~75%?) of my LLM assistance continues to be just (Cursor) tab complete",
+     "date": "2025-08-25",
+     "url": "https://x.com/karpathy/status/1959703967694545296",
+     "source": "X post"
+    },
+    {
+     "quote": "80% agent coding and 20% edits+touchups in December",
+     "date": "2026-01-27",
+     "url": "https://x.com/karpathy/status/2015883857489522876",
+     "source": "X post"
+    },
+    {
+     "date": "2026-03-20",
+     "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+     "source": "No Priors interview (third-party transcript)",
+     "quote": "I don't think I've typed like a line of code probably since December"
+    }
+   ]
+  },
+  {
+   "title": "Even at peak automation, he kept a line between throwaway and production code.",
+   "why": "The headline is \"he stopped writing code\". The fine print is that production code still gets a different standard.",
+   "evidence": [
+    {
+     "quote": "throwaway weekend projects",
+     "date": "2025-02-03",
+     "url": "https://x.com/karpathy/status/1886192184808149383",
+     "source": "X post"
+    },
+    {
+     "quote": "watch them like a hawk",
+     "date": "2026-01-27",
+     "url": "https://x.com/karpathy/status/2015883857489522876",
+     "source": "X post"
+    },
+    {
+     "quote": "(but don't do this in prod!)",
+     "date": "2026-06-10",
+     "url": "https://x.com/karpathy/status/2064409694761054332",
+     "source": "X post"
+    }
+   ]
+  },
+  {
+   "title": "Checking didn't disappear when he stopped reading code. It moved into the setup.",
+   "why": "The human job shifts from reviewing output to designing the tests and metrics the agent must pass.",
+   "evidence": [
+    {
+     "quote": "It's about staring at the code",
+     "date": "2025-06-05",
+     "url": "https://x.com/karpathy/status/1930305209747812559",
+     "source": "X post"
+    },
+    {
+     "quote": "give it success criteria and watch it go",
+     "date": "2026-01-27",
+     "url": "https://x.com/karpathy/status/2015883857489522876",
+     "source": "X post"
+    },
+    {
+     "date": "2026-03-20",
+     "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+     "source": "No Priors interview (third-party transcript)",
+     "quote": "if you can't evaluate then you can't auto research it"
+    }
+   ]
+  },
+  {
+   "title": "In five months he went from \"learn along the way\" to \"remove yourself as the bottleneck\".",
+   "why": "He keeps one thing for the human: understanding. He also admits his own code-writing skill is fading.",
+   "evidence": [
+    {
+     "quote": "I want to learn along the way and become better as a programmer, not just get served mountains of code",
+     "date": "2025-10-19",
+     "url": "https://x.com/karpathy/status/1979644538185752935",
+     "source": "X post"
+    },
+    {
+     "quote": "I am slowly starting to atrophy my ability to write code manually",
+     "date": "2026-01-27",
+     "url": "https://x.com/karpathy/status/2015883857489522876",
+     "source": "X post"
+    },
+    {
+     "date": "2026-03-20",
+     "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+     "source": "No Priors interview (third-party transcript)",
+     "quote": "you have to remove yourself as the bottleneck"
+    },
+    {
+     "date": "2026-04-29",
+     "url": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+     "source": "AI Ascent (AI-edited text he published)",
+     "quote": "You can outsource your thinking, but you can't outsource your understanding",
+     "note": "a line he quotes from someone else"
+    }
+   ]
+  },
+  {
+   "title": "He made the case for staying outside a frontier lab, then joined one.",
+   "why": "He argued both sides himself, so it isn't a contradiction. But from May 2026 on, read him as an insider.",
+   "evidence": [
+    {
+     "date": "2026-03-20",
+     "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+     "source": "No Priors interview (third-party transcript)",
+     "quote": "You're not a completely free agent"
+    },
+    {
+     "date": "2026-03-20",
+     "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+     "source": "No Priors interview (third-party transcript)",
+     "quote": "my judgment will inevitably start to drift",
+     "note": "on staying outside"
+    },
+    {
+     "quote": "I've joined Anthropic",
+     "date": "2026-05-19",
+     "url": "https://x.com/karpathy/status/2056753169888334312",
+     "source": "X post"
+    }
+   ]
+  }
+ ],
  "attention": {
   "buckets": [
    "2022 H1",
@@ -5818,6 +5954,21 @@ window.CHRONICLE = {
  "posts_read": 868,
  "posts_total": 868,
  "zh": {
+  "His own coding didn't climb steadily toward AI. It dipped, then jumped.": "他自己的编程并不是一路稳步交给 AI，而是先回落，再陡升。",
+  "The year he named vibe coding, his serious code was still mostly autocomplete. The jump came in December 2025.": "在他提出“氛围编程”的那一年，他认真对待的代码大多仍靠自动补全。真正的跃升发生在 2025 年 12 月。",
+  "X post": "X 帖子",
+  "No Priors interview (third-party transcript)": "No Priors 访谈（第三方文字稿）",
+  "Even at peak automation, he kept a line between throwaway and production code.": "即使自动化到了顶点，他仍在一次性代码和生产代码之间划了一条线。",
+  "The headline is \"he stopped writing code\". The fine print is that production code still gets a different standard.": "标题是“他不再写代码了”；细则是，生产代码仍要用另一套标准。",
+  "Checking didn't disappear when he stopped reading code. It moved into the setup.": "他不再读代码后，检查并没有消失，而是转移到了前期设置中。",
+  "The human job shifts from reviewing output to designing the tests and metrics the agent must pass.": "人的工作从审阅输出，转向设计智能体必须通过的测试和指标。",
+  "In five months he went from \"learn along the way\" to \"remove yourself as the bottleneck\".": "五个月内，他从“边做边学”走到了“把自己从瓶颈位置移开”。",
+  "He keeps one thing for the human: understanding. He also admits his own code-writing skill is fading.": "他为人保留了一样东西：理解。他也承认自己手写代码的能力正在退化。",
+  "AI Ascent (AI-edited text he published)": "AI Ascent（他发布的 AI 整理稿）",
+  "a line he quotes from someone else": "他引用的别人的一句话",
+  "He made the case for staying outside a frontier lab, then joined one.": "他论证过留在前沿实验室之外的理由，随后却加入了一家。",
+  "He argued both sides himself, so it isn't a contradiction. But from May 2026 on, read him as an insider.": "正反两面都是他自己讲的，所以这不算矛盾。但从 2026 年 5 月起，应把他当作内部人来读。",
+  "on staying outside": "谈留在外部的代价",
   "A Recipe for Training Neural Networks": "A Recipe for Training Neural Networks（训练神经网络的方法）",
   "Data inspection, simple baselines and incremental validation, against silent failures. Context before the main period.": "先检查数据、建立简单基线、逐步验证，以防止“静默失败”。属于正式时期之前的背景。",
   "State of GPT (talk)": "State of GPT（演讲）",
@@ -5876,7 +6027,6 @@ window.CHRONICLE = {
   "Agents write; he watches closely": "智能体写；他密切监督",
   "AI writes; he doesn't read it": "AI 写；他不看",
   "Copilot writes about 80% of his code. He still edits it.": "Copilot 写了他约 80% 的代码，但他仍会修改。",
-  "X post": "X 帖子",
   "His advice to developers: keep a human in the loop.": "他对开发者的建议：让人留在回路中。",
   "State of GPT talk (third-party transcript)": "State of GPT 演讲（第三方文字稿）",
   "A prediction about where coding is heading, not a description of his own work.": "这是对编程走向的预测，而不是对他自己工作方式的描述。",
@@ -5893,7 +6043,6 @@ window.CHRONICLE = {
   "Up from \"about 80% manual+autocomplete\" in November. Still: \"watch them like a hawk\".": "11 月时还是 \"about 80% manual+autocomplete\"（约 80% 手写加补全）。但仍要 \"watch them like a hawk\"（紧盯不放）。",
   "His name for professional agent work: leverage \"without any compromise on the quality of the software\".": "他给专业智能体工作起的名字：获得杠杆，但 \"without any compromise on the quality of the software\"（不牺牲软件质量）。",
   "He reviews agents' work \"depending on how much you care about that code\".": "他审阅智能体的工作 \"depending on how much you care about that code\"（看你有多在乎那段代码）。",
-  "No Priors interview (third-party transcript)": "No Priors 访谈（第三方文字稿）",
   "Written as an Anthropic employee about a new Claude model.": "这是他作为 Anthropic 员工，就一个新 Claude 模型写的。",
   "HackerTube, a weekend project. Manual work: an API key, a server, a domain.": "HackerTube，一个周末项目。手动部分只有：一个 API 密钥、一台服务器、一个域名。",
   "Coding with AI": "用 AI 编程",
