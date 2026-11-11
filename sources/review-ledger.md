@@ -8,7 +8,7 @@ This file records which collected material has actually been read, by period. It
 | 2023 | 186 / 186 (full) | T02: recommendations ≈37:11–40:11; Y10: tool use and LLM OS ≈00:28–00:45; Y07: one passage; T10: none | Drafted 2026-11-06 | Done 2026-11-09; see [LEARNING.md](../LEARNING.md) |
 | 2024 | 203 / 203 (full) | T11 (Sequoia, Mar): full; T04 (No Priors, Sep): full; T05 (Berkeley): Karpathy segment ≈04:04–22:10; Y08, Y09: none; GPU Mode: transcript missing | Drafted 2026-11-09 | Done 2026-11-09; see [LEARNING.md](../LEARNING.md) |
 | 2025 | 158 / 158 (full) | T07 (Dwarkesh): full; T06 (YC): located only, quoted via his own summary post; A04–A06 re-read live 2026-11-09, A03 in archived post; Y11, Y12: short keyword-located passages | Drafted 2026-11-09 | Done 2026-11-09 (Q2 open); see [LEARNING.md](../LEARNING.md) |
-| 2026 | 0 / 70 | T09 partial (earlier review) | Outline only | — |
+| 2026 | 70 / 70 (full, to Nov 2; archive taken Nov 6) | T08 (No Priors, Mar): full, third-party transcript; T09 (Sequoia AI Ascent, Apr): full, AI-edited text he published; A07 HackerTube: fetched live | Drafted 2026-11-10 | Pending |
 | pre-2022 | 0 / 144 (context screening) | A01 (earlier review) | Context paragraph | — |
 
 ## 2022 X pass (2026-11-06)
@@ -38,6 +38,13 @@ This file records which collected material has actually been read, by period. It
 - Y11 and Y12 (about 5h40m) not read in full: only Y11's closing advice (≈03:08:41, ≈03:30:34) and Y12's deep-research section (≈00:48:17–00:50:56).
 - Image-only content not in the archive: textbook diagram, GPT-4.5 poll images, Excalidraw board, bacterial-code image, nano banana outputs. Two X articles (Apr 8, Dec 20) are link-only in the archive.
 
+## 2026 X pass (2026-11-10)
+
+- Method: read `sources/x/2026.md` front to back (70 posts). Posts not cited are about personal life, films (Project Hail Mary), gifts, SpaceX, jokes, and short follow-ups already represented.
+- Long-form: T08 and T09 read in full. T09 is an LLM-written cleanup he published, so it is not verbatim speech. A07 fetched live; no local copy.
+- Web search on 2026-11-10 found no talk or interview after May 19 (joined Anthropic). Viral November "Karpathy said" quotes were not traceable to him and were not used.
+- Not read: image-only posts, the quoted tweet in the May 1 post, linked gists and repos (LLM wiki idea file, autoresearch, microGPT).
+
 ## Next period
 
-2026 (open period to 2026-11-06): 70 posts, plus T08 (No Priors 2026), T09 (Sequoia 2026, AI-edited text) and HackerTube.
+None. All periods from 2022 have been read. The period is open after Nov 6, 2026.

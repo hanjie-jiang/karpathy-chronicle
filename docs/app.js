@@ -71,7 +71,7 @@
     const S = T.stations;
     const pts = S.filter((s) => s.kind === "practice" || s.kind === "feeling" || s.n === 3);
     $("track-q").textContent = T.question;
-    $("track-lede").textContent = "In 2023 he forecast that human oversight of code would fade to almost nothing. For code he cares about, his own practice stayed low until December 2025. Hover or tap a point to read his words.";
+    $("track-lede").textContent = "In 2023 he forecast that human oversight of code would fade to almost nothing. For code he cares about, his own practice stayed low until December 2025, then jumped: by March 2026 he typed no code, but still says not to stop looking at production code. Hover or tap a point to read his words.";
     const idle = `<p class="nt">Hover or tap a point on the chart to read what he said and when.</p>`;
     $("tcard").innerHTML = idle;
 
@@ -95,7 +95,7 @@
       const narrow = W < 640;
       const H = narrow ? 290 : 360, L = narrow ? 70 : 156, R = narrow ? 12 : 28, TOP = 44, BOT = 34;
       const Y = (k) => TOP + ((4 - k) * (H - TOP - BOT)) / 3;
-      const a = Date.parse("2022-09-01"), b = Date.parse("2026-03-15");
+      const a = Date.parse("2022-09-01"), b = Date.parse("2026-12-01");
       const X = (d) => L + ((Date.parse(d) - a) / (b - a)) * (W - L - R);
       const lab = narrow ? TINY : SHORT;
       let g = "";
@@ -110,8 +110,6 @@
         g += `<line class="grid" x1="${xx}" x2="${xx}" y1="${TOP - 8}" y2="${H - BOT + 6}" stroke-dasharray="2 5"/>`;
         g += `<text class="ax" x="${xx}" y="${H - 10}" text-anchor="middle">${y}</text>`;
       }
-      const x26 = X("2026-01-01");
-      g += `<rect x="${x26}" y="${TOP - 8}" width="${W - R - x26}" height="${H - BOT - TOP + 14}" fill="var(--hatch)" opacity=".7"/>`;
 
       // his practice: step line + soft area, per lane
       const lane = (ln) => S.filter((s) => s.kind === "practice" && s.lane === ln);
@@ -144,8 +142,8 @@
         const tab = care.find((s) => s.level === 1);
         g += `<text class="cl q" x="${X(tab.date) - 12}" y="${Y(1) - 12}" text-anchor="end">“tab complete”</text>`;
         g += `<text class="cl" x="${fex - 8}" y="${TOP - 18}" text-anchor="end">“never felt this much behind”</text>`;
-        const last = care[care.length - 1];
-        g += `<text class="cl q" x="${X(last.date) - 14}" y="${Y(last.level) - 14}" text-anchor="end">“80% agent coding”</text>`;
+        const a80 = care.find((s) => s.quote.startsWith("80%"));
+        g += `<text class="cl q" x="${X(a80.date) - 14}" y="${Y(a80.level) - 14}" text-anchor="end">“80% agent coding”</text>`;
       }
 
       // points (with a larger invisible hit area)

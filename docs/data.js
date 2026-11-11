@@ -2526,19 +2526,337 @@ window.CHRONICLE = {
    "status": "read"
   },
   {
+   "date": "2026-01-08",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2009037707918626874",
+   "quotes": [],
+   "note": "Nanochat scaling laws and a \"time to GPT-2\" leaderboard.",
+   "threads": [],
+   "status": "read"
+  },
+  {
    "date": "2026-01-27",
    "lens": "coding",
    "kind": "post",
    "url": "https://x.com/karpathy/status/2015883857489522876",
    "quotes": [
-    "watch them like a hawk",
-    "make wrong assumptions on your behalf"
+    "80% agent coding and 20% edits+touchups in December",
+    "watch them like a hawk"
    ],
-   "note": "Agent mistakes are now conceptual; CLAUDE.md instructions only partly fix them. Source of community \"Karpathy skills\" files.",
+   "note": "The proportions flip in one month. Agent mistakes are now conceptual, so code he cares about is still watched closely.",
    "threads": [
     "oversight"
    ],
-   "status": "spot"
+   "status": "read"
+  },
+  {
+   "date": "2026-01-31",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2017442712388309406",
+   "quotes": [
+    "a complete mess of a computer security nightmare at scale"
+   ],
+   "note": "On a social network of 150,000 agents: overhyped today, not in principle.",
+   "threads": [
+    "empower"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2026-02-01",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2017703360393318587",
+   "quotes": [
+    "time to GPT-2"
+   ],
+   "note": "Projects, Jan–Apr:.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-02-02",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2018043254986703167",
+   "quotes": [
+    "Works great and you will lose a lot fewer brain cells"
+   ],
+   "note": "\"We should bring back RSS… Works great and you will lose a lot fewer brain cells\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-02-05",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2019137879310836075",
+   "quotes": [
+    "acting as oversight",
+    "without any compromise on the quality of the software"
+   ],
+   "note": "Names \"agentic engineering\": the professional, overseen version of vibe coding.",
+   "threads": [
+    "oversight"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2026-02-12",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2021694437152157847",
+   "quotes": [
+    "GPT in 243 lines of pure, dependency-free Python"
+   ],
+   "note": "MicroGPT, \"GPT in 243 lines of pure, dependency-free Python\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-02-12",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2021633574089416993",
+   "quotes": [
+    "with tests proving equivalent results",
+    "Maybe you don't download, configure and take dependency on a giant monolithic library"
+   ],
+   "note": "\"Maybe you don't download, configure and take dependency on a giant monolithic library… you point your agent at it and rip out the exact part you need… 'Libraries are over, LLMs are the new compiler' :)\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-02-17",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2023476423055601903",
+   "quotes": [
+    "LLMs are *especially* good at translation compared to de-novo generation because 1) the original code base acts as a kind of highly detailed prompt, and 2) as a reference to write concrete tests with respect to"
+   ],
+   "note": "\"LLMs are especially good at translation compared to de-novo generation because 1) the original code base acts as a kind of highly detailed prompt, and 2) as a reference to write concrete tests with respect to\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-02-20",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2024583544157458452",
+   "quotes": [
+    "highly custom, ephemeral apps"
+   ],
+   "note": "No more app store: services become sensors and actuators that agents glue together on the spot.",
+   "threads": [
+    "computer"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2026-02-21",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2024987174077432126",
+   "quotes": [
+    "giving my private data/keys to 400K lines of vibe coded monster that is being actively attacked at scale is not very appealing at all"
+   ],
+   "note": "On OpenClaw: \"giving my private data/keys to 400K lines of vibe coded monster that is being actively attacked at scale is not very appealing at all\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-02-21",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2024997757757653224",
+   "quotes": [
+    "First there was chat, then there was code, now there is claw"
+   ],
+   "note": "Earlier: \"First there was chat, then there was code, now there is claw\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-02-25",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2026360908398862478",
+   "quotes": [
+    "Build. For. Agents."
+   ],
+   "note": "A checklist: Markdown docs, skills, a CLI or MCP for every product.",
+   "threads": [
+    "computer"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2026-02-26",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2026731645169185220",
+   "quotes": [
+    "coding agents basically didn’t work before December and basically work since"
+   ],
+   "note": "December 2025 as a threshold in the models, not just in his habits.",
+   "threads": [
+    "oversight"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2026-02-28",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2027521323275325622",
+   "quotes": [
+    "it doesn't work and it's a mess",
+    "They are very good at implementing any given well-scoped and described idea but they don't creatively generate them"
+   ],
+   "note": "\"the agents' ideas are just pretty bad out of the box… They are very good at implementing any given well-scoped and described idea but they don't creatively generate them\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-02-28",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2027501331125239822",
+   "quotes": [
+    "If you're too conservative, you're leaving leverage on the table. If you're too aggressive, you're net creating more chaos than doing useful work",
+    "80% of the time getting work done in the setup you're comfortable with"
+   ],
+   "note": "He suggests \"80% of the time getting work done in the setup you're comfortable with… and 20% exploration of what might be the next step up\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-03-06",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2029696850366971921",
+   "quotes": [
+    "as just another tool",
+    "clearly people are capable of some weight-based updates (my personal suspicion - mostly during sleep)"
+   ],
+   "note": "But \"clearly people are capable of some weight-based updates (my personal suspicion - mostly during sleep)\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-03-06",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2029701092347630069",
+   "quotes": [
+    "I am slightly suspicious about about goodharting"
+   ],
+   "note": "He distrusts a dataset that works too well: \"I am slightly suspicious about about goodharting\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-03-08",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2030371219518931079",
+   "quotes": [
+    "the human iterates on the prompt (.md)"
+   ],
+   "note": "autoresearch: agents run training experiments in a loop; the human writes the instructions.",
+   "threads": [
+    "oversight",
+    "verify"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2026-03-10",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2031135152349524125",
+   "quotes": [],
+   "note": "Ten days later, autoresearch found about 20 real improvements in a repo he had tuned by hand: \"It's not novel, ground-breaking 'research' (yet), but all the adjustments are 'real'\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-03-12",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2031767720933634100",
+   "quotes": [
+    "the basic unit of interest is not one file but one agent. It’s still programming"
+   ],
+   "note": "\"the basic unit of interest is not one file but one agent. It’s still programming\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-03-12",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2031792523187040643",
+   "quotes": [
+    "My autoresearch labs got wiped out in the oauth outage"
+   ],
+   "note": "\"My autoresearch labs got wiped out in the oauth outage… Intelligence brownouts will be interesting\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "quotes": [],
+   "date": "2026-03-20",
+   "lens": "coding",
+   "kind": "talk",
+   "title": "No Priors interview, \"Skill Issue\"",
+   "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+   "note": "No code typed since December; remove yourself as the bottleneck; autoresearch; jokes outside the RL; the case for and against joining a frontier lab; explaining to agents, not people. Read in full (third-party transcript).",
+   "threads": [
+    "oversight",
+    "verify",
+    "empower"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2026-03-25",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2036487306585268612",
+   "quotes": [
+    "this has to be re-evaluated"
+   ],
+   "note": "After a supply-chain attack: fewer dependencies, let an LLM \"yoink\" the functionality instead.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-03-26",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2036836816654147718",
+   "quotes": [
+    "A single question from 2 months ago about some topic can keep coming up as some kind of a deep interest of mine"
+   ],
+   "note": "On current memory features: \"A single question from 2 months ago about some topic can keep coming up as some kind of a deep interest of mine\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-03-27",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2037200624450936940",
+   "quotes": [
+    "the hardest part by far was not the code itself",
+    "build menugen"
+   ],
+   "note": "\"the entire DevOps lifecycle has to become code… it's now just barely technically possible\"",
+   "threads": [],
+   "status": "read"
   },
   {
    "date": "2026-03-28",
@@ -2552,32 +2870,251 @@ window.CHRONICLE = {
    "threads": [
     "empower"
    ],
-   "status": "spot"
+   "status": "read"
+  },
+  {
+   "date": "2026-03-31",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2038849654423798197",
+   "quotes": [
+    "have to change"
+   ],
+   "note": "On npm: the defaults of package managers \"have to change\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-04-03",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2039805659525644595",
+   "quotes": [
+    "more into manipulating knowledge"
+   ],
+   "note": "The LLM wiki: an LLM compiles raw sources into a Markdown wiki it maintains, and answers are filed back.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-04-05",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2040470801506541998",
+   "quotes": [
+    "you just share the idea, then the other person's agent customizes & builds it"
+   ],
+   "note": "He then shared it as an \"idea file\", not code: \"you just share the idea, then the other person's agent customizes & builds it\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-04-05",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2040549459193704852",
+   "quotes": [
+    "increasing the visibility, legibility and accountability of their governments"
+   ],
+   "note": "AI lets citizens read what governments publish.",
+   "threads": [
+    "empower"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2026-04-05",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2040572272944324650",
+   "quotes": [
+    "puts *you* in full control"
+   ],
+   "note": "Personal memory as files you own and can inspect, usable with any AI.",
+   "threads": [
+    "empower"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2026-04-10",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2042334451611693415",
+   "quotes": [
+    "The goldmines are elsewhere"
+   ],
+   "note": "Jaggedness has two causes: verifiable rewards, and what labs choose to train for revenue.",
+   "threads": [
+    "verify"
+   ],
+   "status": "read"
   },
   {
    "quotes": [],
-   "date": "2026-04-30",
+   "date": "2026-04-29",
    "lens": "coding",
    "kind": "talk",
-   "title": "Sequoia Ascent 2026 (edited text)",
+   "title": "Sequoia AI Ascent 2026",
    "url": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
-   "note": "Retrospectively describes increased trust in agents around December 2025. AI-edited excerpt, not verbatim.",
+   "note": "Vibe coding raises the floor, agentic engineering the ceiling; some apps (MenuGen) shouldn't exist; jaggedness = verifiable plus \"labs care\"; you can't outsource your understanding. Read in full in the AI-edited text he published, not verbatim.",
+   "threads": [
+    "oversight",
+    "verify"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2026-05-01",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2049903821095354523",
+   "quotes": [
+    "revenue/TAM dictates what the frontier labs choose to package into training data distributions during RL. You're either in the data distribution",
+    "Still not 100% satisfied with this"
+   ],
+   "note": "He adds: \"Still not 100% satisfied with this\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-05-01",
+   "lens": "agency",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2049907410303865030",
+   "quotes": [],
+   "note": "\"I am becoming the bottleneck of even knowing what we are trying to build… you cannot be a good director if you do not understand\" (T09; see also.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-05-12",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2053872850101285137",
+   "quotes": [
+    "audio is the human-preferred input to AIs but vision"
+   ],
+   "note": "Earlier: \"audio is the human-preferred input to AIs but vision… is the preferred output from them… hot tip try ask for HTML\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-05-19",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2056753169888334312",
+   "quotes": [
+    "I've joined Anthropic"
+   ],
+   "note": "Joins a frontier lab two months after arguing the case for staying independent.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-06-10",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2064409694761054332",
+   "quotes": [
+    "never felt this tempting to stop looking at the code at all"
+   ],
+   "note": "On a new Claude model, as an Anthropic employee, with the caveat \"don't do this in prod!\"",
    "threads": [
     "oversight"
    ],
-   "status": "spot"
+   "status": "read"
+  },
+  {
+   "date": "2026-06-24",
+   "lens": "milestone",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2069547676849557725",
+   "quotes": [],
+   "note": "Conflict of interest.",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-07-22",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2079610838143623371",
+   "quotes": [
+    "a nice long ramble session",
+    "you improve the mind meld"
+   ],
+   "note": "For input, \"a nice long ramble session\" by voice, so \"you improve the mind meld\"",
+   "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2026-10-02",
+   "lens": "coding",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2105819303471976479",
+   "quotes": [
+    "rise up the abstractions into oversight and understanding"
+   ],
+   "note": "As agents do the legwork, his tools for understanding become diagrams, HTML pages and explainer videos.",
+   "threads": [
+    "verify",
+    "oversight"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2026-10-12",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2109361546505966046",
+   "quotes": [
+    "a sharp funnel"
+   ],
+   "note": "The capability gap widens: about 6B barely touched, 20M professionals see it, 5,000 insiders see more.",
+   "threads": [
+    "empower"
+   ],
+   "status": "read"
+  },
+  {
+   "quotes": [],
+   "date": "2026-10-31",
+   "lens": "practice",
+   "kind": "writing",
+   "title": "HackerTube",
+   "url": "https://karpathy.bearblog.dev/hacker-tube/",
+   "note": "A video site built in about 2 hours by talking to Claude only: \"I don't actually _do_ anything resembling traditional engineering anymore\".",
+   "threads": [
+    "oversight"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2026-11-02",
+   "lens": "practice",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/2116957135661945283",
+   "quotes": [
+    "I only talk to Claude and have it do everything"
+   ],
+   "note": "HackerTube: his only manual work was an API key, a server and a domain name.",
+   "threads": [
+    "oversight"
+   ],
+   "status": "read"
   }
  ],
  "threads": [
   {
    "id": "oversight",
    "title": "How much to oversee AI-written code",
-   "reading": "Our reading: not a straight line toward less oversight. Advice depends on stakes and on the tools of the moment. He limits 'vibe coding' to throwaway projects and, for code you care about, still says to watch closely. In 2025 he sorts his tools by stakes, and at year end says he feels behind."
+   "reading": "Our reading: not a straight line toward less oversight. Advice depends on stakes and on the tools of the moment. He limits 'vibe coding' to throwaway projects and, for code you care about, still says to watch closely. In 2025 he sorts his tools by stakes, and at year end says he feels behind. In 2026 agents write nearly everything, but 'don't do this in prod!' keeps the stakes split alive."
   },
   {
    "id": "verify",
    "title": "Verification as the bottleneck",
-   "reading": "Our reading: a recurring concern from 2019 onward, inferred by us at first. In 2025 he states it himself: coding 'is about staring at the code', and verifiability decides what AI automates."
+   "reading": "Our reading: a recurring concern from 2019 onward, inferred by us at first. In 2025 he states it himself: coding 'is about staring at the code', and verifiability decides what AI automates. In 2026 checking moves into the setup: success criteria, tests first, metrics an agent can climb."
   },
   {
    "id": "computer",
@@ -2587,7 +3124,7 @@ window.CHRONICLE = {
   {
    "id": "empower",
    "title": "Empowerment and its risks",
-   "reading": "Our reading: excitement about open tools and individual reach sits beside warnings about attention-exploiting apps and concentration. Both are held at once."
+   "reading": "Our reading: excitement about open tools and individual reach sits beside warnings about attention-exploiting apps and concentration. Both are held at once. In 2026 he adds citizens auditing governments and personal data you own, then joins a frontier lab."
   }
  ],
  "periods": [
@@ -2666,17 +3203,22 @@ window.CHRONICLE = {
   },
   {
    "id": "2026",
-   "title": "Changing coding practice (open period)",
+   "title": "Agentic engineering, out of the loop, into a frontier lab",
    "range": [
     "2026-01-01",
     "2026-11-06"
    ],
-   "status": "outline",
-   "coverage": "A few posts and one edited talk text read. Full X read not started (70 posts).",
-   "summary": "Agents are a large net gain but still need close watching for code you care about.",
-   "interpretation": [],
-   "chapter": "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md#2026-reported-changes-in-coding-practice-with-original-recordings-still-to-verify",
-   "chapter_html": "<p><strong>Observation — author-published AI-edited excerpt, T09.</strong> The April 30 <a href=\"https://karpathy.bearblog.dev/sequoia-ascent-2026/\" target=\"_blank\" rel=\"noopener\">Sequoia text</a> retrospectively describes increased trust around December 2025 and revisits MenuGen's need for an app interface. It is not a verbatim transcript.</p>\n<p><strong>Interpretation to test:</strong> distinguish changes in his observed tool performance, working methods and general beliefs; these need not move together. The March <a href=\"https://www.youtube.com/watch?v=kwSVtQ7dziU\" target=\"_blank\" rel=\"noopener\">No Priors recording</a>, 2026 X candidates and October 31 <a href=\"https://karpathy.bearblog.dev/hacker-tube/\" target=\"_blank\" rel=\"noopener\">HackerTube</a> remain unreviewed. This is an open period through November 6, not a completed endpoint.</p>"
+   "status": "read",
+   "coverage": "All 70 X posts read (to Nov 2). No Priors interview and Sequoia AI Ascent text read in full (third-party and AI-edited transcripts); HackerTube post read. Open period.",
+   "summary": "Coding agents \"basically work\" since December: he goes from 80% agent coding to \"I only talk to Claude\". He builds autoresearch and an LLM wiki, names \"agentic engineering\", and joins Anthropic in May.",
+   "interpretation": [
+    "Verification moves from reading code to designing checks: success criteria, tests first, metrics an agent can climb. The stakes split survives (\"don't do this in prod!\").",
+    "\"Remove yourself as the bottleneck\" partly reverses his 2025 wish to learn along the way. The human job becomes understanding, and he admits his code-writing ability is atrophying.",
+    "Jaggedness = verifiable × what labs choose to train for revenue. The capability gap becomes a \"sharp funnel\".",
+    "He argued in March for staying independent, then joined a frontier lab in May. After that he posts far less, partly about his employer's products."
+   ],
+   "chapter": "https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/CHRONICLE.md#2026-agentic-engineering-taking-himself-out-of-the-loop-and-joining-a-frontier-lab",
+   "chapter_html": "<p><strong>Coverage.</strong> All 70 main-timeline X posts from 2026 (to Nov 2; archive taken Nov 6) were read in full on 2026-11-10. Long-form sources:</p>\n<ul><li>\n<a href=\"https://www.youtube.com/watch?v=kwSVtQ7dziU\" target=\"_blank\" rel=\"noopener\">No Priors, \"Skill Issue\"</a> (T08, March 20): read in full, in a third-party cleaned transcript whose publisher warns errors remain. Not timestamped.\n</li><li>\n<a href=\"https://karpathy.bearblog.dev/sequoia-ascent-2026/\" target=\"_blank\" rel=\"noopener\">Sequoia AI Ascent 2026 fireside chat</a> (T09, about April 29; text posted April 30): read in full, in the text he published. He says an LLM (Codex 5.5) wrote both the summary and the \"cleaned up\" transcript, using his recent posts as extra context, and that he read it. So it is not verbatim speech. Quotes below come from the edited transcript, not the summary.\n</li><li>\n<a href=\"https://karpathy.bearblog.dev/hacker-tube/\" target=\"_blank\" rel=\"noopener\">HackerTube</a> (A07, October 31): fetched live on 2026-11-10.\n</li></ul>\n<p>A web search on 2026-11-10 found no newer talk or interview, and none after he joined Anthropic. Viral \"Karpathy said\" quotes from November were not traceable to him, and one has been publicly fact-checked as fabricated, so none is used here. Details are in the <a href=\"https://github.com/hanjie-jiang/karpathy-chronicle/blob/main/sources/review-ledger.md\" target=\"_blank\" rel=\"noopener\">review ledger</a>.</p>\n<h4>Context</h4>\n<ul><li>\n<strong>Posting pattern.</strong> 59 of the 70 posts fall between January and mid-May. From the day he joined Anthropic (May 19) he posted 11 times in almost six months.\n</li><li>\n<strong>Projects, Jan–Apr:</strong> nanochat scaling laws and a \"time to GPT-2\" leaderboard (<a href=\"https://x.com/karpathy/status/2009037707918626874\" target=\"_blank\" rel=\"noopener\">Jan 8</a>, <a href=\"https://x.com/karpathy/status/2017703360393318587\" target=\"_blank\" rel=\"noopener\">Feb 1</a>). microGPT, \"GPT in 243 lines of pure, dependency-free Python\" (<a href=\"https://x.com/karpathy/status/2021694437152157847\" target=\"_blank\" rel=\"noopener\">Feb 12</a>). Dobby, a home-automation \"claw\" (T08). autoresearch (<a href=\"https://x.com/karpathy/status/2030371219518931079\" target=\"_blank\" rel=\"noopener\">Mar 8</a>). An LLM wiki for personal research (<a href=\"https://x.com/karpathy/status/2039805659525644595\" target=\"_blank\" rel=\"noopener\">Apr 3</a>).\n</li><li>\n<strong>Talks:</strong> No Priors (March) and Sequoia AI Ascent (April). On No Priors he weighed joining a frontier lab against staying independent (see below).\n</li><li>\n<strong>Career change:</strong> \"Personal update: I've joined Anthropic… get back to R&amp;D. I remain deeply passionate about education and plan to resume my work on it in time\" (<a href=\"https://x.com/karpathy/status/2056753169888334312\" target=\"_blank\" rel=\"noopener\">May 19</a>). Press reports say he leads a pretraining research team; we have not seen that in his own words.\n</li><li>\n<strong>After May:</strong> posts on new Claude models and products, working habits (voice rambles, output formats), the capability gap, and HackerTube.\n</li><li>\n<strong>Conflict of interest.</strong> From May 19 his praise of Claude models and products (<a href=\"https://x.com/karpathy/status/2064409694761054332\" target=\"_blank\" rel=\"noopener\">Jun 10</a>, <a href=\"https://x.com/karpathy/status/2069547676849557725\" target=\"_blank\" rel=\"noopener\">Jun 24</a>) comes from an Anthropic employee. Read those posts as an insider's view, not an independent assessment.\n</li></ul>\n<h4>AI fundamentals and limits</h4>\n<ul><li>\n<strong>The December threshold, stated as a fact about the models.</strong> \"LLM agent capabilities (Claude &amp; Codex especially) have crossed some kind of threshold of coherence around December 2025 and caused a phase shift in software engineering\" (<a href=\"https://x.com/karpathy/status/2015883857489522876\" target=\"_blank\" rel=\"noopener\">Jan 27</a>). More strongly: \"coding agents basically didn’t work before December and basically work since\" (<a href=\"https://x.com/karpathy/status/2026731645169185220\" target=\"_blank\" rel=\"noopener\">Feb 26</a>). In the Sequoia text: \"I couldn't remember the last time I corrected it. I started trusting the system more and more\" (T09).\n</li><li>\n<strong>What the agents still get wrong (January).</strong> \"The mistakes have changed a lot - they are not simple syntax errors anymore, they are subtle conceptual errors that a slightly sloppy, hasty junior dev might do… models make wrong assumptions on your behalf and just run along with them without checking.\" They \"don't manage their confusion… they don't push back when they should\", and \"they bloat abstractions\" (<a href=\"https://x.com/karpathy/status/2015883857489522876\" target=\"_blank\" rel=\"noopener\">Jan 27</a>).\n</li><li>\n<strong>Good at carrying out ideas, bad at having them.</strong> Eight agents running nanochat experiments: \"it doesn't work and it's a mess\". \"the agents' ideas are just pretty bad out of the box… They are very good at implementing any given well-scoped and described idea but they don't creatively generate them\" (<a href=\"https://x.com/karpathy/status/2027521323275325622\" target=\"_blank\" rel=\"noopener\">Feb 28</a>). Ten days later, autoresearch found about 20 real improvements in a repo he had tuned by hand: \"It's not novel, ground-breaking 'research' (yet), but all the adjustments are 'real'\" (<a href=\"https://x.com/karpathy/status/2031135152349524125\" target=\"_blank\" rel=\"noopener\">Mar 10</a>).\n</li><li>\n<strong>Jaggedness now has two causes: verifiability and money.</strong> In 2025 his explanation was verifiability. In 2026 he adds what labs choose to train. Search, writing and advice lag partly because of \"reinforcement learning and its use of verifiable rewards\", but also because \"these use cases are not sufficiently prioritized by the companies… The goldmines are elsewhere\" (<a href=\"https://x.com/karpathy/status/2042334451611693415\" target=\"_blank\" rel=\"noopener\">Apr 10</a>). \"revenue/TAM dictates what the frontier labs choose to package into training data distributions during RL. You're either in the data distribution… and flying or you're off-roading in the jungle with a machete\". He adds: \"Still not 100% satisfied with this\" (<a href=\"https://x.com/karpathy/status/2049903821095354523\" target=\"_blank\" rel=\"noopener\">May 1</a>). The October version: \"Capability peaks in domains that are digital, verifiable and economically valuable\" (<a href=\"https://x.com/karpathy/status/2109361546505966046\" target=\"_blank\" rel=\"noopener\">Oct 12</a>). His examples are the same joke every model has told for years (\"It's outside of the reinforcement learning\", T08) and a model that tells you to walk to the car wash (T09).\n</li><li>\n<strong>Little spillover from code to everything else.</strong> Asked whether being better at code makes models better at everything: \"I don't think that's happening… maybe we're seeing a little bit of that but not a satisfying amount\" (T08).\n</li><li>\n<strong>Taste is outside the training too.</strong> \"When I look at the code, sometimes I get a heart attack… It works, but it is gross\". Asked to simplify microGPT further, the models \"can't do it… You feel like you are outside the RL circuits\". He sees no fundamental barrier: \"The labs just haven't done it yet\" (T09).\n</li><li>\n<strong>Memory and continual learning.</strong> Memory could go into RL \"as just another tool\". But \"clearly people are capable of some weight-based updates (my personal suspicion - mostly during sleep)\" (<a href=\"https://x.com/karpathy/status/2029696850366971921\" target=\"_blank\" rel=\"noopener\">Mar 6</a>). On current memory features: \"A single question from 2 months ago about some topic can keep coming up as some kind of a deep interest of mine\" (<a href=\"https://x.com/karpathy/status/2036836816654147718\" target=\"_blank\" rel=\"noopener\">Mar 26</a>). Touching weights, not just context, is \"not a fully developed science\" (T08).\n</li><li>\n<strong>Speciation.</strong> He expects smaller specialized models that \"still have the cognitive core\", but sees \"a monoculture of models\" for now (T08). This continues the 2025 cognitive-core idea.\n</li><li>\n<strong>Ghosts, restated as practical advice.</strong> \"If you yell at them, they are not going to work better or worse. They are statistical simulation circuits\". The posture is \"being suspicious of the system and figuring it out empirically over time\" (T09).\n</li><li>\n<strong>Recursive self-improvement as his research interest.</strong> \"what I'm more interested in is this idea of recursive self-improvement… LLMs improving LLMs\" (T08). On autoresearch at frontier labs: \"It's the final boss battle… doing it is 'just engineering' and it's going to work\" (<a href=\"https://x.com/karpathy/status/2031135152349524125\" target=\"_blank\" rel=\"noopener\">Mar 10</a>).\n</li><li>\n<strong>The capability gap, measured in people.</strong> In April, two groups were \"speaking past each other\": free-tier users who laugh at quirks, and professionals using frontier agents in code and math (<a href=\"https://x.com/karpathy/status/2042334451611693415\" target=\"_blank\" rel=\"noopener\">Apr 10</a>). In October the gap is \"<em>widening</em>\" into \"a sharp funnel\": about 6B people \"have barely come in contact with LLMs\", about 1–2B casual users, about 20M professionals in math and code, and \"~5,000 people… with access to frontier-grade systems internally\". \"Meanwhile, human review and comprehension are starting to fall behind\" (<a href=\"https://x.com/karpathy/status/2109361546505966046\" target=\"_blank\" rel=\"noopener\">Oct 12</a>). This is the first time he writes as one of the roughly 5,000 insiders.\n</li><li>\n<strong>Digital before physical.</strong> \"atoms are just a million times harder\". Digital work will see \"a huge amount of unhobbling\" first, then the interfaces between the digital and physical worlds (sensors and actuators), then robotics (T08). Open models trail closed ones by \"maybe six months, eight months\", which he calls \"a pretty decent power balance\" (T08).\n</li></ul>\n<h4>Human agency and empowerment</h4>\n<ul><li>\n<strong>His stated case for independence, two months before joining a lab.</strong> Inside a frontier lab \"You're not a completely free agent… There are certain things that you can't say\", and \"I feel a bit more aligned with humanity in a certain sense outside of a Frontier Lab\". The counterweight: \"if you're outside of the Frontier Lab, your judgment fundamentally will start to drift… it's something I'm nervous about\". His conclusion: \"the ideal solution maybe is going back and forth\" (T08). On May 19 he joined Anthropic. He did not publicly explain the move beyond \"get back to R&amp;D\".\n</li><li>\n<strong>Against concentration.</strong> \"centralization has a very poor track record\". \"I don't want it to be closed doors with two people or three people… I almost wish there were more labs\" (T08).\n</li><li>\n<strong>People holding governments to account.</strong> \"I am bullish on people (empowered by AI) increasing the visibility, legibility and accountability of their governments\". Accountability \"has been constrained by intelligence\", not access. \"the same tools can easily cut the other way\", but \"I lean optimistic overall\" (<a href=\"https://x.com/karpathy/status/2040549459193704852\" target=\"_blank\" rel=\"noopener\">Apr 5</a>).\n</li><li>\n<strong>Personal data you control.</strong> On personal wikis, versus \"an AI that allegedly gets better the more you use it\": the memory is \"Explicit… Yours… File over app… BYOAI\". \"This approach to personalization puts <em>you</em> in full control\". \"'agent proficiency' is a CORE SKILL of the 21st century\" (<a href=\"https://x.com/karpathy/status/2040572272944324650\" target=\"_blank\" rel=\"noopener\">Apr 5</a>).\n</li><li>\n<strong>Understanding as the human bottleneck.</strong> He keeps returning to a line from someone else's tweet: \"You can outsource your thinking, but you can't outsource your understanding\". \"I am becoming the bottleneck of even knowing what we are trying to build… you cannot be a good director if you do not understand\" (T09; see also <a href=\"https://x.com/karpathy/status/2049907410303865030\" target=\"_blank\" rel=\"noopener\">May 1</a>, which quotes a post not in our archive).\n</li><li>\n<strong>Atrophy, admitted.</strong> \"I've already noticed that I am slowly starting to atrophy my ability to write code manually. Generation (writing code) and discrimination (reading code) are different capabilities in the brain\" (<a href=\"https://x.com/karpathy/status/2015883857489522876\" target=\"_blank\" rel=\"noopener\">Jan 27</a>).\n</li><li>\n<strong>Education goes through agents.</strong> For microGPT he started a video and a guide, then decided \"anyone could ask their agent to explain it… I'm not explaining to people anymore. I'm explaining it to agents\". The teacher's part is \"the few bits\": \"The things that agents can't do is your job now\" (T08). He calls it \"the end of teaching each other things, almost\" (T08). This is a large change for someone who said in 2025 that education was his answer to disempowerment. In May he still says he will \"resume my work on it in time\".\n</li><li>\n<strong>LLMs that argue anything.</strong> After an LLM spent four hours strengthening his blog argument, he asked it to argue the opposite, and it \"demolishes the entire argument\". They are \"extremely competent in arguing almost any direction… useful as a tool for forming your own opinions, just make sure to ask different directions and be careful with the sycophancy\" (<a href=\"https://x.com/karpathy/status/2037921699824607591\" target=\"_blank\" rel=\"noopener\">Mar 28</a>).\n</li><li>\n<strong>Slop and attention.</strong> \"I am bracing for 2026 as the year of the slopacolypse\" (<a href=\"https://x.com/karpathy/status/2015883857489522876\" target=\"_blank\" rel=\"noopener\">Jan 27</a>). \"We should bring back RSS… Works great and you will lose a lot fewer brain cells\" (<a href=\"https://x.com/karpathy/status/2018043254986703167\" target=\"_blank\" rel=\"noopener\">Feb 2</a>). HackerTube is the same impulse as a product: YouTube's feed was \"an enshittified wall of slop… it definitely does not work for me\" (A07).\n</li><li>\n<strong>Security, a constant caution.</strong> On the moltbook agent network: \"it's a dumpster fire and I also definitely do not recommend that people run this stuff on their computers (I ran mine in an isolated computing environment and even then I was scared)\". He still says \"I am not overhyping large networks of autonomous LLM agents in principle\" (<a href=\"https://x.com/karpathy/status/2017442712388309406\" target=\"_blank\" rel=\"noopener\">Jan 31</a>). On OpenClaw: \"giving my private data/keys to 400K lines of vibe coded monster that is being actively attacked at scale is not very appealing at all\" (<a href=\"https://x.com/karpathy/status/2024987174077432126\" target=\"_blank\" rel=\"noopener\">Feb 21</a>). He kept Dobby away from email and calendar because \"I didn't want to give it full access to my digital life yet\" (T08).\n</li><li>\n<strong>Jobs.</strong> \"I think it's fundamentally an empowering tool at the moment… these jobs are bundles of tasks\". He expects the Jevons paradox in software (\"the demand for software actually goes up\") and holds \"a cautiously optimistic view\". The long term is \"really hard to forecast\" (T08). At OpenAI he had asked colleagues: \"you guys realize, if we're successful, we're all out of a job?\" (T08).\n</li></ul>\n<h4>Coding and thought organization</h4>\n<ul><li>\n<strong>The proportions flip.</strong> \"I rapidly went from about 80% manual+autocomplete coding and 20% agents in November to 80% agent coding and 20% edits+touchups in December… I really am mostly programming in English now\" (<a href=\"https://x.com/karpathy/status/2015883857489522876\" target=\"_blank\" rel=\"noopener\">Jan 27</a>). In March: \"I don't think I've typed like a line of code probably since December basically\" (T08). In October he describes his 2025 self: \"less than 1 year ago, I was writing code manually by hand… occasionally pressing Tab to autocomplete a little chunk of code\" (<a href=\"https://x.com/karpathy/status/2109361546505966046\" target=\"_blank\" rel=\"noopener\">Oct 12</a>).\n</li><li>\n<strong>But code he cares about is still watched, at first.</strong> \"if you have any code you actually care about I would watch them like a hawk, in a nice large IDE on the side\". His setup: \"a small few CC sessions on the left in ghostty windows/tabs and an IDE on the right\" (<a href=\"https://x.com/karpathy/status/2015883857489522876\" target=\"_blank\" rel=\"noopener\">Jan 27</a>).\n</li><li>\n<strong>Vibe coding versus agentic engineering.</strong> A year after naming vibe coding, he says it was for \"fun throwaway projects\", while professional work is now agents \"with more oversight and scrutiny. The goal is to claim the leverage from the use of agents but without any compromise on the quality of the software\". His name for that is \"agentic engineering\": you are \"orchestrating agents who do and acting as oversight\" (<a href=\"https://x.com/karpathy/status/2019137879310836075\" target=\"_blank\" rel=\"noopener\">Feb 5</a>). At Sequoia: \"Vibe coding raises the floor. Agentic engineering is about extrapolating the ceiling\" (T09).\n</li><li>\n<strong>Leverage through success criteria.</strong> \"Don't tell it what to do, give it success criteria and watch it go. Get it to write tests first and then pass them… Change your approach from imperative to declarative to get the agents looping longer and gain leverage\" (<a href=\"https://x.com/karpathy/status/2015883857489522876\" target=\"_blank\" rel=\"noopener\">Jan 27</a>). Agents work best \"for tasks that are well-specified and where you can verify/test functionality\" (<a href=\"https://x.com/karpathy/status/2026731645169185220\" target=\"_blank\" rel=\"noopener\">Feb 26</a>).\n</li><li>\n<strong>Taking himself out of the loop.</strong> \"to get the most out of the tools… you have to remove yourself as the bottleneck… The name of the game is how can you get more agents running for longer periods of time without your involvement\" (T08). autoresearch: \"the human iterates on the prompt (.md)… the AI agent iterates on the training code (.py)\" (<a href=\"https://x.com/karpathy/status/2030371219518931079\" target=\"_blank\" rel=\"noopener\">Mar 8</a>). The limit: \"if you can't evaluate then you can't auto research it\" (T08). \"<em>any</em> metric you care about that is reasonably efficient to evaluate… can be autoresearched by an agent swarm\" (<a href=\"https://x.com/karpathy/status/2031135152349524125\" target=\"_blank\" rel=\"noopener\">Mar 10</a>).\n</li><li>\n<strong>The organization becomes code.</strong> \"you are now programming an organization… the 'source code' is the collection of prompts, skills, tools, etc. and processes that make it up\" (<a href=\"https://x.com/karpathy/status/2027521323275325622\" target=\"_blank\" rel=\"noopener\">Feb 28</a>). \"the basic unit of interest is not one file but one agent. It’s still programming\" (<a href=\"https://x.com/karpathy/status/2031767720933634100\" target=\"_blank\" rel=\"noopener\">Mar 12</a>).\n</li><li>\n<strong>Finding the right level of autonomy.</strong> \"If you're too conservative, you're leaving leverage on the table. If you're too aggressive, you're net creating more chaos than doing useful work\". He suggests \"80% of the time getting work done in the setup you're comfortable with… and 20% exploration of what might be the next step up\" (<a href=\"https://x.com/karpathy/status/2027501331125239822\" target=\"_blank\" rel=\"noopener\">Feb 28</a>).\n</li><li>\n<strong>June: almost not looking.</strong> On a new Claude model, as an Anthropic employee: \"it's never felt this tempting to stop looking at the code at all (but don't do this in prod!)\" (<a href=\"https://x.com/karpathy/status/2064409694761054332\" target=\"_blank\" rel=\"noopener\">Jun 10</a>).\n</li><li>\n<strong>October: no traditional engineering.</strong> \"I don't actually <em>do</em> anything resembling traditional engineering anymore\" (A07). In the post: \"I only talk to Claude and have it do everything\" (<a href=\"https://x.com/karpathy/status/2116957135661945283\" target=\"_blank\" rel=\"noopener\">Nov 2</a>). For HackerTube his only manual work was an API key, a server and a domain name. Neither the post nor the blog says whether he read the code.\n</li><li>\n<strong>His work moves to understanding.</strong> \"As LLMs get better, they will do more and more of the legwork autonomously, and a lot more of our work will rise up the abstractions into oversight and understanding\". His tools for this are controlled-language writing (ASD-STE100), diagrams, HTML pages and generated explainer videos (<a href=\"https://x.com/karpathy/status/2105819303471976479\" target=\"_blank\" rel=\"noopener\">Oct 2</a>). Earlier: \"audio is the human-preferred input to AIs but vision… is the preferred output from them… hot tip try ask for HTML\" (<a href=\"https://x.com/karpathy/status/2053872850101285137\" target=\"_blank\" rel=\"noopener\">May 12</a>). And for input, \"a nice long ramble session\" by voice, so \"you improve the mind meld\" (<a href=\"https://x.com/karpathy/status/2079610838143623371\" target=\"_blank\" rel=\"noopener\">Jul 22</a>).\n</li><li>\n<strong>The LLM wiki.</strong> Raw sources go into a folder; an LLM \"incrementally 'compile[s]' a wiki\". \"the LLM writes and maintains all of the data of the wiki, I rarely touch it directly\". Outputs are filed back, \"So my own explorations and queries always 'add up'\". LLM \"health checks\" find inconsistent data. \"a large fraction of my recent token throughput is going less into manipulating code, and more into manipulating knowledge\" (<a href=\"https://x.com/karpathy/status/2039805659525644595\" target=\"_blank\" rel=\"noopener\">Apr 3</a>). He then shared it as an \"idea file\", not code: \"you just share the idea, then the other person's agent customizes &amp; builds it\" (<a href=\"https://x.com/karpathy/status/2040470801506541998\" target=\"_blank\" rel=\"noopener\">Apr 5</a>).\n</li><li>\n<strong>Feelings.</strong> Programming feels \"<em>more</em> fun because a lot of the fill in the blanks drudgery is removed\". He also predicts a split: \"LLM coding will split up engineers based on those who primarily liked coding and those who primarily liked building\" (<a href=\"https://x.com/karpathy/status/2015883857489522876\" target=\"_blank\" rel=\"noopener\">Jan 27</a>). On No Priors he describes being \"in this state of AI psychosis\", where failures feel like \"skill issue\" (T08).\n</li></ul>\n<h4>Engineering and project practice</h4>\n<ul><li>\n<strong>Build for agents, with a checklist.</strong> \"If you have any kind of product or service think: can agents access and use them?… are your legacy docs (for humans) at least exportable in markdown?… have you written Skills for your product?… can your product/service be usable via CLI? Or MCP?… It's 2026. Build. For. Agents.\" (<a href=\"https://x.com/karpathy/status/2026360908398862478\" target=\"_blank\" rel=\"noopener\">Feb 25</a>). CLIs matter \"precisely because they are a 'legacy' technology\", so agents can use them natively.\n</li><li>\n<strong>No more app store.</strong> He built a cardio-experiment dashboard in an hour by having Claude reverse-engineer his treadmill's API. \"There will never be (and shouldn't be) a specific app on the app store for this kind of thing\". \"The future are services of AI-native sensors &amp; actuators orchestrated via LLM glue into highly custom, ephemeral apps. It's just not here yet\". \"99% of products/services still don't have an AI-native CLI yet\" (<a href=\"https://x.com/karpathy/status/2024583544157458452\" target=\"_blank\" rel=\"noopener\">Feb 20</a>).\n</li><li>\n<strong>Some apps should not exist.</strong> MenuGen, his 2025 project, is now his example of the old way: \"All of MenuGen is spurious in that framing… That app shouldn't exist\" when a multimodal model can draw dishes straight onto the menu photo (T09). His point to founders: look for \"functionality that either suddenly perhaps shouldn't even exist… or was fundamentally not possible before\" (<a href=\"https://x.com/karpathy/status/2049903821095354523\" target=\"_blank\" rel=\"noopener\">May 1</a>).\n</li><li>\n<strong>The demo-to-product gap, still unsolved.</strong> \"the hardest part by far was not the code itself… the DevOps\". Test of an agent-native world: tell the agent \"build menugen\" and get a deployed site. \"the entire DevOps lifecycle has to become code… it's now just barely technically possible\" (<a href=\"https://x.com/karpathy/status/2037200624450936940\" target=\"_blank\" rel=\"noopener\">Mar 27</a>). By HackerTube (October) Claude deployed and hardened the server, but he still did the browser steps: the API key, the server and the domain (A07).\n</li><li>\n<strong>Rip out dependencies.</strong> With DeepWiki and an agent he replaced torchao's fp8 code with \"150 lines of clean code… with tests proving equivalent results\". \"Maybe you don't download, configure and take dependency on a giant monolithic library… you point your agent at it and rip out the exact part you need… 'Libraries are over, LLMs are the new compiler' :)\" (<a href=\"https://x.com/karpathy/status/2021633574089416993\" target=\"_blank\" rel=\"noopener\">Feb 12</a>). After the litellm attack: \"Classical software engineering would have you believe that dependencies are good… but imo this has to be re-evaluated\" (<a href=\"https://x.com/karpathy/status/2036487306585268612\" target=\"_blank\" rel=\"noopener\">Mar 25</a>). On npm: the defaults of package managers \"have to change\" (<a href=\"https://x.com/karpathy/status/2038849654423798197\" target=\"_blank\" rel=\"noopener\">Mar 31</a>).\n</li><li>\n<strong>Configuration through skills.</strong> NanoClaw configures itself with skills that rewrite its own code: \"the implied new meta is to write the most maximally forkable repo and then have skills that fork it into any desired more exotic configuration\" (<a href=\"https://x.com/karpathy/status/2024987174077432126\" target=\"_blank\" rel=\"noopener\">Feb 21</a>). Installation becomes \"install .md skills instead of install .sh scripts\" (<a href=\"https://x.com/karpathy/status/2049903821095354523\" target=\"_blank\" rel=\"noopener\">May 1</a>).\n</li><li>\n<strong>Translation over invention.</strong> \"LLMs are <em>especially</em> good at translation compared to de-novo generation because 1) the original code base acts as a kind of highly detailed prompt, and 2) as a reference to write concrete tests with respect to\" (<a href=\"https://x.com/karpathy/status/2023476423055601903\" target=\"_blank\" rel=\"noopener\">Feb 17</a>).\n</li><li>\n<strong>Hiring.</strong> Small puzzles are \"still the old paradigm\". Instead, build a large project, deploy it securely, and \"I will use ten Codex agents to try to break the website\" (T09). On human judgment: his MenuGen agent matched Stripe purchases to Google accounts by email, so \"You need a persistent user ID. This is the kind of mistake agents still make\" (T09).\n</li><li>\n<strong>Reliability as infrastructure.</strong> \"My autoresearch labs got wiped out in the oauth outage… Intelligence brownouts will be interesting\" (<a href=\"https://x.com/karpathy/status/2031792523187040643\" target=\"_blank\" rel=\"noopener\">Mar 12</a>).\n</li><li>\n<strong>The third interface.</strong> Claude in team tools is \"the 3rd major redesign of LLM UIUX… a self-contained, persistent, asynchronous entity with org-wide tools and context, working alongside teams of humans\" (<a href=\"https://x.com/karpathy/status/2069547676849557725\" target=\"_blank\" rel=\"noopener\">Jun 24</a>, posted as an Anthropic employee). Earlier: \"First there was chat, then there was code, now there is claw\" (<a href=\"https://x.com/karpathy/status/2024997757757653224\" target=\"_blank\" rel=\"noopener\">Feb 21</a>).\n</li><li>\n<strong>Still minimal, still scientific.</strong> nanochat follows scaling laws \"basically reproducing the Chinchilla paper plots\" (<a href=\"https://x.com/karpathy/status/2009037707918626874\" target=\"_blank\" rel=\"noopener\">Jan 8</a>). GPT-2 training cost falls about \"2.5X every year\" (<a href=\"https://x.com/karpathy/status/2017703360393318587\" target=\"_blank\" rel=\"noopener\">Feb 1</a>). He distrusts a dataset that works too well: \"I am slightly suspicious about about goodharting\" (<a href=\"https://x.com/karpathy/status/2029701092347630069\" target=\"_blank\" rel=\"noopener\">Mar 6</a>). And when an agent \"discovered\" that a bigger network lowers loss, he notes it is \"a totally spurious result\" (<a href=\"https://x.com/karpathy/status/2027521323275325622\" target=\"_blank\" rel=\"noopener\">Feb 28</a>).\n</li></ul>\n<h4>Interpretation (ours, provisional)</h4>\n<ol><li>\n<strong>The biggest change is where verification sits, not whether it matters.</strong> In 2025 verification meant \"staring at the code\". In 2026 it moves into the setup: success criteria, tests written first, a naive version kept as reference, metrics that autoresearch can climb, adversarial agents in a hiring test. The human checks the system that checks the code. The coding-autonomy chart rises from autocomplete (October 2025) to \"80% agent coding\" (January) to \"never felt this tempting to stop looking at the code at all\" (June) to \"only talk to Claude\" (October). But the stakes split survives: \"watch them like a hawk\" and \"don't do this in prod!\" are still there. What changed is how much counts as throwaway, and how much can be checked automatically.\n</li><li>\n<strong>\"Remove yourself as the bottleneck\" partly reverses his 2025 stance.</strong> In October 2025 he wanted to \"learn along the way… not just get served mountains of code\". In 2026 the goal is maximum token throughput without him. He keeps the old value by moving it: his job becomes understanding (\"you can't outsource your understanding\"), and his new tools (the wiki, HTML outputs, explainer videos, asking for the opposite argument) are aimed at that. He also names the cost: atrophy of writing code.\n</li><li>\n<strong>The jaggedness theory gains economics.</strong> 2024: jagged. 2025: because of verifiability. 2026: verifiability times what labs choose to train, driven by revenue. This makes it a practical rule for builders: check whether your task is \"on the rails\"; if not, bring your own context, evals or finetuning. He says he is \"still not 100% satisfied\" with it.\n</li><li>\n<strong>His position changes: from independent observer to insider.</strong> In March he gave arguments both ways, including the fear that his \"judgment… will start to drift\" outside a lab. In May he joined one. After that, his public output shrinks, and some of it is about his employer's products. His October funnel is written from inside the 5,000. Read his post-May claims with that in mind.\n</li><li>\n<strong>Education moves from lectures to artifacts for agents.</strong> microGPT is \"the few bits\"; agents do the explaining. This fits his 2025 fear of human disempowerment only if learners still do the effortful part. He has not yet said how that works, and he has paused his education work.\n</li><li>\n<strong>Constants.</strong> Security caution, minimal code, dislike of dependencies, distrust of hype and of metrics that are too good, building for agents, and the demo-to-product gap (now framed as \"the entire DevOps lifecycle has to become code\").\n</li></ol>\n<h4>Uncertainties and gaps</h4>\n<ul><li>\nT08 is a third-party cleaned transcript with no timestamps. T09 is an AI-edited text he published, not verbatim speech. Neither recording was watched or audio-checked.\n</li><li>\nImage-only posts were not read (Jan 31; chart and dashboard images). The tweet he quotes on May 1 (\"the quote I've been citing\") is not in the archive. We use the wording as given in T09.\n</li><li>\nLinked documents were not read: the LLM wiki idea gist, the autoresearch and microGPT code, the nanochat reports, and the agentic-engineering material.\n</li><li>\nNo talk or interview after May 19 was found. Coverage of his Anthropic-period thinking is 11 posts plus one blog post.\n</li><li>\nReplies are not in the archive. The period is open: posts after the Nov 6 archive date are not covered.\n</li><li>\nThe claim that he leads a pretraining team at Anthropic comes from press reports, not his own posts.\n</li></ul>"
   }
  ],
  "tracks": [
@@ -2872,10 +3414,66 @@ window.CHRONICLE = {
      "date": "2026-01-27",
      "url": "https://x.com/karpathy/status/2015883857489522876",
      "source": "X post",
-     "status": "spot"
+     "status": "read"
+    },
+    {
+     "kind": "advice",
+     "lane": "care",
+     "level": 3,
+     "short": "agentic engineering",
+     "change": "Advice",
+     "quote": "you are orchestrating agents who do and acting as oversight",
+     "note": "His name for professional agent work: leverage \"without any compromise on the quality of the software\".",
+     "n": 14,
+     "date": "2026-02-05",
+     "url": "https://x.com/karpathy/status/2019137879310836075",
+     "source": "X post",
+     "status": "read"
+    },
+    {
+     "date": "2026-03-20",
+     "url": "https://www.youtube.com/watch?v=kwSVtQ7dziU",
+     "source": "No Priors interview (third-party transcript)",
+     "kind": "practice",
+     "lane": "care",
+     "level": 3,
+     "short": "no code typed since Dec",
+     "change": "Moves up",
+     "quote": "I don't think I've typed like a line of code probably since December basically.",
+     "note": "He reviews agents' work \"depending on how much you care about that code\".",
+     "n": 15,
+     "status": "read"
+    },
+    {
+     "kind": "advice",
+     "lane": "care",
+     "level": 3,
+     "short": "tempting to stop looking",
+     "change": "Advice",
+     "quote": "never felt this tempting to stop looking at the code at all (but don't do this in prod!)",
+     "note": "Written as an Anthropic employee about a new Claude model.",
+     "n": 16,
+     "date": "2026-06-10",
+     "url": "https://x.com/karpathy/status/2064409694761054332",
+     "source": "X post",
+     "status": "read"
+    },
+    {
+     "kind": "practice",
+     "lane": "throwaway",
+     "level": 4,
+     "short": "only talks to Claude",
+     "change": "Same",
+     "quote": "I only talk to Claude and have it do everything",
+     "note": "HackerTube, a weekend project. Manual work: an API key, a server, a domain.",
+     "n": 17,
+     "date": "2026-11-02",
+     "url": "https://x.com/karpathy/status/2116957135661945283",
+     "source": "X post",
+     "status": "read"
     }
    ],
-   "reading": "Not a steady climb. For code he cares about, his own practice stays at or below \"reads every change\" for three years, and in 2025 even drops to mostly autocomplete, while his 2023 forecast pointed to \"~pass-through\". From February 2025 he splits by stakes: throwaway projects go to the top. The real jump for code he cares about comes in December 2025, and even then he says to watch the agents closely."
+   "reading": "Not a steady climb. For code he cares about, his own practice stays at or below \"reads every change\" for three years, and in 2025 even drops to mostly autocomplete, while his 2023 forecast pointed to \"~pass-through\". From February 2025 he splits by stakes: throwaway projects go to the top. The real jump for code he cares about comes in December 2025, and even then he says to watch the agents closely. By March 2026 he types no code at all, yet for production he still says \"don't do this in prod!\": the top step stays reserved for throwaway projects."
   }
  ],
  "attention": {
@@ -3222,97 +3820,97 @@ window.CHRONICLE = {
       {
        "date": "2026-01-27",
        "url": "https://x.com/karpathy/status/2015883857489522876",
-       "quote": "watch them like a hawk"
+       "quote": "80% agent coding and 20% edits+touchups in December"
       },
       {
        "date": "2026-02-02",
        "url": "https://x.com/karpathy/status/2018043254986703167",
-       "quote": ""
+       "quote": "Works great and you will lose a lot fewer brain cells"
       },
       {
        "date": "2026-02-05",
        "url": "https://x.com/karpathy/status/2019137879310836075",
-       "quote": ""
+       "quote": "acting as oversight"
       },
       {
        "date": "2026-02-17",
        "url": "https://x.com/karpathy/status/2023476423055601903",
-       "quote": ""
+       "quote": "LLMs are *especially* good at translation compared to de-novo generation because 1) the original code base acts as a kind of highly detailed prompt, and 2) as a reference to write concrete tests with respect to"
       },
       {
        "date": "2026-02-20",
        "url": "https://x.com/karpathy/status/2024583544157458452",
-       "quote": ""
+       "quote": "highly custom, ephemeral apps"
       },
       {
        "date": "2026-02-21",
        "url": "https://x.com/karpathy/status/2024987174077432126",
-       "quote": ""
+       "quote": "giving my private data/keys to 400K lines of vibe coded monster that is being actively attacked at scale is not very appealing at all"
       },
       {
        "date": "2026-02-25",
        "url": "https://x.com/karpathy/status/2026360908398862478",
-       "quote": ""
+       "quote": "Build. For. Agents."
       },
       {
        "date": "2026-02-26",
        "url": "https://x.com/karpathy/status/2026731645169185220",
-       "quote": ""
+       "quote": "coding agents basically didn’t work before December and basically work since"
       },
       {
        "date": "2026-02-28",
        "url": "https://x.com/karpathy/status/2027501331125239822",
-       "quote": ""
+       "quote": "If you're too conservative, you're leaving leverage on the table. If you're too aggressive, you're net creating more chaos than doing useful work"
       },
       {
        "date": "2026-02-28",
        "url": "https://x.com/karpathy/status/2027521323275325622",
-       "quote": ""
+       "quote": "it doesn't work and it's a mess"
       },
       {
        "date": "2026-03-12",
        "url": "https://x.com/karpathy/status/2031767720933634100",
-       "quote": ""
+       "quote": "the basic unit of interest is not one file but one agent. It’s still programming"
       },
       {
        "date": "2026-03-25",
        "url": "https://x.com/karpathy/status/2036487306585268612",
-       "quote": ""
+       "quote": "this has to be re-evaluated"
       },
       {
        "date": "2026-04-03",
        "url": "https://x.com/karpathy/status/2039805659525644595",
-       "quote": ""
+       "quote": "more into manipulating knowledge"
       },
       {
        "date": "2026-04-05",
        "url": "https://x.com/karpathy/status/2040549459193704852",
-       "quote": ""
+       "quote": "increasing the visibility, legibility and accountability of their governments"
       },
       {
        "date": "2026-04-05",
        "url": "https://x.com/karpathy/status/2040572272944324650",
-       "quote": ""
+       "quote": "puts *you* in full control"
       },
       {
        "date": "2026-04-10",
        "url": "https://x.com/karpathy/status/2042334451611693415",
-       "quote": ""
+       "quote": "The goldmines are elsewhere"
       },
       {
        "date": "2026-05-01",
        "url": "https://x.com/karpathy/status/2049903821095354523",
-       "quote": ""
+       "quote": "revenue/TAM dictates what the frontier labs choose to package into training data distributions during RL. You're either in the data distribution"
       },
       {
        "date": "2026-10-12",
        "url": "https://x.com/karpathy/status/2109361546505966046",
-       "quote": ""
+       "quote": "a sharp funnel"
       },
       {
        "date": "2026-11-02",
        "url": "https://x.com/karpathy/status/2116957135661945283",
-       "quote": ""
+       "quote": "I only talk to Claude and have it do everything"
       }
      ]
     ]
@@ -3536,7 +4134,7 @@ window.CHRONICLE = {
       {
        "date": "2026-01-27",
        "url": "https://x.com/karpathy/status/2015883857489522876",
-       "quote": "watch them like a hawk"
+       "quote": "80% agent coding and 20% edits+touchups in December"
       },
       {
        "date": "2026-01-31",
@@ -3546,32 +4144,32 @@ window.CHRONICLE = {
       {
        "date": "2026-01-31",
        "url": "https://x.com/karpathy/status/2017442712388309406",
-       "quote": ""
+       "quote": "a complete mess of a computer security nightmare at scale"
       },
       {
        "date": "2026-02-05",
        "url": "https://x.com/karpathy/status/2019137879310836075",
-       "quote": ""
+       "quote": "acting as oversight"
       },
       {
        "date": "2026-02-12",
        "url": "https://x.com/karpathy/status/2021633574089416993",
-       "quote": ""
+       "quote": "with tests proving equivalent results"
       },
       {
        "date": "2026-02-20",
        "url": "https://x.com/karpathy/status/2024583544157458452",
-       "quote": ""
+       "quote": "highly custom, ephemeral apps"
       },
       {
        "date": "2026-02-21",
        "url": "https://x.com/karpathy/status/2024987174077432126",
-       "quote": ""
+       "quote": "giving my private data/keys to 400K lines of vibe coded monster that is being actively attacked at scale is not very appealing at all"
       },
       {
        "date": "2026-02-25",
        "url": "https://x.com/karpathy/status/2026360908398862478",
-       "quote": ""
+       "quote": "Build. For. Agents."
       },
       {
        "date": "2026-02-25",
@@ -3581,22 +4179,22 @@ window.CHRONICLE = {
       {
        "date": "2026-02-26",
        "url": "https://x.com/karpathy/status/2026731645169185220",
-       "quote": ""
+       "quote": "coding agents basically didn’t work before December and basically work since"
       },
       {
        "date": "2026-02-28",
        "url": "https://x.com/karpathy/status/2027501331125239822",
-       "quote": ""
+       "quote": "If you're too conservative, you're leaving leverage on the table. If you're too aggressive, you're net creating more chaos than doing useful work"
       },
       {
        "date": "2026-02-28",
        "url": "https://x.com/karpathy/status/2027521323275325622",
-       "quote": ""
+       "quote": "it doesn't work and it's a mess"
       },
       {
        "date": "2026-03-06",
        "url": "https://x.com/karpathy/status/2029701092347630069",
-       "quote": ""
+       "quote": "I am slightly suspicious about about goodharting"
       },
       {
        "date": "2026-03-06",
@@ -3606,7 +4204,7 @@ window.CHRONICLE = {
       {
        "date": "2026-03-08",
        "url": "https://x.com/karpathy/status/2030371219518931079",
-       "quote": ""
+       "quote": "the human iterates on the prompt (.md)"
       },
       {
        "date": "2026-03-09",
@@ -3626,7 +4224,7 @@ window.CHRONICLE = {
       {
        "date": "2026-03-12",
        "url": "https://x.com/karpathy/status/2031767720933634100",
-       "quote": ""
+       "quote": "the basic unit of interest is not one file but one agent. It’s still programming"
       },
       {
        "date": "2026-03-12",
@@ -3636,27 +4234,27 @@ window.CHRONICLE = {
       {
        "date": "2026-03-27",
        "url": "https://x.com/karpathy/status/2037200624450936940",
-       "quote": ""
+       "quote": "the hardest part by far was not the code itself"
       },
       {
        "date": "2026-04-03",
        "url": "https://x.com/karpathy/status/2039805659525644595",
-       "quote": ""
+       "quote": "more into manipulating knowledge"
       },
       {
        "date": "2026-04-05",
        "url": "https://x.com/karpathy/status/2040470801506541998",
-       "quote": ""
+       "quote": "you just share the idea, then the other person's agent customizes & builds it"
       },
       {
        "date": "2026-04-05",
        "url": "https://x.com/karpathy/status/2040572272944324650",
-       "quote": ""
+       "quote": "puts *you* in full control"
       },
       {
        "date": "2026-04-10",
        "url": "https://x.com/karpathy/status/2042334451611693415",
-       "quote": ""
+       "quote": "The goldmines are elsewhere"
       },
       {
        "date": "2026-04-10",
@@ -3666,17 +4264,17 @@ window.CHRONICLE = {
       {
        "date": "2026-05-01",
        "url": "https://x.com/karpathy/status/2049903821095354523",
-       "quote": ""
+       "quote": "revenue/TAM dictates what the frontier labs choose to package into training data distributions during RL. You're either in the data distribution"
       },
       {
        "date": "2026-10-02",
        "url": "https://x.com/karpathy/status/2105819303471976479",
-       "quote": ""
+       "quote": "rise up the abstractions into oversight and understanding"
       },
       {
        "date": "2026-10-12",
        "url": "https://x.com/karpathy/status/2109361546505966046",
-       "quote": ""
+       "quote": "a sharp funnel"
       }
      ]
     ]
@@ -4046,7 +4644,7 @@ window.CHRONICLE = {
       {
        "date": "2026-01-27",
        "url": "https://x.com/karpathy/status/2015883857489522876",
-       "quote": "watch them like a hawk"
+       "quote": "80% agent coding and 20% edits+touchups in December"
       },
       {
        "date": "2026-01-31",
@@ -4056,22 +4654,22 @@ window.CHRONICLE = {
       {
        "date": "2026-02-01",
        "url": "https://x.com/karpathy/status/2017703360393318587",
-       "quote": ""
+       "quote": "time to GPT-2"
       },
       {
        "date": "2026-02-20",
        "url": "https://x.com/karpathy/status/2024583544157458452",
-       "quote": ""
+       "quote": "highly custom, ephemeral apps"
       },
       {
        "date": "2026-02-26",
        "url": "https://x.com/karpathy/status/2026731645169185220",
-       "quote": ""
+       "quote": "coding agents basically didn’t work before December and basically work since"
       },
       {
        "date": "2026-02-28",
        "url": "https://x.com/karpathy/status/2027521323275325622",
-       "quote": ""
+       "quote": "it doesn't work and it's a mess"
       },
       {
        "date": "2026-03-06",
@@ -4086,22 +4684,22 @@ window.CHRONICLE = {
       {
        "date": "2026-03-25",
        "url": "https://x.com/karpathy/status/2036487306585268612",
-       "quote": ""
+       "quote": "this has to be re-evaluated"
       },
       {
        "date": "2026-04-10",
        "url": "https://x.com/karpathy/status/2042334451611693415",
-       "quote": ""
+       "quote": "The goldmines are elsewhere"
       },
       {
        "date": "2026-05-01",
        "url": "https://x.com/karpathy/status/2049903821095354523",
-       "quote": ""
+       "quote": "revenue/TAM dictates what the frontier labs choose to package into training data distributions during RL. You're either in the data distribution"
       },
       {
        "date": "2026-06-10",
        "url": "https://x.com/karpathy/status/2064409694761054332",
-       "quote": ""
+       "quote": "never felt this tempting to stop looking at the code at all"
       },
       {
        "date": "2026-10-02",
@@ -4111,7 +4709,7 @@ window.CHRONICLE = {
       {
        "date": "2026-10-12",
        "url": "https://x.com/karpathy/status/2109361546505966046",
-       "quote": ""
+       "quote": "a sharp funnel"
       }
      ]
     ]
@@ -4546,7 +5144,7 @@ window.CHRONICLE = {
       {
        "date": "2026-02-01",
        "url": "https://x.com/karpathy/status/2017703360393318587",
-       "quote": ""
+       "quote": "time to GPT-2"
       },
       {
        "date": "2026-02-13",
@@ -4561,37 +5159,37 @@ window.CHRONICLE = {
       {
        "date": "2026-02-28",
        "url": "https://x.com/karpathy/status/2027521323275325622",
-       "quote": ""
+       "quote": "it doesn't work and it's a mess"
       },
       {
        "date": "2026-03-06",
        "url": "https://x.com/karpathy/status/2029696850366971921",
-       "quote": ""
+       "quote": "as just another tool"
       },
       {
        "date": "2026-04-03",
        "url": "https://x.com/karpathy/status/2039805659525644595",
-       "quote": ""
+       "quote": "more into manipulating knowledge"
       },
       {
        "date": "2026-04-05",
        "url": "https://x.com/karpathy/status/2040572272944324650",
-       "quote": ""
+       "quote": "puts *you* in full control"
       },
       {
        "date": "2026-04-10",
        "url": "https://x.com/karpathy/status/2042334451611693415",
-       "quote": ""
+       "quote": "The goldmines are elsewhere"
       },
       {
        "date": "2026-05-01",
        "url": "https://x.com/karpathy/status/2049903821095354523",
-       "quote": ""
+       "quote": "revenue/TAM dictates what the frontier labs choose to package into training data distributions during RL. You're either in the data distribution"
       },
       {
        "date": "2026-10-12",
        "url": "https://x.com/karpathy/status/2109361546505966046",
-       "quote": ""
+       "quote": "a sharp funnel"
       }
      ]
     ]
@@ -4931,7 +5529,7 @@ window.CHRONICLE = {
       {
        "date": "2026-01-27",
        "url": "https://x.com/karpathy/status/2015883857489522876",
-       "quote": "watch them like a hawk"
+       "quote": "80% agent coding and 20% edits+touchups in December"
       },
       {
        "date": "2026-03-09",
@@ -4941,12 +5539,12 @@ window.CHRONICLE = {
       {
        "date": "2026-04-05",
        "url": "https://x.com/karpathy/status/2040549459193704852",
-       "quote": ""
+       "quote": "increasing the visibility, legibility and accountability of their governments"
       },
       {
        "date": "2026-05-19",
        "url": "https://x.com/karpathy/status/2056753169888334312",
-       "quote": ""
+       "quote": "I've joined Anthropic"
       }
      ]
     ]
@@ -5176,17 +5774,17 @@ window.CHRONICLE = {
       {
        "date": "2026-01-31",
        "url": "https://x.com/karpathy/status/2017442712388309406",
-       "quote": ""
+       "quote": "a complete mess of a computer security nightmare at scale"
       },
       {
        "date": "2026-04-05",
        "url": "https://x.com/karpathy/status/2040549459193704852",
-       "quote": ""
+       "quote": "increasing the visibility, legibility and accountability of their governments"
       },
       {
        "date": "2026-04-05",
        "url": "https://x.com/karpathy/status/2040572272944324650",
-       "quote": ""
+       "quote": "puts *you* in full control"
       }
      ]
     ]
@@ -5194,6 +5792,6 @@ window.CHRONICLE = {
   ],
   "note": "Counted automatically by keyword across every archived post since 2022. It shows what he talks about, not what he believes. Some matches are off-topic."
  },
- "posts_read": 798,
+ "posts_read": 868,
  "posts_total": 868
 };

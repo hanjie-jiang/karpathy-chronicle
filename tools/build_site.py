@@ -103,11 +103,27 @@ X = [
     ("1952076108565991588", "agency", ["It is imperative that humanity not fall while AI ascends"], "Funds a challenge for things that \"uplift team human\".", ["empower"]),
     ("1929634696474120576", "agency", ["TikTok is nothing compared to what is possible"], "Generated video can be optimized directly against engagement, and he doubts we will like the optimum.", ["empower"]),
     ("1993010584175141038", "agency", ["proficient in the use of AI, but can also exist without it"], "To a school board: grade in class, and keep the ability to verify AI.", ["empower", "verify"]),
-    # ---- spot-read later posts (periods not yet fully read) ----
-    ("2015883857489522876", "coding", ["watch them like a hawk", "make wrong assumptions on your behalf"], "Agent mistakes are now conceptual; CLAUDE.md instructions only partly fix them. Source of community \"Karpathy skills\" files.", ["oversight"]),
+    # ---- 2026 (thread-tagged; other cited 2026 posts come from CHRONICLE automatically) ----
+    ("2015883857489522876", "coding", ["80% agent coding and 20% edits+touchups in December", "watch them like a hawk"], "The proportions flip in one month. Agent mistakes are now conceptual, so code he cares about is still watched closely.", ["oversight"]),
+    ("2019137879310836075", "coding", ["acting as oversight", "without any compromise on the quality of the software"], "Names \"agentic engineering\": the professional, overseen version of vibe coding.", ["oversight"]),
+    ("2026731645169185220", "coding", ["coding agents basically didn’t work before December and basically work since"], "December 2025 as a threshold in the models, not just in his habits.", ["oversight"]),
+    ("2030371219518931079", "coding", ["the human iterates on the prompt (.md)"], "autoresearch: agents run training experiments in a loop; the human writes the instructions.", ["oversight", "verify"]),
+    ("2064409694761054332", "coding", ["never felt this tempting to stop looking at the code at all"], "On a new Claude model, as an Anthropic employee, with the caveat \"don't do this in prod!\"", ["oversight"]),
+    ("2105819303471976479", "coding", ["rise up the abstractions into oversight and understanding"], "As agents do the legwork, his tools for understanding become diagrams, HTML pages and explainer videos.", ["verify", "oversight"]),
+    ("2039805659525644595", "coding", ["more into manipulating knowledge"], "The LLM wiki: an LLM compiles raw sources into a Markdown wiki it maintains, and answers are filed back.", []),
+    ("2116957135661945283", "practice", ["I only talk to Claude and have it do everything"], "HackerTube: his only manual work was an API key, a server and a domain name.", ["oversight"]),
+    ("2042334451611693415", "fund", ["The goldmines are elsewhere"], "Jaggedness has two causes: verifiable rewards, and what labs choose to train for revenue.", ["verify"]),
+    ("2109361546505966046", "fund", ["a sharp funnel"], "The capability gap widens: about 6B barely touched, 20M professionals see it, 5,000 insiders see more.", ["empower"]),
+    ("2056753169888334312", "milestone", ["I've joined Anthropic"], "Joins a frontier lab two months after arguing the case for staying independent.", []),
+    ("2026360908398862478", "practice", ["Build. For. Agents."], "A checklist: Markdown docs, skills, a CLI or MCP for every product.", ["computer"]),
+    ("2024583544157458452", "practice", ["highly custom, ephemeral apps"], "No more app store: services become sensors and actuators that agents glue together on the spot.", ["computer"]),
+    ("2036487306585268612", "practice", ["this has to be re-evaluated"], "After a supply-chain attack: fewer dependencies, let an LLM \"yoink\" the functionality instead.", []),
+    ("2017442712388309406", "agency", ["a complete mess of a computer security nightmare at scale"], "On a social network of 150,000 agents: overhyped today, not in principle.", ["empower"]),
+    ("2040549459193704852", "agency", ["increasing the visibility, legibility and accountability of their governments"], "AI lets citizens read what governments publish.", ["empower"]),
+    ("2040572272944324650", "agency", ["puts *you* in full control"], "Personal memory as files you own and can inspect, usable with any AI.", ["empower"]),
     ("2037921699824607591", "agency", ["super useful as a tool for forming your own opinions"], "Use LLMs to argue several directions, and watch for sycophancy.", ["empower"]),
 ]
-READ_YEARS = {2022, 2023, 2024, 2025}
+READ_YEARS = {2022, 2023, 2024, 2025, 2026}
 
 OTHER = [
     dict(date="2019-04-25", lens="practice", kind="writing", title="A Recipe for Training Neural Networks", url="https://karpathy.github.io/2019/04/25/recipe/",
@@ -128,19 +144,23 @@ OTHER = [
          note="Decade of agents; RL as \"sucking supervision through a straw\"; agents not net useful for novel code; the march of nines; education against disempowerment. Read in full (publisher transcript).", threads=["oversight", "empower"], status="read"),
     dict(date="2025-12-19", lens="fund", kind="writing", title="2025 year in review", url="https://karpathy.bearblog.dev/year-in-review-2025/",
          note="RL on verifiable rewards, jagged \"ghost\" intelligence, distrust of benchmarks, the LLM app layer, agents on your computer, vibe coding, and a new GUI.", threads=["verify"], status="read"),
-    dict(date="2026-04-30", lens="coding", kind="talk", title="Sequoia Ascent 2026 (edited text)", url="https://karpathy.bearblog.dev/sequoia-ascent-2026/",
-         note="Retrospectively describes increased trust in agents around December 2025. AI-edited excerpt, not verbatim.", threads=["oversight"], status="spot"),
+    dict(date="2026-03-20", lens="coding", kind="talk", title="No Priors interview, \"Skill Issue\"", url="https://www.youtube.com/watch?v=kwSVtQ7dziU",
+         note="No code typed since December; remove yourself as the bottleneck; autoresearch; jokes outside the RL; the case for and against joining a frontier lab; explaining to agents, not people. Read in full (third-party transcript).", threads=["oversight", "verify", "empower"], status="read"),
+    dict(date="2026-04-29", lens="coding", kind="talk", title="Sequoia AI Ascent 2026", url="https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+         note="Vibe coding raises the floor, agentic engineering the ceiling; some apps (MenuGen) shouldn't exist; jaggedness = verifiable plus \"labs care\"; you can't outsource your understanding. Read in full in the AI-edited text he published, not verbatim.", threads=["oversight", "verify"], status="read"),
+    dict(date="2026-10-31", lens="practice", kind="writing", title="HackerTube", url="https://karpathy.bearblog.dev/hacker-tube/",
+         note="A video site built in about 2 hours by talking to Claude only: \"I don't actually _do_ anything resembling traditional engineering anymore\".", threads=["oversight"], status="read"),
 ]
 
 THREADS = [
     dict(id="oversight", title="How much to oversee AI-written code",
-         reading="Our reading: not a straight line toward less oversight. Advice depends on stakes and on the tools of the moment. He limits 'vibe coding' to throwaway projects and, for code you care about, still says to watch closely. In 2025 he sorts his tools by stakes, and at year end says he feels behind."),
+         reading="Our reading: not a straight line toward less oversight. Advice depends on stakes and on the tools of the moment. He limits 'vibe coding' to throwaway projects and, for code you care about, still says to watch closely. In 2025 he sorts his tools by stakes, and at year end says he feels behind. In 2026 agents write nearly everything, but 'don't do this in prod!' keeps the stakes split alive."),
     dict(id="verify", title="Verification as the bottleneck",
-         reading="Our reading: a recurring concern from 2019 onward, inferred by us at first. In 2025 he states it himself: coding 'is about staring at the code', and verifiability decides what AI automates."),
+         reading="Our reading: a recurring concern from 2019 onward, inferred by us at first. In 2025 he states it himself: coding 'is about staring at the code', and verifiability decides what AI automates. In 2026 checking moves into the setup: success criteria, tests first, metrics an agent can climb."),
     dict(id="computer", title="The LLM as a new kind of computer",
          reading="Our reading: the analogy builds in steps, from 'differentiable computer' (2022) to 'LLM OS' (Sept 2023), then to 'statistical modeling of token streams' (2024). This dates when he said it publicly, not when he first thought it."),
     dict(id="empower", title="Empowerment and its risks",
-         reading="Our reading: excitement about open tools and individual reach sits beside warnings about attention-exploiting apps and concentration. Both are held at once."),
+         reading="Our reading: excitement about open tools and individual reach sits beside warnings about attention-exploiting apps and concentration. Both are held at once. In 2026 he adds citizens auditing governments and personal data you own, then joins a frontier lab."),
 ]
 
 PERIODS = [
@@ -169,9 +189,13 @@ PERIODS = [
                          "Jagged intelligence gets a cause (what is verifiable gets optimized) and a list of missing pieces: reflection instead of scalar rewards, system prompt learning, culture, a knowledge-light cognitive core.",
                          "The demo-to-product gap becomes personal (MenuGen) and turns into a design rule: make products and docs readable by LLMs.",
                          "Empowerment becomes a race to keep humans capable: stronger optimism about regular people, and a stated fear that humanity \"gets disempowered\"."]),
-    dict(id="2026", title="Changing coding practice (open period)", range=["2026-01-01", "2026-11-06"], status="outline",
-         coverage="A few posts and one edited talk text read. Full X read not started (70 posts).",
-         summary="Agents are a large net gain but still need close watching for code you care about.", interpretation=[]),
+    dict(id="2026", title="Agentic engineering, out of the loop, into a frontier lab", range=["2026-01-01", "2026-11-06"], status="read",
+         coverage="All 70 X posts read (to Nov 2). No Priors interview and Sequoia AI Ascent text read in full (third-party and AI-edited transcripts); HackerTube post read. Open period.",
+         summary="Coding agents \"basically work\" since December: he goes from 80% agent coding to \"I only talk to Claude\". He builds autoresearch and an LLM wiki, names \"agentic engineering\", and joins Anthropic in May.",
+         interpretation=["Verification moves from reading code to designing checks: success criteria, tests first, metrics an agent can climb. The stakes split survives (\"don't do this in prod!\").",
+                         "\"Remove yourself as the bottleneck\" partly reverses his 2025 wish to learn along the way. The human job becomes understanding, and he admits his code-writing ability is atrophying.",
+                         "Jaggedness = verifiable × what labs choose to train for revenue. The capability gap becomes a \"sharp funnel\".",
+                         "He argued in March for staying independent, then joined a frontier lab in May. After that he posts far less, partly about his employer's products."]),
 ]
 
 
@@ -219,8 +243,17 @@ TRACKS = [
              dict(x="2015883857489522876", kind="practice", lane="care", level=3, short="80% agents, watched closely", change="Moves up",
                   quote="80% agent coding and 20% edits+touchups in December",
                   note="Up from \"about 80% manual+autocomplete\" in November. Still: \"watch them like a hawk\"."),
+             dict(x="2019137879310836075", kind="advice", lane="care", level=3, short="agentic engineering", change="Advice",
+                  quote="you are orchestrating agents who do and acting as oversight", note="His name for professional agent work: leverage \"without any compromise on the quality of the software\"."),
+             dict(date="2026-03-20", url="https://www.youtube.com/watch?v=kwSVtQ7dziU", source="No Priors interview (third-party transcript)",
+                  kind="practice", lane="care", level=3, short="no code typed since Dec", change="Moves up",
+                  quote="I don't think I've typed like a line of code probably since December basically.", note="He reviews agents' work \"depending on how much you care about that code\"."),
+             dict(x="2064409694761054332", kind="advice", lane="care", level=3, short="tempting to stop looking", change="Advice",
+                  quote="never felt this tempting to stop looking at the code at all (but don't do this in prod!)", note="Written as an Anthropic employee about a new Claude model."),
+             dict(x="2116957135661945283", kind="practice", lane="throwaway", level=4, short="only talks to Claude", change="Same",
+                  quote="I only talk to Claude and have it do everything", note="HackerTube, a weekend project. Manual work: an API key, a server, a domain."),
          ],
-         reading="Not a steady climb. For code he cares about, his own practice stays at or below \"reads every change\" for three years, and in 2025 even drops to mostly autocomplete, while his 2023 forecast pointed to \"~pass-through\". From February 2025 he splits by stakes: throwaway projects go to the top. The real jump for code he cares about comes in December 2025, and even then he says to watch the agents closely."),
+         reading="Not a steady climb. For code he cares about, his own practice stays at or below \"reads every change\" for three years, and in 2025 even drops to mostly autocomplete, while his 2023 forecast pointed to \"~pass-through\". From February 2025 he splits by stakes: throwaway projects go to the top. The real jump for code he cares about comes in December 2025, and even then he says to watch the agents closely. By March 2026 he types no code at all, yet for production he still says \"don't do this in prod!\": the top step stays reserved for throwaway projects."),
 ]
 
 
