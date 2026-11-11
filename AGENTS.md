@@ -45,3 +45,7 @@ Use these sections in each log (no separate template required):
 - Handoff: remaining work, open questions, and a concrete next action.
 
 Keep logs factual and concise. Do not copy full chat transcripts, credentials, or unrelated private information. Keep research content in research artifacts when they exist; link it from logs.
+
+## Filing explanations
+
+When the user asks what a term, idea or question means, save the answer as one file in `notes/` (private, gitignored) and add a row to `notes/README.md`. Include his dated sources and keep explanation separate from the user's beliefs, which go in `LEARNING.md`.

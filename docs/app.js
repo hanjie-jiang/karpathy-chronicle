@@ -175,12 +175,16 @@
   // ---- threads
   $("threadcards").innerHTML = D.threads.map((t) => {
     const evs = D.events.filter((e) => e.threads.includes(t.id));
-    return `<article class="card"><h3>${esc(t.title)}</h3><ol class="steps">${evs.map((e) => `
+    const isKey = (e) => (t.key || []).some((k) => e.url.includes(k));
+    const step = (e) => `
       <li class="${e.status === "spot" ? "spot" : ""}" style="--c:${color(e.lens)}">
         <div class="d">${fmt(e.date)}${e.title ? " · " + esc(e.title) : ""}</div>
         <div class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.quotes[0] ? "“" + e.quotes[0] + "”" : e.note)}</a></div>
-      </li>`).join("")}</ol>
-      <div class="ours"><b>Our reading</b>${esc(t.reading.replace(/^Our reading:\s*(.)/, (_, c) => c.toUpperCase()))}</div></article>`;
+      </li>`;
+    const keys = evs.filter(isKey);
+    return `<article class="card"><h3>${esc(t.title)}</h3><ol class="steps">${keys.map(step).join("")}</ol>
+      <div class="ours"><b>Our reading</b>${esc(t.reading)}</div>
+      <details class="chap"><summary>All ${evs.length} statements</summary><ol class="steps">${evs.map(step).join("")}</ol></details></article>`;
   }).join("");
 
   // ---- periods
