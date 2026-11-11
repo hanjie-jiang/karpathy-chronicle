@@ -322,6 +322,60 @@ def build_tracks(posts, errors):
     return out
 
 
+# ---- His metaphors for AI: the headline section (user request, 2026-11-11).
+# phrase = his exact words (checked against the archive, or the transcript for T-sources);
+# date = the first post in our archive that uses it, not a claim that he coined it.
+METAPHOR_GROUPS = [
+    dict(id="is", title="What an LLM is"),
+    dict(id="computer", title="The LLM as a computer"),
+    dict(id="work", title="How to work with it"),
+]
+TALKS = {"T07": dict(date="2025-10-17", url="https://www.dwarkesh.com/p/andrej-karpathy", source="Dwarkesh Podcast (publisher transcript)")}
+METAPHORS = [
+    dict(group='is', src='1529514197121384448', phrase='alien artifacts', gloss='Powerful but unfamiliar: you learn it by poking it.'),
+    dict(group='is', src='1632800081622761472', phrase='not an AI but a simulator', gloss='A pretrained model simulates internet documents; it has no goals of its own.'),
+    dict(group='is', src='1733299213503787018', phrase='They are dream machines', gloss='Hallucination is all LLMs do; prompts steer the dream toward something useful.'),
+    dict(group='is', src='1816531576228053133', phrase='Jagged Intelligence', gloss='Brilliant at some hard tasks, failing at some easy ones, with no clear line between them.'),
+    dict(group='is', src='1935518272667217925', phrase='people spirits', gloss='Stochastic simulations of people, so they inherit human-like quirks.'),
+    dict(group='is', src='1938626382248149433', phrase='cognitive core', gloss='A small model that keeps the thinking and drops the encyclopedia.'),
+    dict(group='is', src='1973435013875314729', phrase='It is about summoning ghosts', gloss='Not evolved animals but imitations of human data: a different kind of mind.'),
+    dict(group='computer', src='1582807367988654081', phrase='general-purpose differentiable computer', gloss='The Transformer as a computer you can train.'),
+    dict(group='computer', src='1593081701454204930', phrase='cognitive engine', gloss='The LLM orchestrates calculators, search and code through text.'),
+    dict(group='computer', src='1674873002314563584', phrase='Software 3.0', gloss='Prompts as a new kind of code, after hand-written code (1.0) and learned weights (2.0).'),
+    dict(group='computer', src='1707437820045062561', phrase='the kernel process of a new Operating System', gloss='Not a chatbot but the core of an operating system: the "LLM OS".'),
+    dict(group='computer', src='1935518272667217925', phrase='fabbed by labs, and distributed like utilities', gloss='Built like chips in a fab, delivered like electricity.'),
+    dict(group='computer', src='2031792523187040643', phrase='Intelligence brownouts', gloss='When frontier AI goes down, the planet loses IQ points.'),
+    dict(group='work', src='1886192184808149383', phrase='vibe coding', gloss='Give in to the vibes and forget the code exists. Fine for throwaway projects.'),
+    dict(group='work', src='1914494203696177444', phrase='LLMs don’t like to click, they like to curl', gloss='Build products and docs for agents, not only for people.'),
+    dict(group='work', src='1915581920022585597', phrase='over-eager junior intern savant', gloss='Knows everything, sometimes bluffs: keep a tight leash.'),
+    dict(group='work', src='1941616674094170287', phrase='maximize bacterial DNA', gloss='Write small, self-contained code that is easy to copy.'),
+    dict(group='work', src='T07', phrase='sucking supervision through a straw', gloss='Reinforcement learning learns from a single score at the end of a long task.'),
+    dict(group='work', src='1988705360723763242', phrase='the long march of 9s', gloss='A demo is the first nine of reliability; every further nine is more hard work.'),
+    dict(group='work', src='2019137879310836075', phrase='agentic engineering', gloss='Orchestrating agents with professional oversight: the grown-up version of vibe coding.'),
+    dict(group='work', src='2024987174077432126', phrase='a little ghost of a personal digital house elf', gloss='A persistent agent on a computer at home that runs things for you.')
+]
+
+
+def build_metaphors(posts, errors):
+    out = []
+    for m in METAPHORS:
+        m = dict(m)
+        src = m.pop("src")
+        if src in TALKS:
+            path = ROOT / "sources" / "videos" / "transcripts" / f"{src}.md"
+            if path.exists() and m["phrase"].lower() not in path.read_text(encoding="utf-8").lower():
+                errors.append(f"metaphor not in transcript {src}: {m['phrase']!r}")
+            m.update(TALKS[src])
+        else:
+            p = posts.get(src)
+            if not p or m["phrase"] not in p["text"]:
+                errors.append(f"metaphor not verbatim in {src}: {m['phrase']!r}")
+                continue
+            m.update(date=p["date_cst"], url=p["url"], source="X post")
+        out.append(m)
+    return out
+
+
 # ---- "What we found": five findings chosen by the user (2026-11-11) from findings-draft.md.
 # Titles and "why" lines are our interpretation; evidence quotes are his words, checked below:
 # X quotes against the archive, interview quotes against the local transcript files.
@@ -561,7 +615,8 @@ ZH_FILE = ROOT / "tools" / "i18n_zh.json"
 
 def displayed_strings(data):
     """Site text written by us that the page shows. His quotes are excluded: they stay in English."""
-    out = []
+    out = [g["title"] for g in data["metaphor_groups"]]
+    out += [x for m in data["metaphors"] for x in (m["gloss"], m["source"])]
     for f in data["findings"]:
         out += [f["title"], f["why"]]
         out += [x for e in f["evidence"] for x in (e["source"], e.get("note")) if x]
@@ -614,13 +669,14 @@ def main():
         events.append(dict(quotes=[], **o) if "quotes" not in o else dict(o))
     tracks = build_tracks(posts, errors)
     findings = build_findings(posts, errors)
+    metaphors = build_metaphors(posts, errors)
     if errors:
         print("\n".join(errors))
         sys.exit(1)
     events.sort(key=lambda e: e["date"])
     read_posts = sum(1 for p in posts.values() if p["year"] in READ_YEARS)
     total_posts = sum(1 for p in posts.values() if p["year"] >= 2022)
-    data = dict(updated="2026-11-11", events=events, threads=THREADS, periods=PERIODS, tracks=tracks, findings=findings,
+    data = dict(updated="2026-11-11", events=events, threads=THREADS, periods=PERIODS, tracks=tracks, findings=findings, metaphors=metaphors, metaphor_groups=METAPHOR_GROUPS,
                 attention=build_attention(posts, events),
                 posts_read=read_posts, posts_total=total_posts)
     zh_all = json.loads(ZH_FILE.read_text(encoding="utf-8"))

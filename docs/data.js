@@ -3701,6 +3701,190 @@ window.CHRONICLE = {
    ]
   }
  ],
+ "metaphors": [
+  {
+   "group": "is",
+   "phrase": "alien artifacts",
+   "gloss": "Powerful but unfamiliar: you learn it by poking it.",
+   "date": "2022-05-26",
+   "url": "https://x.com/karpathy/status/1529514197121384448",
+   "source": "X post"
+  },
+  {
+   "group": "is",
+   "phrase": "not an AI but a simulator",
+   "gloss": "A pretrained model simulates internet documents; it has no goals of its own.",
+   "date": "2023-03-07",
+   "url": "https://x.com/karpathy/status/1632800081622761472",
+   "source": "X post"
+  },
+  {
+   "group": "is",
+   "phrase": "They are dream machines",
+   "gloss": "Hallucination is all LLMs do; prompts steer the dream toward something useful.",
+   "date": "2023-12-09",
+   "url": "https://x.com/karpathy/status/1733299213503787018",
+   "source": "X post"
+  },
+  {
+   "group": "is",
+   "phrase": "Jagged Intelligence",
+   "gloss": "Brilliant at some hard tasks, failing at some easy ones, with no clear line between them.",
+   "date": "2024-07-26",
+   "url": "https://x.com/karpathy/status/1816531576228053133",
+   "source": "X post"
+  },
+  {
+   "group": "is",
+   "phrase": "people spirits",
+   "gloss": "Stochastic simulations of people, so they inherit human-like quirks.",
+   "date": "2025-06-19",
+   "url": "https://x.com/karpathy/status/1935518272667217925",
+   "source": "X post"
+  },
+  {
+   "group": "is",
+   "phrase": "cognitive core",
+   "gloss": "A small model that keeps the thinking and drops the encyclopedia.",
+   "date": "2025-06-27",
+   "url": "https://x.com/karpathy/status/1938626382248149433",
+   "source": "X post"
+  },
+  {
+   "group": "is",
+   "phrase": "It is about summoning ghosts",
+   "gloss": "Not evolved animals but imitations of human data: a different kind of mind.",
+   "date": "2025-10-02",
+   "url": "https://x.com/karpathy/status/1973435013875314729",
+   "source": "X post"
+  },
+  {
+   "group": "computer",
+   "phrase": "general-purpose differentiable computer",
+   "gloss": "The Transformer as a computer you can train.",
+   "date": "2022-10-20",
+   "url": "https://x.com/karpathy/status/1582807367988654081",
+   "source": "X post"
+  },
+  {
+   "group": "computer",
+   "phrase": "cognitive engine",
+   "gloss": "The LLM orchestrates calculators, search and code through text.",
+   "date": "2022-11-17",
+   "url": "https://x.com/karpathy/status/1593081701454204930",
+   "source": "X post"
+  },
+  {
+   "group": "computer",
+   "phrase": "Software 3.0",
+   "gloss": "Prompts as a new kind of code, after hand-written code (1.0) and learned weights (2.0).",
+   "date": "2023-07-01",
+   "url": "https://x.com/karpathy/status/1674873002314563584",
+   "source": "X post"
+  },
+  {
+   "group": "computer",
+   "phrase": "the kernel process of a new Operating System",
+   "gloss": "Not a chatbot but the core of an operating system: the \"LLM OS\".",
+   "date": "2023-09-29",
+   "url": "https://x.com/karpathy/status/1707437820045062561",
+   "source": "X post"
+  },
+  {
+   "group": "computer",
+   "phrase": "fabbed by labs, and distributed like utilities",
+   "gloss": "Built like chips in a fab, delivered like electricity.",
+   "date": "2025-06-19",
+   "url": "https://x.com/karpathy/status/1935518272667217925",
+   "source": "X post"
+  },
+  {
+   "group": "computer",
+   "phrase": "Intelligence brownouts",
+   "gloss": "When frontier AI goes down, the planet loses IQ points.",
+   "date": "2026-03-12",
+   "url": "https://x.com/karpathy/status/2031792523187040643",
+   "source": "X post"
+  },
+  {
+   "group": "work",
+   "phrase": "vibe coding",
+   "gloss": "Give in to the vibes and forget the code exists. Fine for throwaway projects.",
+   "date": "2025-02-03",
+   "url": "https://x.com/karpathy/status/1886192184808149383",
+   "source": "X post"
+  },
+  {
+   "group": "work",
+   "phrase": "LLMs don’t like to click, they like to curl",
+   "gloss": "Build products and docs for agents, not only for people.",
+   "date": "2025-04-22",
+   "url": "https://x.com/karpathy/status/1914494203696177444",
+   "source": "X post"
+  },
+  {
+   "group": "work",
+   "phrase": "over-eager junior intern savant",
+   "gloss": "Knows everything, sometimes bluffs: keep a tight leash.",
+   "date": "2025-04-25",
+   "url": "https://x.com/karpathy/status/1915581920022585597",
+   "source": "X post"
+  },
+  {
+   "group": "work",
+   "phrase": "maximize bacterial DNA",
+   "gloss": "Write small, self-contained code that is easy to copy.",
+   "date": "2025-07-06",
+   "url": "https://x.com/karpathy/status/1941616674094170287",
+   "source": "X post"
+  },
+  {
+   "group": "work",
+   "phrase": "sucking supervision through a straw",
+   "gloss": "Reinforcement learning learns from a single score at the end of a long task.",
+   "date": "2025-10-17",
+   "url": "https://www.dwarkesh.com/p/andrej-karpathy",
+   "source": "Dwarkesh Podcast (publisher transcript)"
+  },
+  {
+   "group": "work",
+   "phrase": "the long march of 9s",
+   "gloss": "A demo is the first nine of reliability; every further nine is more hard work.",
+   "date": "2025-11-13",
+   "url": "https://x.com/karpathy/status/1988705360723763242",
+   "source": "X post"
+  },
+  {
+   "group": "work",
+   "phrase": "agentic engineering",
+   "gloss": "Orchestrating agents with professional oversight: the grown-up version of vibe coding.",
+   "date": "2026-02-05",
+   "url": "https://x.com/karpathy/status/2019137879310836075",
+   "source": "X post"
+  },
+  {
+   "group": "work",
+   "phrase": "a little ghost of a personal digital house elf",
+   "gloss": "A persistent agent on a computer at home that runs things for you.",
+   "date": "2026-02-21",
+   "url": "https://x.com/karpathy/status/2024987174077432126",
+   "source": "X post"
+  }
+ ],
+ "metaphor_groups": [
+  {
+   "id": "is",
+   "title": "What an LLM is"
+  },
+  {
+   "id": "computer",
+   "title": "The LLM as a computer"
+  },
+  {
+   "id": "work",
+   "title": "How to work with it"
+  }
+ ],
  "attention": {
   "buckets": [
    "2022 H1",
@@ -6020,9 +6204,34 @@ window.CHRONICLE = {
  "posts_read": 868,
  "posts_total": 868,
  "zh": {
+  "What an LLM is": "LLM 是什么",
+  "The LLM as a computer": "LLM 是一种计算机",
+  "How to work with it": "如何与它共事",
+  "Powerful but unfamiliar: you learn it by poking it.": "强大但陌生：只能靠不断试探去了解它。",
+  "X post": "X 帖子",
+  "A pretrained model simulates internet documents; it has no goals of its own.": "预训练模型模拟的是互联网文档；它没有自己的目标。",
+  "Hallucination is all LLMs do; prompts steer the dream toward something useful.": "幻觉就是 LLM 所做的全部；提示词把梦境引向有用之处。",
+  "Brilliant at some hard tasks, failing at some easy ones, with no clear line between them.": "在某些难题上很出色，却在某些简单问题上失败，而两者之间没有清晰的界线。",
+  "Stochastic simulations of people, so they inherit human-like quirks.": "对人的随机模拟，因此继承了类似人的怪癖。",
+  "A small model that keeps the thinking and drops the encyclopedia.": "一个小模型：保留思考能力，舍弃百科知识。",
+  "Not evolved animals but imitations of human data: a different kind of mind.": "不是进化出来的动物，而是对人类数据的模仿：一种不同的心智。",
+  "The Transformer as a computer you can train.": "Transformer 是一台可以训练的计算机。",
+  "The LLM orchestrates calculators, search and code through text.": "LLM 通过文本调度计算器、搜索和代码。",
+  "Prompts as a new kind of code, after hand-written code (1.0) and learned weights (2.0).": "提示词成为新的代码形式，继手写代码（1.0）和学习得到的权重（2.0）之后。",
+  "Not a chatbot but the core of an operating system: the \"LLM OS\".": "不是聊天机器人，而是一个新操作系统的核心：“LLM OS”。",
+  "Built like chips in a fab, delivered like electricity.": "像芯片一样在“晶圆厂”里制造，像电力一样被输送。",
+  "When frontier AI goes down, the planet loses IQ points.": "前沿 AI 一宕机，整个星球就少了几分智商。",
+  "Give in to the vibes and forget the code exists. Fine for throwaway projects.": "顺着感觉走，忘掉代码的存在。适合一次性项目。",
+  "Build products and docs for agents, not only for people.": "产品和文档要为智能体而建，而不只是为人。",
+  "Knows everything, sometimes bluffs: keep a tight leash.": "什么都懂，有时却会虚张声势：要拴紧缰绳。",
+  "Write small, self-contained code that is easy to copy.": "写小而自包含、易于复制的代码。",
+  "Reinforcement learning learns from a single score at the end of a long task.": "强化学习只从漫长任务结束时的一个分数里学习。",
+  "Dwarkesh Podcast (publisher transcript)": "Dwarkesh 播客（出版方文字稿）",
+  "A demo is the first nine of reliability; every further nine is more hard work.": "演示只是可靠性的第一个 9；之后的每一个 9 都是艰苦的工作。",
+  "Orchestrating agents with professional oversight: the grown-up version of vibe coding.": "带着专业监督去调度智能体：氛围编程的成熟版本。",
+  "A persistent agent on a computer at home that runs things for you.": "常驻在家中电脑上、替你打理事务的智能体。",
   "His own coding didn't climb steadily toward AI. It dipped, then jumped.": "他自己的编程并不是一路稳步交给 AI，而是先回落，再陡升。",
   "The year he named vibe coding, his serious code was still mostly autocomplete. The jump came in December 2025.": "在他提出“氛围编程”的那一年，他认真对待的代码大多仍靠自动补全。真正的跃升发生在 2025 年 12 月。",
-  "X post": "X 帖子",
   "No Priors interview (third-party transcript)": "No Priors 访谈（第三方文字稿）",
   "Even at peak automation, he kept a line between throwaway and production code.": "即使自动化到了顶点，他仍在一次性代码和生产代码之间划了一条线。",
   "The headline is \"he stopped writing code\". The fine print is that production code still gets a different standard.": "标题是“他不再写代码了”；细则是，生产代码仍要用另一套标准。",

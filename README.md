@@ -2,7 +2,7 @@
 
 **Read it: https://hanjie-jiang.github.io/karpathy-chronicle/** · [中文版](https://hanjie-jiang.github.io/karpathy-chronicle/?lang=zh)
 
-How Andrej Karpathy's public thinking about AI changed from 2022 to 2026, from a full read of all 868 of his X posts since 2022, plus his talks, interviews and blog posts. Every quote links to its source and is checked word for word before each build. Our interpretations are labelled as ours.
+Alien artifacts, dream machines, people spirits, ghosts: the metaphors Andrej Karpathy uses to explain AI, and how his thinking changed from 2022 to 2026, from a full read of all 868 of his X posts since 2022, plus his talks, interviews and blog posts. Every quote links to its source and is checked word for word before each build. Our interpretations are labelled as ours.
 
 [![How much of the coding does he hand to AI? A step chart, 2023 to 2026](docs/og.png)](https://hanjie-jiang.github.io/karpathy-chronicle/)
 
@@ -18,6 +18,7 @@ Each finding on the site sits next to his own dated words, so you can check it i
 
 ## What's on the site
 
+- **His metaphors for AI:** 21 of his images for AI (from "alien artifacts" to "summoning ghosts"), grouped by what an LLM is, the LLM as a computer, and how to work with it, each linked to where he said it.
 - **What we found:** the five findings above, with evidence.
 - **How much of the coding does he hand to AI?** A chart of his own practice, his forecasts and his advice, 2022–2026.
 - **What he talks about:** the share of his posts on six themes, per half-year, counted by keyword.

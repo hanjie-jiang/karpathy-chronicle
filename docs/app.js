@@ -16,7 +16,7 @@
   const ZHUI = {
     tag: "独立 · 非官方 · 持续更新中",
     h1: "Karpathy 思想编年史",
-    intro: "追踪 Andrej Karpathy 自 2022 年以来对 AI、AI 的局限、人的能动性，以及如何用 AI 构建的公开思考如何演变。每条引文都链接到原文。我们的解读会明确标注。<br><small>他的原话保留英文原文；其余内容为中文翻译。</small>",
+    intro: "外星造物、造梦机器、人的灵魂、幽灵。Andrej Karpathy 如何解释 AI，以及他的看法从 2022 到 2026 年如何变化。每条引文都链接到原文；我们的解读会明确标注。<br><small>他的原话保留英文原文；其余内容为中文翻译。</small>",
     proto: "原型",
     at_h: "他在谈论什么",
     at_lede: "每半年中，涉及各主题的 X 帖子所占比例（自 2022 年起）。按关键词自动统计，因此反映的是关注度，而不是观点。",
@@ -32,7 +32,10 @@
     upd: "更新于",
     src: "源码与方法见",
     theme: "切换主题",
+    n_me2: "比喻",
     n_fi: "发现",
+    mt_h: "他关于 AI 的比喻",
+    mt_lede: "外星造物、造梦机器、人的灵魂、幽灵：这些是他用来解释 AI 的意象，按它们在他 2022 年以来帖子中出现的先后排列。并非每个都是他首创，但合在一起，就是他理解 AI 的方式。每张卡片都链接到他说这句话的出处。",
     n_track: "编程图表",
     fi_h: "我们的发现",
     fi_lede: "通读他自 2022 年以来的全部帖子后，归纳出的五个规律。标题是我们的解读；旁边附上他的原话，供你核对。",
@@ -73,6 +76,23 @@
     [LG(`${read} of ${D.periods.length}`, `${read} / ${D.periods.length}`), LG("periods written", "已写完的时期")],
   ].map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
   $("updated").textContent = fmt(D.updated);
+
+  // ---- metaphors: the headline gallery, grouped, in order of first appearance
+  (function renderMetaphors() {
+    const M = D.metaphors || [];
+    if (!M.length) { $("metaphors").remove(); return; }
+    const GC = { is: "--practice", computer: "--fund", work: "--coding" };
+    $("mgroups").innerHTML = D.metaphor_groups.map((g) => {
+      const items = M.filter((m) => m.group === g.id).sort((a, b) => a.date.localeCompare(b.date));
+      return `<div class="mgroup" style="--g:var(${GC[g.id]})"><h3>${esc(tr(g.title))}</h3><div class="mgrid">${items.map((m) => `
+        <a class="mcard" href="${esc(m.url)}" target="_blank" rel="noopener">
+          <span class="yr">${m.date.slice(0, 4)}</span>
+          <span class="ph" lang="en">“${esc(m.phrase)}”</span>
+          <span class="gl">${esc(tr(m.gloss))}</span>
+          <span class="src">${fmt(m.date)} · ${esc(tr(m.source))} ↗</span>
+        </a>`).join("")}</div></div>`;
+    }).join("");
+  })();
 
   // ---- findings: our headline, his words beside it
   (function renderFindings() {
@@ -279,7 +299,7 @@
     const io = new IntersectionObserver((ents) => ents.forEach((en) => {
       if (en.isIntersecting) links.forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id));
     }), { rootMargin: "-45% 0px -50% 0px" });
-    ["findings", "track", "attention", "threads", "periods", "method"].forEach((id) => { const el = $(id); if (el) io.observe(el); });
+    ["metaphors", "findings", "track", "attention", "threads", "periods", "method"].forEach((id) => { const el = $(id); if (el) io.observe(el); });
     const yrs = [...document.querySelectorAll(".nav .yrs a")];
     const yo = new IntersectionObserver((ents) => ents.forEach((en) => {
       if (en.isIntersecting) yrs.forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id));
