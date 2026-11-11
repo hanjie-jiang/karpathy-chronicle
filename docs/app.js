@@ -32,6 +32,11 @@
     upd: "更新于",
     src: "源码与方法见",
     theme: "切换主题",
+    n_track: "编程图表",
+    n_at: "话题",
+    n_th: "主线",
+    n_pe: "时期",
+    n_me: "方法",
   };
   const qlang = new URLSearchParams(location.search).get("lang");
   let saved = null;
@@ -229,7 +234,7 @@
 
   // ---- periods
   $("periodlist").innerHTML = D.periods.map((p) => `
-    <article class="card period">
+    <article class="card period" id="p${p.id}">
       <div><div class="yr">${p.id}</div><span class="badge ${p.status}">${p.status === "read" ? LG("Fully read", "已通读") : LG("Outline", "提纲")}</span></div>
       <div>
         <h3>${esc(tr(p.title))}</h3>
@@ -243,6 +248,21 @@
         </details>` : ""}
       </div>
     </article>`).join("");
+
+  // ---- deep links (e.g. #p2025) target cards built above, after the browser's own jump
+  if (location.hash.length > 1) {
+    const t = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (t) requestAnimationFrame(() => t.scrollIntoView());
+  }
+
+  // ---- nav: highlight the section in view
+  if ("IntersectionObserver" in window) {
+    const links = [...document.querySelectorAll(".nav .in > a")];
+    const io = new IntersectionObserver((ents) => ents.forEach((en) => {
+      if (en.isIntersecting) links.forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id));
+    }), { rootMargin: "-45% 0px -50% 0px" });
+    ["track", "attention", "threads", "periods", "method"].forEach((id) => { const el = $(id); if (el) io.observe(el); });
+  }
 
   // ---- theme toggle
   const root = document.documentElement;

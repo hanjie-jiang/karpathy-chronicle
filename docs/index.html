@@ -193,6 +193,16 @@ footer { padding: 32px 0 56px; border-top: 1px solid var(--line); font-size: 13p
 .langbtn:hover { border-color: var(--ink); }
 .zhnote { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
 :lang(zh) .ours b { letter-spacing: 0; }
+/* sticky nav */
+.nav { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+.nav .in { display: flex; align-items: center; gap: 4px 18px; overflow-x: auto; scrollbar-width: none; white-space: nowrap; padding-top: 10px; padding-bottom: 10px; font-size: 13.5px; }
+.nav .in::-webkit-scrollbar { display: none; }
+.nav a { text-decoration: none; color: var(--muted); }
+.nav a:hover, .nav a.on { color: var(--ink); }
+.nav .yrs { display: inline-flex; gap: 4px; padding-left: 14px; border-left: 1px solid var(--line); }
+.nav .yrs a { border: 1px solid var(--line); border-radius: 999px; padding: 1px 9px; font-variant-numeric: tabular-nums; }
+.nav .yrs a:hover { border-color: var(--ink); }
+section, .period { scroll-margin-top: 56px; }
 .themebtn { font: inherit; font-size: 13px; background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
 
 @media (max-width: 760px) {
@@ -214,6 +224,15 @@ footer { padding: 32px 0 56px; border-top: 1px solid var(--line); font-size: 13p
   <p data-i18n="intro">How Andrej Karpathy's public thinking about AI, its limits, human agency, and building with it has developed since 2022. Every quote links to the original. Our interpretations are labelled as ours.</p>
   <div class="stats" id="stats"></div>
 </header>
+
+<nav class="nav" aria-label="Sections"><div class="wrap in">
+  <a href="#track" data-i18n="n_track">Coding chart</a>
+  <a href="#attention" data-i18n="n_at">Topics</a>
+  <a href="#threads" data-i18n="n_th">Threads</a>
+  <a href="#periods" data-i18n="n_pe">Periods</a>
+  <span class="yrs"><a href="#p2022">2022</a><a href="#p2023">2023</a><a href="#p2024">2024</a><a href="#p2025">2025</a><a href="#p2026">2026</a></span>
+  <a href="#method" data-i18n="n_me">Method</a>
+</div></nav>
 
 <section class="wrap" id="track">
   <span class="tag" data-i18n="proto">Prototype</span>
