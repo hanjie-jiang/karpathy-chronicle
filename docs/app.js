@@ -52,7 +52,7 @@
   const LG = (en, zh) => (ZH ? zh : en);
   if (ZH) {
     document.documentElement.lang = "zh-CN";
-    document.title = "Karpathy 思想编年史";
+    document.title = "Karpathy 思想编年史：他关于 AI 的比喻与思考（2022–2026）";
     document.querySelectorAll("[data-i18n]").forEach((el) => { const v = ZHUI[el.dataset.i18n]; if (v) el.innerHTML = v; });
   }
   document.querySelectorAll(".lang a").forEach((a) => {
