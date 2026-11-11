@@ -12,15 +12,55 @@
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const color = (lens) => `var(--${lens})`;
-  const fmt = (d) => new Date(d + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+  // ---- language: ?lang= in the URL, then the saved choice, then the browser language
+  const ZHUI = {
+    tag: "独立 · 非官方 · 持续更新中",
+    h1: "Karpathy 思想编年史",
+    intro: "追踪 Andrej Karpathy 自 2022 年以来对 AI、AI 的局限、人的能动性，以及如何用 AI 构建的公开思考如何演变。每条引文都链接到原文。我们的解读会明确标注。<br><small>他的原话保留英文原文；其余内容为中文翻译。</small>",
+    proto: "原型",
+    at_h: "他在谈论什么",
+    at_lede: "每半年中，涉及各主题的 X 帖子所占比例（自 2022 年起）。按关键词自动统计，因此反映的是关注度，而不是观点。",
+    th_h: "主线",
+    th_lede: "四个随时间追踪的观点。每一步都是他的原话。每张卡片末尾的灰底部分是我们的解读，可以对照原话检验。",
+    pe_h: "时期",
+    pe_lede: "编年史按时期逐段撰写，基于对当年全部帖子的通读。2026 年尚未结束：目前覆盖到 11 月初的帖子。",
+    me_h: "方法与局限",
+    me1: "<b>来源。</b>他的 X 帖子、演讲、访谈和文章。每次构建前，X 引文都会与他的帖子存档逐字核对。演讲引文来自第三方或机器转写稿，并已注明。",
+    me2: "<b>日期。</b>帖子日期为北京时间（UTC+8），因此可能比美国日期晚一天。",
+    me3: "<b>并不完整。</b>回复、纯图片帖子和大部分长录音尚未阅读。没有收录不代表他从未说过。公开言论反映的是他何时表达了什么，而不是他何时私下想到的。",
+    me4: "<b>非官方。</b>这是一位学习者的独立解读，与 Andrej Karpathy 本人无关，也未获其认可。欢迎指正。",
+    upd: "更新于",
+    src: "源码与方法见",
+    theme: "切换主题",
+  };
+  const qlang = new URLSearchParams(location.search).get("lang");
+  let saved = null;
+  try { saved = localStorage.getItem("lang"); } catch (_) {}
+  const ZH = (qlang || saved || (navigator.language || "").toLowerCase()).startsWith("zh");
+  const tr = (s) => (ZH && D.zh && D.zh[s]) || s;
+  const LG = (en, zh) => (ZH ? zh : en);
+  if (ZH) {
+    document.documentElement.lang = "zh-CN";
+    document.title = "Karpathy 思想编年史";
+    document.querySelectorAll("[data-i18n]").forEach((el) => { const v = ZHUI[el.dataset.i18n]; if (v) el.innerHTML = v; });
+  }
+  const lb = $("langbtn");
+  lb.textContent = ZH ? "English" : "中文";
+  lb.lang = ZH ? "en" : "zh";
+  lb.addEventListener("click", () => {
+    const next = ZH ? "en" : "zh";
+    try { localStorage.setItem("lang", next); } catch (_) {}
+    const u = new URL(location.href); u.searchParams.set("lang", next); location.href = u.toString();
+  });
+  const fmt = (d) => new Date(d + "T00:00:00").toLocaleDateString(ZH ? "zh-CN" : "en-GB", { day: "numeric", month: "short", year: "numeric" });
 
 
   // ---- stats
   const read = D.periods.filter((p) => p.status === "read").length;
   $("stats").innerHTML = [
-    [D.events.length, "sourced moments"],
-    [`${D.posts_read} / ${D.posts_total}`, "X posts read since 2022"],
-    [`${read} of ${D.periods.length}`, "periods written"],
+    [D.events.length, LG("sourced moments", "条有出处的记录")],
+    [`${D.posts_read} / ${D.posts_total}`, LG("X posts read since 2022", "2022 年以来已读的 X 帖子")],
+    [LG(`${read} of ${D.periods.length}`, `${read} / ${D.periods.length}`), LG("periods written", "已写完的时期")],
   ].map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
   $("updated").textContent = fmt(D.updated);
 
@@ -33,20 +73,20 @@
     const max = Math.max(...A.themes.flatMap((th) => th.counts.map((_, i) => (A.totals[i] >= LOW ? share(th, i) : 0))));
     const years = [...new Set(A.buckets.map((b) => b.slice(0, 4)))];
     let html = A.themes.map((th) => `
-      <div class="at-row"><div class="at-lab">${esc(th.label)}</div>
+      <div class="at-row"><div class="at-lab">${esc(tr(th.label))}</div>
         <div class="at-bars">${th.counts.map((c, i) => {
           const h = Math.min(100, (share(th, i) / max) * 100);
           return `<button type="button" class="at-b${A.totals[i] < LOW ? " low" : ""}" data-t="${th.id}" data-i="${i}"
-            aria-label="${esc(th.label)}, ${A.buckets[i]}: ${c} of ${A.totals[i]} posts"><i style="height:${Math.max(h, c ? 4 : 0)}%"></i></button>`;
+            aria-label="${esc(tr(th.label))}, ${A.buckets[i]}: ${c} / ${A.totals[i]}"><i style="height:${Math.max(h, c ? 4 : 0)}%"></i></button>`;
         }).join("")}</div></div>`).join("");
     const cols = `grid-template-columns:repeat(${A.buckets.length},1fr)`;
     html = html.replace(/class="at-bars"/g, `class="at-bars" style="${cols}"`);
     html += `<div class="at-row at-axis"><div></div><div class="at-bars" style="${cols}">${years.map((y) => {
       const n = A.buckets.filter((b) => b.startsWith(y)).length;
-      return `<span style="grid-column:span ${n}">${y}${y === "2026" ? " so far" : ""}</span>`;
+      return `<span style="grid-column:span ${n}">${y}${y === "2026" ? LG(" so far", " 至今") : ""}</span>`;
     }).join("")}</div></div>`;
     $("at").innerHTML = html;
-    const idle = `<p class="nt">Taller bar = a larger share of his posts that half-year. Click a bar to see the posts behind it.</p>`;
+    const idle = `<p class="nt">${LG("Taller bar = a larger share of his posts that half-year. Click a bar to see the posts behind it.", "柱子越高 = 该半年中相关帖子占比越大。点击柱子可查看对应的帖子。")}</p>`;
     $("atcard").innerHTML = idle;
     $("at").addEventListener("click", (ev) => {
       const b = ev.target.closest(".at-b");
@@ -55,8 +95,8 @@
       const th = A.themes.find((x) => x.id === b.dataset.t), i = +b.dataset.i;
       const ps = th.posts[i];
       const pct = Math.round((th.counts[i] / A.totals[i]) * 100);
-      $("atcard").innerHTML = `<div class="m"><b>${esc(th.label)}</b> · ${A.buckets[i]} · ${th.counts[i]} of ${A.totals[i]} posts (${pct}%)${A.totals[i] < LOW ? " · few posts this half-year, so the share is unreliable" : ""}</div>
-        <ul class="at-list">${ps.map((p) => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${fmt(p.date)}</a>${p.quote ? ` <span>“${esc(p.quote)}”</span>` : ""}</li>`).join("") || "<li>No posts.</li>"}</ul>`;
+      $("atcard").innerHTML = `<div class="m"><b>${esc(tr(th.label))}</b> · ${A.buckets[i]} · ${LG(`${th.counts[i]} of ${A.totals[i]} posts`, `${A.totals[i]} 条中的 ${th.counts[i]} 条`)} (${pct}%)${A.totals[i] < LOW ? LG(" · few posts this half-year, so the share is unreliable", " · 该半年帖子较少，比例不可靠") : ""}</div>
+        <ul class="at-list">${ps.map((p) => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${fmt(p.date)}</a>${p.quote ? ` <span>“${esc(p.quote)}”</span>` : ""}</li>`).join("") || `<li>${LG("No posts.", "没有帖子。")}</li>`}</ul>`;
     });
   })();
 
@@ -65,27 +105,27 @@
     const T = (D.tracks || [])[0];
     if (!T) { $("track").remove(); return; }
     const COL = { care: "var(--coding)", throwaway: "var(--practice)" };
-    const SHORT = ["Writes it himself", "Reviews every change", "Supervises agents", "Doesn't read it"];
-    const TINY = ["Himself", "Reviews", "Supervises", "Unread"];
-    const month = (d) => new Date(d + "T00:00:00").toLocaleDateString("en-GB", { month: "short", year: "numeric" });
+    const SHORT = ZH ? ["自己写", "逐行审阅", "监督智能体", "不看代码"] : ["Writes it himself", "Reviews every change", "Supervises agents", "Doesn't read it"];
+    const TINY = ZH ? ["自己写", "审阅", "监督", "不看"] : ["Himself", "Reviews", "Supervises", "Unread"];
+    const month = (d) => new Date(d + "T00:00:00").toLocaleDateString(ZH ? "zh-CN" : "en-GB", { month: "short", year: "numeric" });
     const S = T.stations;
     const pts = S.filter((s) => s.kind === "practice" || s.kind === "feeling" || s.n === 3);
-    $("track-q").textContent = T.question;
-    $("track-lede").textContent = "In 2023 he forecast that human oversight of code would fade to almost nothing. For code he cares about, his own practice stayed low until December 2025, then jumped: by March 2026 he typed no code, but still says not to stop looking at production code. Hover or tap a point to read his words.";
-    const idle = `<p class="nt">Hover or tap a point on the chart to read what he said and when.</p>`;
+    $("track-q").textContent = tr(T.question);
+    $("track-lede").textContent = ZH ? "2023 年他预测，人对代码的监督会淡化到几乎没有。对他在乎的代码，他自己的做法直到 2025 年 12 月都停留在低位，随后陡升：到 2026 年 3 月他已不再手写代码，但仍说不要放手不看生产代码。将鼠标悬停或点击某个点，可阅读他的原话。" : "In 2023 he forecast that human oversight of code would fade to almost nothing. For code he cares about, his own practice stayed low until December 2025, then jumped: by March 2026 he typed no code, but still says not to stop looking at production code. Hover or tap a point to read his words.";
+    const idle = `<p class="nt">${LG("Hover or tap a point on the chart to read what he said and when.", "将鼠标悬停或点击图中的点，查看他何时说了什么。")}</p>`;
     $("tcard").innerHTML = idle;
 
     let sel = null;
     function card(n) {
       const s = S.find((x) => x.n === +n);
       const c = s.kind === "practice" ? COL[s.lane] : "var(--muted)";
-      const what = s.kind === "forecast" ? "Forecast (a prediction, not his own practice)"
-        : s.kind === "feeling" ? "A feeling, not yet a new way of working"
-        : `${T.levels[s.level - 1]}${s.lane === "throwaway" ? " · throwaway project" : " · code he cares about"}`;
+      const what = s.kind === "forecast" ? LG("Forecast (a prediction, not his own practice)", "预测（对未来的判断，不是他自己的做法）")
+        : s.kind === "feeling" ? LG("A feeling, not yet a new way of working", "一种感受，还不是新的工作方式")
+        : `${tr(T.levels[s.level - 1])}${s.lane === "throwaway" ? LG(" · throwaway project", " · 一次性项目") : LG(" · code he cares about", " · 他在乎的代码")}`;
       $("tcard").style.setProperty("--c", c);
       $("tcard").innerHTML = `<div class="m">${month(s.date)} · <b>${esc(what)}</b></div>
         <p class="qq">“${esc(s.quote)}”</p>
-        <p class="nt">${esc(s.note)} <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.source)} ↗</a>
+        <p class="nt">${esc(tr(s.note))} <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(tr(s.source))} ↗</a>
         ${s.status === "spot" ? " · 2026 not fully read yet" : ""}</p>`;
     }
 
@@ -104,7 +144,7 @@
         g += `<line class="grid" x1="${L}" x2="${W - R}" y1="${Y(k)}" y2="${Y(k)}"/>`;
         g += `<text class="ax" x="${L - 12}" y="${Y(k) + 4}" text-anchor="end">${lab[k - 1]}</text>`;
       }
-      g += `<text class="ax" x="${L - 12}" y="${TOP - 26}" text-anchor="end" font-weight="600">More to AI ↑</text>`;
+      g += `<text class="ax" x="${narrow ? 4 : L - 12}" y="${TOP - 26}" text-anchor="${narrow ? "start" : "end"}" font-weight="600">${LG("More to AI ↑", "交给 AI 更多 ↑")}</text>`;
       for (let y = 2023; y <= 2026; y++) {
         const xx = X(y + "-01-01");
         g += `<line class="grid" x1="${xx}" x2="${xx}" y1="${TOP - 8}" y2="${H - BOT + 6}" stroke-dasharray="2 5"/>`;
@@ -136,9 +176,9 @@
       if (!narrow) {
         const c0 = care[0];
         g += `<text class="cl q" x="${X(c0.date) + 12}" y="${Y(2) - 14}">“I prompt. &amp; edit.”</text>`;
-        g += `<text class="cl" x="${X("2023-06-01")}" y="${Y(2) + 22}" style="fill:var(--coding)">code he cares about</text>`;
-        g += `<text class="cl" x="${fx}" y="${Y(4) - 14}" text-anchor="middle" style="fill:var(--muted)">2023 forecast: “~pass-through”</text>`;
-        g += `<text class="cl" x="${X(thr[0].date) - 14}" y="${ty + 5}" text-anchor="end" style="fill:var(--practice)">throwaway projects (vibe coding)</text>`;
+        g += `<text class="cl" x="${X("2023-06-01")}" y="${Y(2) + 22}" style="fill:var(--coding)">${LG("code he cares about", "他在乎的代码")}</text>`;
+        g += `<text class="cl" x="${fx}" y="${Y(4) - 14}" text-anchor="middle" style="fill:var(--muted)">${LG("2023 forecast", "2023 年预测")}: “~pass-through”</text>`;
+        g += `<text class="cl" x="${X(thr[0].date) - 14}" y="${ty + 5}" text-anchor="end" style="fill:var(--practice)">${LG("throwaway projects (vibe coding)", "一次性项目（氛围编程）")}</text>`;
         const tab = care.find((s) => s.level === 1);
         g += `<text class="cl q" x="${X(tab.date) - 12}" y="${Y(1) - 12}" text-anchor="end">“tab complete”</text>`;
         g += `<text class="cl" x="${fex - 8}" y="${TOP - 18}" text-anchor="end">“never felt this much behind”</text>`;
@@ -156,7 +196,7 @@
           <circle cx="${cx}" cy="${cy}" r="18" fill="transparent"/>
           <circle class="v" cx="${cx}" cy="${cy}" r="6.5" fill="${hollow ? "var(--surface)" : c}" stroke="${c}" stroke-width="2.5"/></g>`;
       });
-      box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="${esc(T.question)}">${g}</svg>`;
+      box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" height="${H}" role="img" aria-label="${esc(tr(T.question))}">${g}</svg>`;
     }
 
     const pick = (ev) => {
@@ -178,27 +218,28 @@
     const isKey = (e) => (t.key || []).some((k) => e.url.includes(k));
     const step = (e) => `
       <li class="${e.status === "spot" ? "spot" : ""}" style="--c:${color(e.lens)}">
-        <div class="d">${fmt(e.date)}${e.title ? " · " + esc(e.title) : ""}</div>
-        <div class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.quotes[0] ? "“" + e.quotes[0] + "”" : e.note)}</a></div>
+        <div class="d">${fmt(e.date)}${e.title ? " · " + esc(tr(e.title)) : ""}</div>
+        <div class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.quotes[0] ? "“" + e.quotes[0] + "”" : tr(e.note))}</a></div>
       </li>`;
     const keys = evs.filter(isKey);
-    return `<article class="card"><h3>${esc(t.title)}</h3><ol class="steps">${keys.map(step).join("")}</ol>
-      <div class="ours"><b>Our reading</b>${esc(t.reading)}</div>
-      <details class="chap"><summary>All ${evs.length} statements</summary><ol class="steps">${evs.map(step).join("")}</ol></details></article>`;
+    return `<article class="card"><h3>${esc(tr(t.title))}</h3><ol class="steps">${keys.map(step).join("")}</ol>
+      <div class="ours"><b>${LG("Our reading", "我们的解读")}</b>${esc(tr(t.reading))}</div>
+      <details class="chap"><summary>${LG(`All ${evs.length} statements`, `全部 ${evs.length} 条原话`)}</summary><ol class="steps">${evs.map(step).join("")}</ol></details></article>`;
   }).join("");
 
   // ---- periods
   $("periodlist").innerHTML = D.periods.map((p) => `
     <article class="card period">
-      <div><div class="yr">${p.id}</div><span class="badge ${p.status}">${p.status === "read" ? "Fully read" : "Outline"}</span></div>
+      <div><div class="yr">${p.id}</div><span class="badge ${p.status}">${p.status === "read" ? LG("Fully read", "已通读") : LG("Outline", "提纲")}</span></div>
       <div>
-        <h3>${esc(p.title)}</h3>
-        <p class="cov">${esc(p.coverage)}</p>
-        <p>${esc(p.summary)}</p>
-        ${p.interpretation.length ? `<div class="ours"><b>Our reading</b><ul>${p.interpretation.map((s) => `<li>${esc(s)}</li>`).join("")}</ul></div>` : ""}
-        ${p.chapter_html ? `<details class="chap"><summary>${p.status === "read" ? `Read the full ${p.id} chapter` : `Read the current ${p.id} outline`}</summary>
-          <div class="prose">${p.chapter_html}</div>
-          ${p.chapter ? `<p class="chapter"><a href="${esc(p.chapter)}" target="_blank" rel="noopener">Also on GitHub ↗</a></p>` : ""}
+        <h3>${esc(tr(p.title))}</h3>
+        <p class="cov">${esc(tr(p.coverage))}</p>
+        <p>${esc(tr(p.summary))}</p>
+        ${p.interpretation.length ? `<div class="ours"><b>${LG("Our reading", "我们的解读")}</b><ul>${p.interpretation.map((s) => `<li>${esc(tr(s))}</li>`).join("")}</ul></div>` : ""}
+        ${p.chapter_html ? `<details class="chap"><summary>${p.status === "read" ? LG(`Read the full ${p.id} chapter`, `阅读 ${p.id} 年完整章节（英文）`) : LG(`Read the current ${p.id} outline`, `阅读 ${p.id} 年提纲（英文）`)}</summary>
+          ${ZH ? `<p class="zhnote">完整章节目前只有英文版。</p>` : ""}
+          <div class="prose" lang="en">${p.chapter_html}</div>
+          ${p.chapter ? `<p class="chapter"><a href="${esc(p.chapter)}" target="_blank" rel="noopener">${LG("Also on GitHub ↗", "在 GitHub 上查看 ↗")}</a></p>` : ""}
         </details>` : ""}
       </div>
     </article>`).join("");

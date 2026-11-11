@@ -31,11 +31,11 @@
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.6 Inter, system-ui, sans-serif; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.6 Inter, system-ui, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; }
 a { color: inherit; text-decoration-color: var(--faint); text-underline-offset: 3px; }
 a:hover { text-decoration-color: var(--ink); }
 .wrap { max-width: 1120px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
-h1, h2, h3 { font-family: Newsreader, Georgia, serif; font-weight: 500; letter-spacing: -0.01em; margin: 0; }
+h1, h2, h3 { font-family: Newsreader, Georgia, "Songti SC", "Noto Serif SC", "SimSun", serif; font-weight: 500; letter-spacing: -0.01em; margin: 0; }
 h2 { font-size: 28px; margin-bottom: 6px; }
 .lede { color: var(--muted); max-width: 680px; margin: 0 0 24px; }
 section { padding: 56px 0; border-top: 1px solid var(--line); }
@@ -188,6 +188,11 @@ header p { font-size: 18px; color: var(--muted); max-width: 640px; margin: 16px 
 .method { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 40px; color: var(--muted); font-size: 14px; }
 .method p { margin: 0 0 10px; }
 footer { padding: 32px 0 56px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+.top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.langbtn { font: inherit; font-size: 13px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); border-radius: 999px; padding: 4px 12px; cursor: pointer; }
+.langbtn:hover { border-color: var(--ink); }
+.zhnote { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
+:lang(zh) .ours b { letter-spacing: 0; }
 .themebtn { font: inherit; font-size: 13px; background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 999px; padding: 3px 10px; cursor: pointer; }
 
 @media (max-width: 760px) {
@@ -204,14 +209,14 @@ footer { padding: 32px 0 56px; border-top: 1px solid var(--line); font-size: 13p
 </head>
 <body>
 <header class="wrap">
-  <span class="tag">Independent · unofficial · work in progress</span>
-  <h1>The Karpathy Chronicle</h1>
-  <p>How Andrej Karpathy's public thinking about AI, its limits, human agency, and building with it has developed since 2022. Every quote links to the original. Our interpretations are labelled as ours.</p>
+  <div class="top"><span class="tag" data-i18n="tag">Independent · unofficial · work in progress</span><button class="langbtn" id="langbtn" type="button" lang="zh">中文</button></div>
+  <h1 data-i18n="h1">The Karpathy Chronicle</h1>
+  <p data-i18n="intro">How Andrej Karpathy's public thinking about AI, its limits, human agency, and building with it has developed since 2022. Every quote links to the original. Our interpretations are labelled as ours.</p>
   <div class="stats" id="stats"></div>
 </header>
 
 <section class="wrap" id="track">
-  <span class="tag">Prototype</span>
+  <span class="tag" data-i18n="proto">Prototype</span>
   <h2 id="track-q"></h2>
   <p class="lede" id="track-lede"></p>
   <div class="trk" id="trk"></div>
@@ -219,41 +224,41 @@ footer { padding: 32px 0 56px; border-top: 1px solid var(--line); font-size: 13p
 </section>
 
 <section class="wrap" id="attention">
-  <h2>What he talks about</h2>
-  <p class="lede">Share of his X posts touching each theme, every half-year since 2022. Counted automatically by keyword, so it shows attention, not belief.</p>
+  <h2 data-i18n="at_h">What he talks about</h2>
+  <p class="lede" data-i18n="at_lede">Share of his X posts touching each theme, every half-year since 2022. Counted automatically by keyword, so it shows attention, not belief.</p>
   <div class="at" id="at"></div>
   <div class="tcard" id="atcard" aria-live="polite"></div>
 </section>
 
 <section class="wrap" id="threads">
-  <h2>Threads</h2>
-  <p class="lede">Four ideas followed across time. The steps are his statements. The shaded note at the end of each is our reading, which you can check against the steps.</p>
+  <h2 data-i18n="th_h">Threads</h2>
+  <p class="lede" data-i18n="th_lede">Four ideas followed across time. The steps are his statements. The shaded note at the end of each is our reading, which you can check against the steps.</p>
   <div class="threads" id="threadcards"></div>
 </section>
 
 <section class="wrap" id="periods">
-  <h2>Periods</h2>
-  <p class="lede">The chronicle is written one period at a time, from a full read of that year's posts. 2026 is still open: it covers posts up to early November.</p>
+  <h2 data-i18n="pe_h">Periods</h2>
+  <p class="lede" data-i18n="pe_lede">The chronicle is written one period at a time, from a full read of that year's posts. 2026 is still open: it covers posts up to early November.</p>
   <div class="periods" id="periodlist"></div>
 </section>
 
 <section class="wrap" id="method">
-  <h2>Method and limits</h2>
+  <h2 data-i18n="me_h">Method and limits</h2>
   <div class="method">
     <div>
-      <p><b>Sources.</b> His X posts, talks, interviews and writing. X quotes are checked word for word against an archive of his posts before each build. Talk quotes come from third-party or machine transcripts and are marked as such.</p>
-      <p><b>Dates.</b> Post dates are in Beijing time (UTC+8), so a post can appear one day after its US date.</p>
+      <p data-i18n="me1"><b>Sources.</b> His X posts, talks, interviews and writing. X quotes are checked word for word against an archive of his posts before each build. Talk quotes come from third-party or machine transcripts and are marked as such.</p>
+      <p data-i18n="me2"><b>Dates.</b> Post dates are in Beijing time (UTC+8), so a post can appear one day after its US date.</p>
     </div>
     <div>
-      <p><b>Not exhaustive.</b> Replies, image-only posts and most long recordings have not been read. Leaving something out does not mean he never said it. Public statements show what he expressed and when, not when he privately learned it.</p>
-      <p><b>Not affiliated.</b> This is an independent reading by a learner. It is not endorsed by or connected to Andrej Karpathy. Corrections are welcome.</p>
+      <p data-i18n="me3"><b>Not exhaustive.</b> Replies, image-only posts and most long recordings have not been read. Leaving something out does not mean he never said it. Public statements show what he expressed and when, not when he privately learned it.</p>
+      <p data-i18n="me4"><b>Not affiliated.</b> This is an independent reading by a learner. It is not endorsed by or connected to Andrej Karpathy. Corrections are welcome.</p>
     </div>
   </div>
 </section>
 
 <footer class="wrap">
-  <span>Updated <span id="updated"></span> · Source and method on <a href="https://github.com/hanjie-jiang/karpathy-chronicle">GitHub</a></span>
-  <button class="themebtn" id="themebtn" type="button">Toggle theme</button>
+  <span><span data-i18n="upd">Updated</span> <span id="updated"></span> · <span data-i18n="src">Source and method on</span> <a href="https://github.com/hanjie-jiang/karpathy-chronicle">GitHub</a></span>
+  <button class="themebtn" id="themebtn" type="button" data-i18n="theme">Toggle theme</button>
 </footer>
 
 <script src="data.js"></script>
