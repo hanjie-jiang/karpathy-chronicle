@@ -27,7 +27,7 @@ X = [
     ("1508148604149587972", "milestone", ["re-sharpen my technical edge and train some neural nets"], "Takes time off after almost five years at Tesla.", []),
     ("1547332301519851520", "milestone", ["revisiting my long-term passions around technical work in AI, open source and education"], "Announces he is leaving Tesla, with no concrete plans.", []),
     ("1559672719414681601", "milestone", ["the culmination of about 8 years of obsessing about the best way to explain neural nets and backprop"], "Releases micrograd, the first lecture in a from-scratch series.", []),
-    ("1529514197121384448", "fund", ["alien artifacts", "Obviously powerful, especially if you poke it just right"], "LLMs as unfamiliar objects, not brains.", ["computer"]),
+    ("1529514197121384448", "fund", ["alien artifacts", "Obviously powerful, especially if you poke it just right"], "LLMs as unfamiliar objects, not brains.", ["computer", "ghost"]),
     ("1536061913376776192", "fund", ["models appear to follow smooth scaling laws and data+model size can still plenty grow"], "Expects scale to keep paying off.", []),
     ("1567233122252750848", "fund", ["how much can an AI learn from internet text alone?"], "A limit framed as an open question.", []),
     ("1582807367988654081", "fund", ["general-purpose differentiable computer"], "The Transformer as a general computer.", ["computer"]),
@@ -51,12 +51,12 @@ X = [
     ("1623476659369443328", "milestone", ["personally benefited greatly from"], "Rejoins OpenAI.", []),
     ("1683143097604243456", "milestone", [], "Releases llama2.c: Llama 2 inference in one ~500-line C file.", []),
     ("1617979122625712128", "fund", ["The hottest new programming language is English"], "English as programming.", ["computer"]),
-    ("1632800081622761472", "fund", ["not an AI but a simulator"], "A pretrained LLM simulates internet documents.", []),
+    ("1632800081622761472", "fund", ["not an AI but a simulator"], "A pretrained LLM simulates internet documents.", ["ghost"]),
     ("1638983034522460162", "fund", ["new kind of computer architecture that runs on text"], "GPT as a computer.", ["computer"]),
     ("1642600116837298178", "fund", ["completely unaware of their own strengths and limitations"], "A concrete limit.", []),
     ("1687248476508487681", "fund", ["Algorithmic progress was necessity, now bonus"], "Why scale dominates.", []),
     ("1707437820045062561", "fund", ["the kernel process of a new Operating System"], "The LLM OS framing, on X by September 2023.", ["computer"]),
-    ("1733299213503787018", "fund", ["hallucination is all LLMs do"], "The assistant, not the model, has the hallucination problem; fix it with retrieval, sampling and verification.", ["verify"]),
+    ("1733299213503787018", "fund", ["hallucination is all LLMs do", "They are dream machines"], "The assistant, not the model, has the hallucination problem; fix it with retrieval, sampling and verification.", ["verify", "ghost@1"]),
     ("1654892810590650376", "agency", ["cambrian explosion"], "The open-source LLM ecosystem, conditioned on expensive base models.", ["empower"]),
     ("1673450276999815170", "agency", ["Most apps are actively adversarial to users"], "The attention concern continues.", ["empower"]),
     ("1681356674635034625", "agency", ["the most capable LLM available directly as weights to anyone"], "Welcomes Llama 2.", ["empower"]),
@@ -80,7 +80,7 @@ X = [
     ("1780692023970038259", "fund", ["computers that do statistical arithmetic on tokens"], "The history of computing repeating with LLMs.", ["computer"]),
     ("1835024197506187617", "fund", ["highly general purpose technology for statistical modeling of token streams"], "LLMs have little to do with language.", ["computer"]),
     ("1816531576228053133", "fund", ["Jagged Intelligence", "keep a human in the loop"], "Brilliant at some tasks, failing at simple ones, and not always obvious which is which.", ["verify", "oversight"]),
-    ("1862565643436138619", "fund", ["You're asking a human data labeler"], "What you are really talking to when you \"ask an AI\".", ["verify"]),
+    ("1862565643436138619", "fund", ["You're asking a human data labeler", "some mashup spirit of its average data labeler"], "What you are really talking to when you \"ask an AI\".", ["verify", "ghost@1"]),
     ("1767598414945292695", "coding", ["supervising the automation", "How does a human provide oversight?"], "Software engineering will follow self-driving: more autonomy, oversight at a higher level.", ["oversight"]),
     ("1827143768459637073", "coding", ["reviewing and editing the generated diffs"], "With Cursor and Sonnet, most of his programming is now English, and he still reviews.", ["oversight"]),
     ("1804187473167421798", "coding", ["One built-in UI/UX feature of LLM interfaces I'd love is proof"], "He checks commands against the docs to verify the model's recollection.", ["verify"]),
@@ -96,13 +96,17 @@ X = [
     ("2004607146781278521", "coding", ["I've never felt this much behind as a programmer"], "At year end: a new layer of agents, prompts and tools to master, and a sense of falling behind.", ["oversight"]),
     ("1990116666194456651", "fund", ["Software 2.0 easily automates what you can verify"], "Verifiability predicts which tasks AI automates, and explains the jagged frontier.", ["verify"]),
     ("1938626382248149433", "fund", ["maximally sacrifices encyclopedic knowledge for capability"], "The \"cognitive core\": a small local model that reasons, looks things up, and stays yours.", ["computer", "empower"]),
-    ("1935518272667217925", "fund", ["LLMs are a new kind of computer, and you program them *in English*"], "YC talk summary: LLMs as utilities, fabs and operating systems; build partial-autonomy products.", ["computer"]),
+    ("1935518272667217925", "fund", ["LLMs are a new kind of computer, and you program them *in English*", "people spirits"], "YC talk summary: LLMs as utilities, fabs and operating systems; build partial-autonomy products.", ["computer", "ghost@1"]),
     ("1914494203696177444", "practice", ["is now an LLM, not a human"], "Build docs and products for agents to read and script.", ["computer"]),
     ("1917961248031080455", "practice", ["painful slog as a deployed, real app"], "MenuGen: the demo was quick, deployment was the work, and an LLM could not reach most of it.", []),
     ("1894099637218545984", "agency", ["Agency is significantly more powerful and significantly more scarce"], "Agency over intelligence, in hiring and education.", ["empower"]),
     ("1952076108565991588", "agency", ["It is imperative that humanity not fall while AI ascends"], "Funds a challenge for things that \"uplift team human\".", ["empower"]),
     ("1929634696474120576", "agency", ["TikTok is nothing compared to what is possible"], "Generated video can be optimized directly against engagement, and he doubts we will like the optimum.", ["empower"]),
     ("1993010584175141038", "agency", ["proficient in the use of AI, but can also exist without it"], "To a school board: grade in class, and keep the ability to verify AI.", ["empower", "verify"]),
+    ("1973435013875314729", "fund", ["not about building animals. It is about summoning ghosts"], "Responding to Sutton: pretraining is \"crappy evolution\", so LLMs are a different kind of intelligence.", ["ghost"]),
+    ("1980665134415802554", "fund", ["they are not animal-like entities"], "Models have no built-in sense of their own abilities; it all has to be added explicitly.", ["ghost"]),
+    ("1991910395720925418", "fund", ["shaped a lot less by biological evolution and a lot more by commercial evolution"], "The space of intelligences: LLMs are optimized for imitation, rewards and user upvotes, not survival.", ["ghost"]),
+    ("1997731268969304070", "fund", ["Don't think of LLMs as entities but as simulators"], "So ask what a group of experts would say, not what \"you\" think.", ["ghost"]),
     # ---- 2026 (thread-tagged; other cited 2026 posts come from CHRONICLE automatically) ----
     ("2015883857489522876", "coding", ["80% agent coding and 20% edits+touchups in December", "watch them like a hawk"], "The proportions flip in one month. Agent mistakes are now conceptual, so code he cares about is still watched closely.", ["oversight"]),
     ("2019137879310836075", "coding", ["acting as oversight", "without any compromise on the quality of the software"], "Names \"agentic engineering\": the professional, overseen version of vibe coding.", ["oversight"]),
@@ -148,11 +152,16 @@ OTHER = [
          note="No code typed since December; remove yourself as the bottleneck; autoresearch; jokes outside the RL; the case for and against joining a frontier lab; explaining to agents, not people. Read in full (third-party transcript).", threads=["oversight", "verify", "empower"], status="read"),
     dict(date="2026-04-29", lens="coding", kind="talk", title="Sequoia AI Ascent 2026", url="https://karpathy.bearblog.dev/sequoia-ascent-2026/",
          note="Vibe coding raises the floor, agentic engineering the ceiling; some apps (MenuGen) shouldn't exist; jaggedness = verifiable plus \"labs care\"; you can't outsource your understanding. Read in full in the AI-edited text he published, not verbatim.", threads=["oversight", "verify"], status="read"),
+    dict(date="2026-04-29", lens="fund", kind="talk", title="Sequoia AI Ascent 2026", url="https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+         quotes=["If you yell at them, they are not going to work better or worse"], note="Ghosts, not animals, restated as practical advice: be suspicious and test empirically. AI-edited text he published.", threads=["ghost"], status="read"),
     dict(date="2026-10-31", lens="practice", kind="writing", title="HackerTube", url="https://karpathy.bearblog.dev/hacker-tube/",
          note="A video site built in about 2 hours by talking to Claude only: \"I don't actually _do_ anything resembling traditional engineering anymore\".", threads=["oversight"], status="read"),
 ]
 
 THREADS = [
+    dict(id="ghost", title="What an LLM is: ghosts, not animals",
+         key=["1529514197121384448", "1632800081622761472", "1733299213503787018", "1935518272667217925", "1973435013875314729", "1997731268969304070", "sequoia-ascent-2026"],
+         reading="His answer to \"what is an LLM?\" sharpens over four years: not a mind like ours, but a simulation of human text. The lesson he draws: don't treat it like a person; ask it to simulate perspectives, and test where it works."),
     dict(id="oversight", title="How much to oversee AI-written code",
          key=["1608895189078380544", "bZQun8Y4L2A", "1886192184808149383", "1915581920022585597", "2015883857489522876", "2064409694761054332"],
          reading="Not a straight line. He hands more to AI as tools improve, but always by stakes: throwaway projects first, production code last, and in 2026 still \"don't do this in prod!\""),
@@ -595,8 +604,12 @@ def main():
         for q in quotes:
             if q not in p["text"]:
                 errors.append(f"quote not verbatim in {pid}: {q!r}")
-        events.append(dict(date=p["date_cst"], lens=lens, kind="post", url=p["url"], quotes=quotes, note=note,
-                           threads=threads, status="read" if p["year"] in READ_YEARS else "spot"))
+        tq = {t.split("@")[0]: int(t.split("@")[1]) for t in threads if "@" in t}
+        ev = dict(date=p["date_cst"], lens=lens, kind="post", url=p["url"], quotes=quotes, note=note,
+                  threads=[t.split("@")[0] for t in threads], status="read" if p["year"] in READ_YEARS else "spot")
+        if tq:
+            ev["tq"] = tq
+        events.append(ev)
     for o in OTHER:
         events.append(dict(quotes=[], **o) if "quotes" not in o else dict(o))
     tracks = build_tracks(posts, errors)

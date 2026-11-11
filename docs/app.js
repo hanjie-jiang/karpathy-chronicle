@@ -21,7 +21,7 @@
     at_h: "他在谈论什么",
     at_lede: "每半年中，涉及各主题的 X 帖子所占比例（自 2022 年起）。按关键词自动统计，因此反映的是关注度，而不是观点。",
     th_h: "主线",
-    th_lede: "四个随时间追踪的观点。每一步都是他的原话。每张卡片末尾的灰底部分是我们的解读，可以对照原话检验。",
+    th_lede: "五个随时间追踪的观点。每一步都是他的原话。每张卡片末尾的灰底部分是我们的解读，可以对照原话检验。",
     pe_h: "时期",
     pe_lede: "编年史按时期逐段撰写，基于对当年全部帖子的通读。2026 年尚未结束：目前覆盖到 11 月初的帖子。",
     me_h: "方法与局限",
@@ -241,10 +241,10 @@
     const step = (e) => `
       <li class="${e.status === "spot" ? "spot" : ""}" style="--c:${color(e.lens)}">
         <div class="d">${fmt(e.date)}${e.title ? " · " + esc(tr(e.title)) : ""}</div>
-        <div class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.quotes[0] ? "“" + e.quotes[0] + "”" : tr(e.note))}</a></div>
+        <div class="t"><a href="${esc(e.url)}" target="_blank" rel="noopener">${(() => { const q = e.quotes[(e.tq || {})[t.id] || 0]; return esc(q ? "“" + q + "”" : tr(e.note)); })()}</a></div>
       </li>`;
     const keys = evs.filter(isKey);
-    const TC = { oversight: "--coding", verify: "--fund", computer: "--practice", empower: "--agency" };
+    const TC = { ghost: "--milestone", oversight: "--coding", verify: "--fund", computer: "--practice", empower: "--agency" };
     return `<article class="card" style="--tc:var(${TC[t.id] || "--fund"})"><h3>${esc(tr(t.title))}</h3><ol class="steps">${keys.map(step).join("")}</ol>
       <div class="ours"><b>${LG("Our reading", "我们的解读")}</b>${esc(tr(t.reading))}</div>
       <details class="chap"><summary>${LG(`All ${evs.length} statements`, `全部 ${evs.length} 条原话`)}</summary><ol class="steps">${evs.map(step).join("")}</ol></details></article>`;

@@ -176,7 +176,8 @@ window.CHRONICLE = {
    ],
    "note": "LLMs as unfamiliar objects, not brains.",
    "threads": [
-    "computer"
+    "computer",
+    "ghost"
    ],
    "status": "read"
   },
@@ -618,7 +619,9 @@ window.CHRONICLE = {
     "not an AI but a simulator"
    ],
    "note": "A pretrained LLM simulates internet documents.",
-   "threads": [],
+   "threads": [
+    "ghost"
+   ],
    "status": "read"
   },
   {
@@ -1027,13 +1030,18 @@ window.CHRONICLE = {
    "kind": "post",
    "url": "https://x.com/karpathy/status/1733299213503787018",
    "quotes": [
-    "hallucination is all LLMs do"
+    "hallucination is all LLMs do",
+    "They are dream machines"
    ],
    "note": "The assistant, not the model, has the hallucination problem; fix it with retrieval, sampling and verification.",
    "threads": [
-    "verify"
+    "verify",
+    "ghost"
    ],
-   "status": "read"
+   "status": "read",
+   "tq": {
+    "ghost": 1
+   }
   },
   {
    "date": "2023-12-12",
@@ -1624,13 +1632,18 @@ window.CHRONICLE = {
    "kind": "post",
    "url": "https://x.com/karpathy/status/1862565643436138619",
    "quotes": [
-    "You're asking a human data labeler"
+    "You're asking a human data labeler",
+    "some mashup spirit of its average data labeler"
    ],
    "note": "What you are really talking to when you \"ask an AI\".",
    "threads": [
-    "verify"
+    "verify",
+    "ghost"
    ],
-   "status": "read"
+   "status": "read",
+   "tq": {
+    "ghost": 1
+   }
   },
   {
    "date": "2024-12-09",
@@ -2102,13 +2115,18 @@ window.CHRONICLE = {
    "kind": "post",
    "url": "https://x.com/karpathy/status/1935518272667217925",
    "quotes": [
-    "LLMs are a new kind of computer, and you program them *in English*"
+    "LLMs are a new kind of computer, and you program them *in English*",
+    "people spirits"
    ],
    "note": "YC talk summary: LLMs as utilities, fabs and operating systems; build partial-autonomy products.",
    "threads": [
-    "computer"
+    "computer",
+    "ghost"
    ],
-   "status": "read"
+   "status": "read",
+   "tq": {
+    "ghost": 1
+   }
   },
   {
    "date": "2025-06-25",
@@ -2269,18 +2287,6 @@ window.CHRONICLE = {
   },
   {
    "date": "2025-10-02",
-   "lens": "fund",
-   "kind": "post",
-   "url": "https://x.com/karpathy/status/1973435013875314729",
-   "quotes": [
-    "today's frontier LLM research is not about building animals. It is about summoning ghosts"
-   ],
-   "note": "Responding to Richard Sutton: \"Pretraining is our crappy evolution… today's frontier LLM research is not about building animals. It is about summoning ghosts\"",
-   "threads": [],
-   "status": "read"
-  },
-  {
-   "date": "2025-10-02",
    "lens": "practice",
    "kind": "post",
    "url": "https://x.com/karpathy/status/1973468610917179630",
@@ -2289,6 +2295,20 @@ window.CHRONICLE = {
    ],
    "note": "Production apps are \"larger pipelines where a bunch of LLMs collaborate in DAGs and flows\"",
    "threads": [],
+   "status": "read"
+  },
+  {
+   "date": "2025-10-02",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1973435013875314729",
+   "quotes": [
+    "not about building animals. It is about summoning ghosts"
+   ],
+   "note": "Responding to Sutton: pretraining is \"crappy evolution\", so LLMs are a different kind of intelligence.",
+   "threads": [
+    "ghost"
+   ],
    "status": "read"
   },
   {
@@ -2341,6 +2361,20 @@ window.CHRONICLE = {
    "note": "Says the industry overshoots tooling relative to present capability.",
    "threads": [
     "oversight"
+   ],
+   "status": "read"
+  },
+  {
+   "date": "2025-10-21",
+   "lens": "fund",
+   "kind": "post",
+   "url": "https://x.com/karpathy/status/1980665134415802554",
+   "quotes": [
+    "they are not animal-like entities"
+   ],
+   "note": "Models have no built-in sense of their own abilities; it all has to be added explicitly.",
+   "threads": [
+    "ghost"
    ],
    "status": "read"
   },
@@ -2410,11 +2444,12 @@ window.CHRONICLE = {
    "kind": "post",
    "url": "https://x.com/karpathy/status/1991910395720925418",
    "quotes": [
-    "space of intelligences",
     "shaped a lot less by biological evolution and a lot more by commercial evolution"
    ],
-   "note": "In November he described the \"space of intelligences\": LLMs are \"shaped a lot less by biological evolution and a lot more by commercial evolution\", and \"increasingly selected by at-scale A/B tests for DAU => deeply crave",
-   "threads": [],
+   "note": "The space of intelligences: LLMs are optimized for imitation, rewards and user upvotes, not survival.",
+   "threads": [
+    "ghost"
+   ],
    "status": "read"
   },
   {
@@ -2462,8 +2497,10 @@ window.CHRONICLE = {
    "quotes": [
     "Don't think of LLMs as entities but as simulators"
    ],
-   "note": "Ask instead what a good group of people would say.",
-   "threads": [],
+   "note": "So ask what a group of experts would say, not what \"you\" think.",
+   "threads": [
+    "ghost"
+   ],
    "status": "read"
   },
   {
@@ -2965,6 +3002,21 @@ window.CHRONICLE = {
    "status": "read"
   },
   {
+   "date": "2026-04-29",
+   "lens": "fund",
+   "kind": "talk",
+   "title": "Sequoia AI Ascent 2026",
+   "url": "https://karpathy.bearblog.dev/sequoia-ascent-2026/",
+   "quotes": [
+    "If you yell at them, they are not going to work better or worse"
+   ],
+   "note": "Ghosts, not animals, restated as practical advice: be suspicious and test empirically. AI-edited text he published.",
+   "threads": [
+    "ghost"
+   ],
+   "status": "read"
+  },
+  {
    "date": "2026-05-01",
    "lens": "fund",
    "kind": "post",
@@ -3106,6 +3158,20 @@ window.CHRONICLE = {
   }
  ],
  "threads": [
+  {
+   "id": "ghost",
+   "title": "What an LLM is: ghosts, not animals",
+   "key": [
+    "1529514197121384448",
+    "1632800081622761472",
+    "1733299213503787018",
+    "1935518272667217925",
+    "1973435013875314729",
+    "1997731268969304070",
+    "sequoia-ascent-2026"
+   ],
+   "reading": "His answer to \"what is an LLM?\" sharpens over four years: not a mind like ours, but a simulation of human text. The lesson he draws: don't treat it like a person; ask it to simulate perspectives, and test where it works."
+  },
   {
    "id": "oversight",
    "title": "How much to oversee AI-written code",
@@ -4256,7 +4322,7 @@ window.CHRONICLE = {
       {
        "date": "2025-10-02",
        "url": "https://x.com/karpathy/status/1973435013875314729",
-       "quote": "today's frontier LLM research is not about building animals. It is about summoning ghosts"
+       "quote": "not about building animals. It is about summoning ghosts"
       },
       {
        "date": "2025-10-09",
@@ -4276,7 +4342,7 @@ window.CHRONICLE = {
       {
        "date": "2025-11-22",
        "url": "https://x.com/karpathy/status/1991910395720925418",
-       "quote": "space of intelligences"
+       "quote": "shaped a lot less by biological evolution and a lot more by commercial evolution"
       },
       {
        "date": "2025-12-27",
@@ -5236,7 +5302,7 @@ window.CHRONICLE = {
       {
        "date": "2025-10-02",
        "url": "https://x.com/karpathy/status/1973435013875314729",
-       "quote": "today's frontier LLM research is not about building animals. It is about summoning ghosts"
+       "quote": "not about building animals. It is about summoning ghosts"
       },
       {
        "date": "2025-10-02",
@@ -5261,7 +5327,7 @@ window.CHRONICLE = {
       {
        "date": "2025-10-21",
        "url": "https://x.com/karpathy/status/1980665134415802554",
-       "quote": ""
+       "quote": "they are not animal-like entities"
       },
       {
        "date": "2025-10-24",
@@ -5281,7 +5347,7 @@ window.CHRONICLE = {
       {
        "date": "2025-11-22",
        "url": "https://x.com/karpathy/status/1991910395720925418",
-       "quote": "space of intelligences"
+       "quote": "shaped a lot less by biological evolution and a lot more by commercial evolution"
       },
       {
        "date": "2025-12-08",
@@ -5666,7 +5732,7 @@ window.CHRONICLE = {
       {
        "date": "2025-10-02",
        "url": "https://x.com/karpathy/status/1973435013875314729",
-       "quote": "today's frontier LLM research is not about building animals. It is about summoning ghosts"
+       "quote": "not about building animals. It is about summoning ghosts"
       },
       {
        "date": "2025-10-13",
@@ -5921,12 +5987,12 @@ window.CHRONICLE = {
       {
        "date": "2025-10-02",
        "url": "https://x.com/karpathy/status/1973435013875314729",
-       "quote": "today's frontier LLM research is not about building animals. It is about summoning ghosts"
+       "quote": "not about building animals. It is about summoning ghosts"
       },
       {
        "date": "2025-11-22",
        "url": "https://x.com/karpathy/status/1991910395720925418",
-       "quote": "space of intelligences"
+       "quote": "shaped a lot less by biological evolution and a lot more by commercial evolution"
       }
      ],
      [
@@ -5988,6 +6054,8 @@ window.CHRONICLE = {
   "Vibe coding raises the floor, agentic engineering the ceiling; some apps (MenuGen) shouldn't exist; jaggedness = verifiable plus \"labs care\"; you can't outsource your understanding. Read in full in the AI-edited text he published, not verbatim.": "氛围编程抬高下限，智能体工程（agentic engineering）抬高上限；有些应用（如 MenuGen）本不该存在；参差 = 可验证 + \"labs care\"（实验室重视）；你无法外包自己的理解。已全文阅读他发布的 AI 整理稿，并非逐字原话。",
   "HackerTube": "HackerTube",
   "A video site built in about 2 hours by talking to Claude only: \"I don't actually _do_ anything resembling traditional engineering anymore\".": "只靠和 Claude 对话、约 2 小时做出的视频网站：\"I don't actually _do_ anything resembling traditional engineering anymore\"。",
+  "What an LLM is: ghosts, not animals": "LLM 是什么：幽灵，而不是动物",
+  "His answer to \"what is an LLM?\" sharpens over four years: not a mind like ours, but a simulation of human text. The lesson he draws: don't treat it like a person; ask it to simulate perspectives, and test where it works.": "四年间，他对“LLM 是什么”的回答越来越清晰：它不是像我们一样的心智，而是对人类文本的模拟。他得出的教训是：别把它当成一个人；让它模拟不同视角，并通过实验弄清它在哪里管用。",
   "How much to oversee AI-written code": "AI 写的代码要盯多紧",
   "Not a straight line. He hands more to AI as tools improve, but always by stakes: throwaway projects first, production code last, and in 2026 still \"don't do this in prod!\"": "不是一条直线。工具越强，他交给 AI 的越多，但始终按风险高低来分：先是一次性项目，生产代码最后；到 2026 年他仍说 \"don't do this in prod!\"（别在生产环境这么做）。",
   "Verification as the bottleneck": "验证才是瓶颈",
